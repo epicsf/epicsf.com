@@ -1,0 +1,126 @@
+// Mixins.
+
+@mixin lato {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+@mixin cardo {
+  font-family: Cardo, serif;
+  font-weight: 400;
+}
+
+@mixin italic {
+  font-style: italic;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+// Utility classes.
+
+.italic {
+  @include italic;
+}
+
+.bold {
+  @include bold;
+}
+
+// Font styles and sizes.
+
+h1 {
+  @include cardo;
+  @include italic;
+  font-size: 50pt;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include cardo;
+  @include italic;
+  font-size: 36pt;
+  letter-spacing: 0;
+}
+
+h3 {
+  @include lato;
+  font-size: 22pt;
+  letter-spacing: 100;
+  text-transform: uppercase;
+}
+
+.time {
+  @include lato;
+  font-size: 40pt;
+  letter-spacing: 50;
+  text-transform: uppercase;
+
+  .meridiem {
+    font-size: 32pt;
+  }
+}
+
+.title-1 {
+  @include lato;
+  @include italic;
+  font-size: 18pt;
+  font-style: italic;
+  letter-spacing: 20;
+}
+
+.title-2 {
+  @include cardo;
+  @include italic;
+  font-size: 18pt;
+}
+
+.title-3 {
+  @include lato;
+  font-size: 14pt;
+  letter-spacing: 150;
+  text-transform: uppercase;
+}
+
+.title-4 {
+  @include lato;
+  @include italic;
+  @include bold;
+  font-size: 14pt;
+  letter-spacing: 20;
+}
+
+.title-5 {
+  @include lato;
+  @include italic;
+  font-size: 12pt;
+  letter-spacing: 120;
+  text-transform: uppercase;
+}
+
+a,
+.link {
+  @include lato;
+  font-size: 12pt;
+  letter-spacing: 120;
+  text-transform: uppercase;
+}
+
+.body1 {
+  @include cardo;
+  @include italic;
+  font-size: 22pt;
+}
+
+.body2 {
+  @include lato;
+  font-size: 15pt;
+}
+
+.body3 {
+  @include lato;
+  font-size: 13pt;
+  letter-spacing: 20;
+}

@@ -1,2 +1,101 @@
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: 700; }
+
+h1 {
+  font-family: Cardo, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50pt;
+  letter-spacing: 0;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: Cardo, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 36pt;
+  letter-spacing: 0; }
+
+h3 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 22pt;
+  letter-spacing: 100;
+  text-transform: uppercase; }
+
+.time {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 40pt;
+  letter-spacing: 50;
+  text-transform: uppercase; }
+  .time .meridiem {
+    font-size: 32pt; }
+
+.title-1 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18pt;
+  font-style: italic;
+  letter-spacing: 20; }
+
+.title-2 {
+  font-family: Cardo, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18pt; }
+
+.title-3 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  letter-spacing: 150;
+  text-transform: uppercase; }
+
+.title-4 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14pt;
+  letter-spacing: 20; }
+
+.title-5 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12pt;
+  letter-spacing: 120;
+  text-transform: uppercase; }
+
+a,
+.link {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  letter-spacing: 120;
+  text-transform: uppercase; }
+
+.body1 {
+  font-family: Cardo, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22pt; }
+
+.body2 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 15pt; }
+
+.body3 {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 13pt;
+  letter-spacing: 20; }
+
 body {
   font-weight: bold; }
