@@ -1,0 +1,32 @@
+@each $size in (20, 40, 60, 80, 100, 140) {
+  .spacer-#{$size} {
+    display: block;
+    height: #{$size}px;
+  }
+
+  .pad-both-#{$size} {
+    padding: #{$size}px 0;
+  }
+
+  .pad-top-#{$size} {
+    padding-top: #{$size}px;
+  }
+
+  .pad-bottom-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+}
+
+.divider-1 {
+  background: #61d6a1;
+  display: block;
+  height: 2px;
+  width: 100px;
+}
+
+.divider-2 {
+  background: #61d6a1;
+  display: block;
+  height: 1px;
+  width: 40px;
+}

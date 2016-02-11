@@ -11,9 +11,9 @@
 
     </div><!-- .site-content -->
 
-    <footer id="colophon" class="site-footer" role="contentinfo">
+    <footer id="footer" class="site-footer" role="contentinfo">
       <?php if ( has_nav_menu( 'primary' ) ) : ?>
-        <nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
+        <nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'epic' ); ?>">
           <?php
             wp_nav_menu( array(
               'theme_location' => 'primary',
@@ -24,7 +24,7 @@
       <?php endif; ?>
 
       <?php if ( has_nav_menu( 'social' ) ) : ?>
-        <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentysixteen' ); ?>">
+        <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'epic' ); ?>">
           <?php
             wp_nav_menu( array(
               'theme_location' => 'social',

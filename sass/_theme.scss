@@ -1,0 +1,11 @@
+$link-color: #fc4c00;
+
+a {
+  color: $link-color;
+}
+
+.btn {
+  color: $link-color;
+  padding: 16pt 20pt;
+  border: 2px solid $link-color;
+}
