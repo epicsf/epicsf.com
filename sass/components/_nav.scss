@@ -1,0 +1,16 @@
+.main-navigation {
+  height: 90px;
+
+  ul, li {
+    list-style-type: none;
+  }
+
+  li {
+    float: left;
+    margin-right: 50px;
+  }
+
+  a {
+    color: $gray;
+  }
+}

@@ -2,6 +2,16 @@ body {
   font-weight: bold;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 @import 'sass/theme';
 @import 'sass/fonts';
 @import 'sass/ui_utils';
+@import 'sass/components/nav';

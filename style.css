@@ -1,6 +1,13 @@
 body {
   font-weight: bold; }
 
+html {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
 a {
   color: #fc4c00; }
 
@@ -14,6 +21,16 @@ a {
 
 .bold {
   font-weight: 700; }
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
 
 h1 {
   font-family: Cardo, serif;
@@ -197,3 +214,13 @@ a,
   display: block;
   height: 1px;
   width: 40px; }
+
+.main-navigation {
+  height: 90px; }
+  .main-navigation ul, .main-navigation li {
+    list-style-type: none; }
+  .main-navigation li {
+    float: left;
+    margin-right: 50px; }
+  .main-navigation a {
+    color: #414447; }
