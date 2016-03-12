@@ -132,3 +132,10 @@ function epic_body_classes($classes) {
 }
 
 add_filter('body_class', 'epic_body_classes');
+
+/**
+ * Custom template tags for this theme.
+ *
+ * @since Epic 1.0
+ */
+require get_template_directory() . '/inc/template-tags.php';
