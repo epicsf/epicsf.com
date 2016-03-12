@@ -13,6 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
@@ -29,17 +30,23 @@
     <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
       <div id="site-header-menu" class="site-header-menu">
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
-          <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
+          <nav id="site-navigation" class="navbar navbar-full navbar-light bg-faded" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+              &#9776;
+            </button>
+            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
             <div>
-              <a href="/"><span class="screen-reader-text">Epic</span></a>
+              <a href="/" class="navbar-brand" id="epic-logo"><span class="screen-reader-text">Epic</span></a>
             </div>
             <?php
-              wp_nav_menu( array(
+              wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'menu_class'     => 'primary-menu',
-               ) );
+                'menu_class'     => 'nav navbar-nav pull-xs-right',
+               ));
             ?>
-          </nav><!-- .main-navigation -->
+            </div>
+          </nav><!-- .navbar -->
         <?php endif; ?>
       </div><!-- .site-header-menu -->
     <?php endif; ?>

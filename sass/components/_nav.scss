@@ -1,16 +1,30 @@
-.main-navigation {
+#site-navigation {
   height: 90px;
+  padding-top: 33px;
 
-  ul, li {
-    list-style-type: none;
+  a,
+  a:hover,
+  a:focus {
+    color: #414447;
+    text-transform: none;
   }
 
-  li {
-    float: left;
-    margin-right: 50px;
+  .giving-item {
+    a {
+      color: #77d9aa;
+      text-transform: uppercase;
+    }
   }
 
-  a {
-    color: $gray;
+  .nav.navbar-nav {
+    padding: 0 30px;
+
+    li {
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

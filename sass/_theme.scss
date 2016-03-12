@@ -2,7 +2,9 @@ $link-color: #fc4c00;
 $gray: #414447;
 
 
-a {
+a,
+a:focus,
+a:hover {
   color: $link-color;
 }
 

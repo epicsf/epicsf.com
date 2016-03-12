@@ -1,3 +1,5 @@
+@import 'sass/components/bootstrap';
+
 body {
   font-weight: bold;
 }
@@ -7,7 +9,9 @@ html {
   padding: 0;
 }
 
-a {
+a,
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
