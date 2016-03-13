@@ -5013,8 +5013,7 @@ a,
   width: 40px; }
 
 #site-navigation {
-  height: 90px;
-  padding-top: 33px; }
+  height: 90px; }
   #site-navigation a,
   #site-navigation a:hover,
   #site-navigation a:focus {
@@ -5024,6 +5023,7 @@ a,
     color: #77d9aa;
     text-transform: uppercase; }
   #site-navigation .nav.navbar-nav {
+    margin-top: 25px;
     padding: 0 30px; }
     #site-navigation .nav.navbar-nav li {
       margin-right: 50px; }

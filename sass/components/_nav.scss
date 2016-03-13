@@ -1,6 +1,7 @@
 #site-navigation {
+  // Container div
+
   height: 90px;
-  padding-top: 33px;
 
   a,
   a:hover,
@@ -17,6 +18,9 @@
   }
 
   .nav.navbar-nav {
+    // Nav section w/ links
+
+    margin-top: 25px;
     padding: 0 30px;
 
     li {
