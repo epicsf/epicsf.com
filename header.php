@@ -44,7 +44,7 @@
             <?php
               wp_nav_menu(array(
                 'theme_location' => 'primary',
-                'menu_class'     => 'primary-menu',
+                // 'menu_class'     => 'primary-menu',
                 'menu_class'     => 'nav navbar-nav pull-xs-right',
                ));
             ?>

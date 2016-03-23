@@ -5029,3 +5029,19 @@ a,
       margin-right: 50px; }
       #site-navigation .nav.navbar-nav li:last-child {
         margin-right: 0; }
+
+.site-footer {
+  background: #414447;
+  color: #FFF;
+  padding: 60px 0; }
+  .site-footer strong {
+    font-weight: 200;
+    text-transform: uppercase; }
+  .site-footer a {
+    color: #FFF;
+    text-transform: none; }
+  .site-footer .navbar {
+    padding: 0; }
+  .site-footer .navbar-nav .nav-item {
+    float: none;
+    margin: 10px 0 0; }

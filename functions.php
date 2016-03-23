@@ -11,7 +11,11 @@ if (!function_exists('epic_setup')) {
     add_theme_support( 'title-tag' );
 
     register_nav_menus(array(
-      'primary' => 'Primary Nav Menu',
+      'primary'              => 'Primary Nav Menu',
+      'footer-ministries'    => 'Footer Ministries Menu',
+      'footer-about-us'      => 'Footer About Us Menu',
+      'footer-media'         => 'Footer Media Menu',
+      'footer-get-connected' => 'Footer Get Connected Menu',
     ));
 
     /*

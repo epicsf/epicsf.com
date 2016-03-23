@@ -12,40 +12,63 @@
     </div><!-- .site-content -->
 
     <footer id="footer" class="site-footer" role="contentinfo">
-      <?php if ( has_nav_menu( 'primary' ) ) : ?>
-        <nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'epic' ); ?>">
-          <?php
-            wp_nav_menu( array(
-              'theme_location' => 'primary',
-              'menu_class'     => 'primary-menu',
-             ) );
-          ?>
-        </nav><!-- .main-navigation -->
+      <div class="container-fluid">
+        <div class="row">
+        <?php if ( has_nav_menu( 'footer-ministries' ) ) : ?>
+          <div class="col-md-3">
+            <strong>Ministries</strong>
+            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Ministries Menu', 'epic' ); ?>">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-ministries',
+                  'menu_class'     => 'nav navbar-nav',
+                 ) );
+              ?>
+            </nav>
+          </div>
+        <?php endif; ?>
+      <?php if ( has_nav_menu( 'footer-get-connected' ) ) : ?>
+        <div class="col-md-3">
+          <strong>Get Connected</strong>
+          <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'footer-get-connected',
+                'menu_class'     => 'nav navbar-nav',
+               ) );
+            ?>
+          </nav>
+        </div>
       <?php endif; ?>
-
-      <?php if ( has_nav_menu( 'social' ) ) : ?>
-        <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'epic' ); ?>">
-          <?php
-            wp_nav_menu( array(
-              'theme_location' => 'social',
-              'menu_class'     => 'social-links-menu',
-              'depth'          => 1,
-              'link_before'    => '<span class="screen-reader-text">',
-              'link_after'     => '</span>',
-            ) );
-          ?>
-        </nav><!-- .social-navigation -->
+      <?php if ( has_nav_menu( 'footer-media' ) ) : ?>
+        <div class="col-md-3">
+          <strong>Media</strong>
+          <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'footer-media',
+                'menu_class'     => 'nav navbar-nav',
+               ) );
+            ?>
+          </nav>
+        </div>
       <?php endif; ?>
-
+      <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
+        <div class="col-md-3">
+          <strong>About Us</strong>
+          <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'footer-about-us',
+                'menu_class'     => 'nav navbar-nav',
+               ) );
+            ?>
+          </nav>
+        </div>
+      <?php endif; ?>
+        </div> <!-- .row -->
+      </div>
       <div class="site-info">
-        <?php
-          /**
-           * Fires before the twentysixteen footer text for footer customization.
-           *
-           * @since Twenty Sixteen 1.0
-           */
-          do_action( 'twentysixteen_credits' );
-        ?>
       </div><!-- .site-info -->
     </footer><!-- .site-footer -->
   </div><!-- .site-inner -->

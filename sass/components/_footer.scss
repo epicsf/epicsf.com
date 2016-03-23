@@ -1,0 +1,24 @@
+.site-footer {
+  background: #414447;
+  color: #FFF;
+  padding: 60px 0;
+
+  strong {
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #FFF;
+    text-transform: none;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-nav .nav-item {
+    float: none;
+    margin: 10px 0 0;
+  }
+}
