@@ -41,7 +41,7 @@ if (!function_exists('epic_setup')) {
      */
     add_editor_style(array(
       'css/editor-style.css',
-      epic_fonts_url()
+      epic_fonts_url(),
     ));
   }
 }
@@ -89,6 +89,13 @@ function epic_scripts() {
   wp_enqueue_style(
     'epic-fonts',
     epic_fonts_url(),
+    array(),
+    null
+  );
+
+  wp_enqueue_style(
+    'epic-font-icons',
+    'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css',
     array(),
     null
   );

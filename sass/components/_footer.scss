@@ -1,15 +1,24 @@
 .site-footer {
+  $footer-color: #f2f3f4;
+
   background: #414447;
-  color: #FFF;
+  color: $footer-color;
   padding: 60px 0;
 
   strong {
-    font-weight: 200;
+    @include lato;
+
+    color: $footer-color;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   a {
-    color: #FFF;
+    color: $footer-color;
+  }
+
+  li a {
+    color: #e8e9ea;
     text-transform: none;
   }
 
@@ -20,5 +29,27 @@
   .navbar-nav .nav-item {
     float: none;
     margin: 10px 0 0;
+  }
+
+  .aside-content {
+    border-left: 1px solid #5f6264;
+
+    .row {
+      margin-bottom: 30px;
+    }
+
+    .social-links {
+      // font-size: 2px;
+    }
+
+    .service-times {
+      strong {
+        text-transform: initial;
+      }
+    }
+
+    p {
+      font-weight: 400;
+    }
   }
 }

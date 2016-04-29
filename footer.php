@@ -14,6 +14,46 @@
     <footer id="footer" class="site-footer" role="contentinfo">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-md-9">
+        <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
+          <div class="col-md-3">
+            <strong>About Us</strong>
+            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-about-us',
+                  'menu_class'     => 'nav navbar-nav',
+                 ) );
+              ?>
+            </nav>
+          </div>
+        <?php endif; ?>
+        <?php if ( has_nav_menu( 'footer-media' ) ) : ?>
+          <div class="col-md-3">
+            <strong>Media</strong>
+            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-media',
+                  'menu_class'     => 'nav navbar-nav',
+                 ) );
+              ?>
+            </nav>
+          </div>
+        <?php endif; ?>
+        <?php if ( has_nav_menu( 'footer-get-connected' ) ) : ?>
+          <div class="col-md-3">
+            <strong>Get Connected</strong>
+            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-get-connected',
+                  'menu_class'     => 'nav navbar-nav',
+                 ) );
+              ?>
+            </nav>
+          </div>
+        <?php endif; ?>
         <?php if ( has_nav_menu( 'footer-ministries' ) ) : ?>
           <div class="col-md-3">
             <strong>Ministries</strong>
@@ -27,47 +67,39 @@
             </nav>
           </div>
         <?php endif; ?>
-      <?php if ( has_nav_menu( 'footer-get-connected' ) ) : ?>
-        <div class="col-md-3">
-          <strong>Get Connected</strong>
-          <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
-            <?php
-              wp_nav_menu( array(
-                'theme_location' => 'footer-get-connected',
-                'menu_class'     => 'nav navbar-nav',
-               ) );
-            ?>
-          </nav>
-        </div>
-      <?php endif; ?>
-      <?php if ( has_nav_menu( 'footer-media' ) ) : ?>
-        <div class="col-md-3">
-          <strong>Media</strong>
-          <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
-            <?php
-              wp_nav_menu( array(
-                'theme_location' => 'footer-media',
-                'menu_class'     => 'nav navbar-nav',
-               ) );
-            ?>
-          </nav>
-        </div>
-      <?php endif; ?>
-      <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
-        <div class="col-md-3">
-          <strong>About Us</strong>
-          <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
-            <?php
-              wp_nav_menu( array(
-                'theme_location' => 'footer-about-us',
-                'menu_class'     => 'nav navbar-nav',
-               ) );
-            ?>
-          </nav>
-        </div>
-      <?php endif; ?>
+        </div> <!-- .col-md-9 -->
+        <div class="col-md-3 aside-content">
+          <div class="row">
+            <div class="col-md-5">
+              <a href=""><strong>Giving</strong></a>
+            </div> <!-- .col-md-6 -->
+            <div class="col-md-7">
+              <a href=""><strong>Contact</strong></a>
+            </div> <!-- .col-md-6 -->
+          </div> <!-- .row -->
+          <div class="row social-links">
+            <div class="col-md-2">
+              <a href="https://www.facebook.com/epicsf"><i class="fa fa-lg fa-facebook"></i> <span class="sr-only">facebook</span></a>
+            </div> <!-- .col-md-2 -->
+            <div class="col-md-2">
+              <a href="https://twitter.com/EpicChurchSF"><i class="fa fa-lg fa-twitter"></i> <span class="sr-only">twitter</span></a>
+            </div> <!-- .col-md-2 -->
+            <div class="col-md-2">
+              <a href="https://www.instagram.com/epicchurchsf"><i class="fa fa-lg fa-instagram"></i> <span class="sr-only">instagram</span></a>
+            </div> <!-- .col-md-2 -->
+          </div> <!-- .row -->
+          <div class="row">
+            <div class="col-md-12 service-times">
+              <p>
+                Join us at <strong>9:30am</strong> or <strong>11:00am</strong>
+                <br>
+                <em>250 Stevenson Street, SF</em>
+              </p>
+            </div> <!-- .col-md-12 -->
+          </div> <!-- .row -->
+        </div> <!-- .col-md-3 -->
         </div> <!-- .row -->
-      </div>
+      </div> <!-- .container-fluid -->
       <div class="site-info">
       </div><!-- .site-info -->
     </footer><!-- .site-footer -->
