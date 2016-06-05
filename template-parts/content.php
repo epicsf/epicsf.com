@@ -8,13 +8,17 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="<?php echo implode(' ', get_post_class(basename(get_permalink()))); ?>">
   <header class="entry-header">
-    <?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
-      <span class="sticky-post"><?php _e( 'Featured', 'epic' ); ?></span>
-    <?php endif; ?>
+    <div class="row">
+      <?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
+        <span class="sticky-post"><?php _e( 'Featured', 'epic' ); ?></span>
+      <?php endif; ?>
 
-    <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+      <div class="col-md-10 col-md-offset-2">
+        <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+      </div>
+    </div>
   </header><!-- .entry-header -->
 
   <?php epic_excerpt(); ?>

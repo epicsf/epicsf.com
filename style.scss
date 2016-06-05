@@ -16,8 +16,14 @@ a:focus {
   text-decoration: none;
 }
 
+p {
+  font-weight: 400;
+}
+
 @import 'sass/theme';
 @import 'sass/fonts';
 @import 'sass/ui_utils';
 @import 'sass/components/nav';
 @import 'sass/components/footer';
+@import 'sass/pages/pages';
+@import 'sass/pages/groups';

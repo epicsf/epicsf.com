@@ -1,0 +1,40 @@
+.site-content {
+  margin-top: 100px;
+}
+
+.entry-title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.entry-content {
+  h3 {
+    padding-bottom: 1em;
+
+    &:after {
+      content: "";
+      display: block;
+      margin-top: 20px;
+      width: 100px;
+      height: 0;
+      border-bottom: 2px solid $light-gray;
+    }
+  }
+
+  .inlay {
+    background: $inlay-gray;
+    margin: 40px 0;
+    position: relative;
+    padding-bottom: 80px;
+
+    &:before {
+      content: "";
+      background: white;
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
