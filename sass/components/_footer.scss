@@ -1,9 +1,11 @@
 .site-footer {
   $footer-color: #f2f3f4;
 
-  background: #414447;
-  color: $footer-color;
-  padding: 60px 0;
+  .navbar {
+    background: #414447;
+    color: $footer-color;
+    padding: 60px 0;
+  }
 
   strong {
     @include lato;
@@ -23,7 +25,13 @@
   }
 
   .navbar {
-    padding: 0;
+    @media (max-width: 543px) {
+      margin-bottom: 20px;
+
+      a {
+        display: block;
+      }
+    }
   }
 
   .navbar-nav .nav-item {
@@ -33,6 +41,10 @@
 
   .aside-content {
     border-left: 1px solid #5f6264;
+    padding-left: 30px;
+    // So that the border aligns with the
+    // bottom of the text.
+    max-height: 152px;
 
     .row {
       margin-bottom: 30px;
@@ -50,6 +62,16 @@
 
     p {
       font-weight: 400;
+    }
+
+    @media (max-width: 543px) {
+      padding-top: 20px;
+      border-left: 0;
+
+      // &:before {
+      //   content: "";
+      //   border-top: 1px solid #5f6264;
+      // }
     }
   }
 }

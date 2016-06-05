@@ -13,67 +13,68 @@
 
     <footer id="footer" class="site-footer" role="contentinfo">
       <div class="container-fluid">
+        <nav class="navbar navbar-fixed-bottom" role="navigation">
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md-9 col-sm-9 col-xs-12">
         <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <strong>About Us</strong>
-            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
+            <div aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'footer-about-us',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
-            </nav>
+            </div>
           </div>
         <?php endif; ?>
         <?php if ( has_nav_menu( 'footer-media' ) ) : ?>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <strong>Media</strong>
-            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
+            <div aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'footer-media',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
-            </nav>
+            </div>
           </div>
         <?php endif; ?>
         <?php if ( has_nav_menu( 'footer-get-connected' ) ) : ?>
-          <div class="col-md-3">
-            <strong>Get Connected</strong>
-            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <strong data-abbrev="Connect">Get Connected</strong>
+            <div aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'footer-get-connected',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
-            </nav>
+            </div>
           </div>
         <?php endif; ?>
         <?php if ( has_nav_menu( 'footer-ministries' ) ) : ?>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <strong>Ministries</strong>
-            <nav class="navbar" role="navigation" aria-label="<?php esc_attr_e( 'Footer Ministries Menu', 'epic' ); ?>">
+            <div aria-label="<?php esc_attr_e( 'Footer Ministries Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
                   'theme_location' => 'footer-ministries',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
-            </nav>
+            </div>
           </div>
         <?php endif; ?>
         </div> <!-- .col-md-9 -->
-        <div class="col-md-3 aside-content">
+        <div class="col-md-3 col-sm-3 col-xs-12 aside-content">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-xs-6">
               <a href=""><strong>Giving</strong></a>
             </div> <!-- .col-md-6 -->
-            <div class="col-md-7">
+            <div class="col-md-7 col-xs-6">
               <a href=""><strong>Contact</strong></a>
             </div> <!-- .col-md-6 -->
           </div> <!-- .row -->
@@ -99,6 +100,7 @@
           </div> <!-- .row -->
         </div> <!-- .col-md-3 -->
         </div> <!-- .row -->
+        </nav>
       </div> <!-- .container-fluid -->
       <div class="site-info">
       </div><!-- .site-info -->
