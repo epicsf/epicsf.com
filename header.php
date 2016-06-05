@@ -30,7 +30,7 @@
     <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
       <div id="site-header-menu" class="site-header-menu">
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
-          <nav id="site-navigation" class="navbar navbar-full navbar-light bg-faded" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
+          <nav id="site-navigation" class="navbar navbar-full navbar-light" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
               &#9776;
             </button>
@@ -54,37 +54,5 @@
       </div><!-- .site-header-menu -->
     <?php endif; ?>
   </div><!-- .site-header-main -->
-
-    <header id="masthead" class="site-header" role="banner">
-      <div class="site-header-main">
-        <div class="site-branding">
-          <?php if ( is_front_page() && is_home() ) : ?>
-            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <?php else : ?>
-            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-          <?php endif; ?>
-        </div><!-- .site-branding -->
-
-
-      <?php if ( get_header_image() ) : ?>
-        <?php
-          /**
-           * Filter the default epic custom header sizes attribute.
-           *
-           * @since Epic 1.0
-           *
-           * @param string $custom_header_sizes sizes attribute
-           * for Custom Header. Default '(max-width: 709px) 85vw,
-           * (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px'.
-           */
-          $custom_header_sizes = apply_filters( 'epic_custom_header_sizes', '(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px' );
-        ?>
-        <div class="header-image">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ); ?>" sizes="<?php echo esc_attr( $custom_header_sizes ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-          </a>
-        </div><!-- .header-image -->
-      <?php endif; // End header image check. ?>
-    </header><!-- .site-header -->
 
     <div id="content" class="site-content">
