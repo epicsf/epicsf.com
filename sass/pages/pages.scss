@@ -1,3 +1,5 @@
+$footer-height: 280px;
+
 html,
 body,
 #page {
@@ -10,7 +12,11 @@ body,
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -280px;  // Height of footer
+  margin: 0 auto -$footer-height;
+
+  .push {
+    height: $footer-height / 3;
+  }
 }
 
 .entry-title {
@@ -20,16 +26,20 @@ body,
 
 .entry-content {
   h3 {
-    padding-bottom: 1em;
+    padding-bottom: 30px;
 
     &:after {
       content: "";
       display: block;
-      margin-top: 20px;
+      margin-top: 30px;
       width: 100px;
       height: 0;
       border-bottom: 2px solid $light-gray;
     }
+  }
+
+  h4 {
+    margin: 60px 0 40px;
   }
 
   .inlay {

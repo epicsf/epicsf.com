@@ -4855,6 +4855,13 @@ h3 {
   letter-spacing: 100;
   text-transform: uppercase; }
 
+h4 {
+  font-family: Cardo, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24pt;
+  color: #74d8a9; }
+
 .time {
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -4925,6 +4932,12 @@ a,
   font-weight: 400;
   font-size: 13pt;
   letter-spacing: 20; }
+
+dt {
+  text-transform: uppercase; }
+
+dd {
+  font-weight: 400; }
 
 .spacer-20 {
   display: block;
@@ -5084,21 +5097,25 @@ body,
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -280px; }
+  margin: 0 auto-280px; }
+  .site-content .push {
+    height: 93.33333px; }
 
 .entry-title {
   text-transform: uppercase;
   margin-bottom: 40px; }
 
 .entry-content h3 {
-  padding-bottom: 1em; }
+  padding-bottom: 30px; }
   .entry-content h3:after {
     content: "";
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100px;
     height: 0;
     border-bottom: 2px solid #93deb8; }
+.entry-content h4 {
+  margin: 60px 0 40px; }
 .entry-content .inlay {
   background: #e5e5e5;
   margin: 40px 0;
@@ -5116,4 +5133,4 @@ body,
 .epic-groups .entry-content .row > div {
   padding-left: 10%; }
 .epic-groups #ctiframe {
-  height: 2400px; }
+  height: 2200px; }

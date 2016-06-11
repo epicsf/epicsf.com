@@ -63,6 +63,13 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  @include cardo;
+  @include italic;
+  font-size: 24pt;
+  color: $light-green;
+}
+
 .time {
   @include lato;
   font-size: 40pt;
@@ -134,4 +141,12 @@ a,
   @include lato;
   font-size: 13pt;
   letter-spacing: 20;
+}
+
+dt {
+  text-transform: uppercase;
+}
+
+dd {
+  font-weight: 400;
 }
