@@ -24,6 +24,19 @@ Epic is a modernized take on an ever-popular WordPress layout — the horizontal
 2. Type in Epic in the search form and press the 'Enter' key on your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
 
+
+# Page structure
+
+```
+body
+  #page.site
+    .site-inner
+      #site-header-menu.site-header-menu
+        nav#site-navigation.navbar
+    #content.site-content
+    footer#footer.site-footer
+```
+
 # Copyright
 
 Copyright (c) 2016 Epic Church

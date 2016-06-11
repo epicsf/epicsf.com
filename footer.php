@@ -12,8 +12,7 @@
     </div><!-- .site-content -->
 
     <footer id="footer" class="site-footer" role="contentinfo">
-      <div class="container-fluid">
-        <nav class="navbar navbar-fixed-bottom" role="navigation">
+      <nav class="navbar" role="navigation">
         <div class="row">
           <div class="col-md-9 col-sm-9 col-xs-12">
         <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
@@ -100,8 +99,7 @@
           </div> <!-- .row -->
         </div> <!-- .col-md-3 -->
         </div> <!-- .row -->
-        </nav>
-      </div> <!-- .container-fluid -->
+      </nav>
       <div class="site-info">
       </div><!-- .site-info -->
     </footer><!-- .site-footer -->

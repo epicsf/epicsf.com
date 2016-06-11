@@ -25,6 +25,8 @@
   }
 
   .navbar {
+    border-radius: 0;
+
     @media (max-width: 543px) {
       margin-bottom: 20px;
 

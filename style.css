@@ -5049,11 +5049,13 @@ a,
 .site-footer li a {
   color: #e8e9ea;
   text-transform: none; }
-@media (max-width: 543px) {
-  .site-footer .navbar {
-    margin-bottom: 20px; }
-    .site-footer .navbar a {
-      display: block; } }
+.site-footer .navbar {
+  border-radius: 0; }
+  @media (max-width: 543px) {
+    .site-footer .navbar {
+      margin-bottom: 20px; }
+      .site-footer .navbar a {
+        display: block; } }
 .site-footer .navbar-nav .nav-item {
   float: none;
   margin: 10px 0 0; }
@@ -5072,8 +5074,17 @@ a,
       padding-top: 20px;
       border-left: 0; } }
 
+html,
+body,
+#page {
+  height: 100%; }
+
 .site-content {
-  margin-top: 100px; }
+  margin-top: 100px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -280px; }
 
 .entry-title {
   text-transform: uppercase;

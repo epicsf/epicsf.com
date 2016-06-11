@@ -1,5 +1,16 @@
+html,
+body,
+#page {
+  height: 100%;
+}
+
 .site-content {
   margin-top: 100px;
+
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -280px;  // Height of footer
 }
 
 .entry-title {
