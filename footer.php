@@ -8,7 +8,7 @@
  * @since Epic 1.0
  */
 ?>
-
+      <div class='push'></div>
     </div><!-- .site-content -->
 
     <footer id="footer" class="site-footer" role="contentinfo">
