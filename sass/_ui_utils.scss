@@ -30,3 +30,16 @@
   height: 1px;
   width: 40px;
 }
+
+.full-width {
+  width: 100%;
+}
+
+.pull-up {
+  position: relative;
+  top: -100px;
+}
+
+iframe {
+  z-index: 1000;
+}

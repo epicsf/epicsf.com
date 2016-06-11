@@ -1,0 +1,58 @@
+.about {
+  .entry-title {
+    display: none;
+  }
+
+  aside {
+    text-transform: uppercase;
+  }
+
+  .center-block {
+    text-align: center;
+  }
+
+  h1 {
+    text-transform: none;
+    color: $light-green;
+    font-style: normal;
+    font-size: 44pt;
+    position: relative;
+    padding: 34px 0;
+    margin: 20px 0 140px;
+
+    @mixin divider-line {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+      height: 2px;
+      background: #d4d3d2;
+      @content;
+    }
+
+    &:before {
+      @include divider-line {
+        top: 0;
+      }
+    }
+
+    &:after {
+      @include divider-line {
+        bottom: 0;
+      }
+    }
+  }
+
+  .vertical-center {
+    position: relative;
+    height: 250px;
+
+    > div,
+    > em {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
