@@ -5205,3 +5205,45 @@ body,
   text-transform: uppercase;
   font-size: 13pt;
   margin: 0 0 8px; }
+.about .spacer {
+  height: 140px; }
+.about .values {
+  counter-reset: li;
+  margin-top: 80px;
+  margin-left: 0;
+  padding-left: 0; }
+  .about .values > li {
+    position: relative;
+    /* Create a positioning context */
+    margin: 0 0 6px 2em;
+    /* Give each list item a left margin to make room for the numbers */
+    padding: 4px 8px;
+    /* Add some spacing around the content */
+    list-style: none;
+    /* Disable the normal item numbering */
+    margin-bottom: 75px; }
+    .about .values > li:before {
+      font-size: 24px;
+      counter-increment: li;
+      /* Increment the counter by 1 */
+      content: "0" counters(li,".") ".";
+      /* Use the counter as content */
+      /* Position and style the number */
+      position: absolute;
+      left: -50px;
+      top: -2px;
+      width: 2em;
+      margin-right: 8px;
+      padding: 4px;
+      color: #d9d8d7;
+      font-weight: bold;
+      text-align: center; }
+    .about .values > li:nth-child(5) strong, .about .values > li:nth-child(6) strong {
+      margin-left: 4px; }
+  .about .values em {
+    font-family: Cardo, serif;
+    font-weight: 400;
+    font-size: 22px; }
+  .about .values strong {
+    text-transform: uppercase;
+    font-size: 18px; }
