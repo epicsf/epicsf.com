@@ -4823,6 +4823,9 @@ a:hover {
 .bold {
   font-weight: 700; }
 
+.thin {
+  font-weight: 100; }
+
 .screen-reader-text {
   position: absolute;
   width: 1px;
@@ -5247,3 +5250,13 @@ body,
   .about .values strong {
     text-transform: uppercase;
     font-size: 18px; }
+.about .beliefs h2 {
+  margin-top: 250px; }
+.about .beliefs h3 {
+  color: #414447;
+  padding-bottom: 30px; }
+  .about .beliefs h3:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 80px; }

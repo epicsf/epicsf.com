@@ -130,9 +130,27 @@
       text-transform: uppercase;
       font-size: 18px;
     }
+  }
 
-    // > li:before {
+  .beliefs-dropbackground {
+    // ¯\_(ツ)_/¯
+  }
 
-    // }
+  .beliefs {
+    h2 {
+      margin-top: 250px;
+    }
+
+    h3 {
+      color: $body-color;
+      padding-bottom: 30px;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 80px;
+      }
+    }
   }
 }

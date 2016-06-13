@@ -18,6 +18,10 @@
   font-weight: 700;
 }
 
+@mixin thin {
+  font-weight: 100;
+}
+
 // Utility classes.
 
 .italic {
@@ -26,6 +30,10 @@
 
 .bold {
   @include bold;
+}
+
+.thin {
+  @include thin;
 }
 
 .screen-reader-text {
