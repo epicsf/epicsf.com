@@ -1,0 +1,17 @@
+.volunteering {
+  .entry-content {
+    h2 {
+      color: $light-green;
+      margin-bottom: 40px;
+    }
+
+    .other-opps {
+      // TK vertically center CTA
+      font-size: 16px;
+
+      img {
+        height: 600px;
+      }
+    }
+  }
+}
