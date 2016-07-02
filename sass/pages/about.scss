@@ -133,7 +133,18 @@
   }
 
   .beliefs-dropbackground {
-    // ¯\_(ツ)_/¯
+    // The gray box thing.
+    position: relative;
+
+    &:before {
+      content: "";
+      background: #e5e5e5;
+      right: 10%;
+      left: 45%;
+      top: 30%;
+      position: absolute;
+      height: 840px;
+    }
   }
 
   .beliefs {

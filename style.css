@@ -5265,6 +5265,16 @@ body,
   .about .values strong {
     text-transform: uppercase;
     font-size: 18px; }
+.about .beliefs-dropbackground {
+  position: relative; }
+  .about .beliefs-dropbackground:before {
+    content: "";
+    background: #e5e5e5;
+    right: 10%;
+    left: 45%;
+    top: 30%;
+    position: absolute;
+    height: 840px; }
 .about .beliefs h2 {
   margin-top: 250px; }
 .about .beliefs h3 {
