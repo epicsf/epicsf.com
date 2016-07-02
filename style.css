@@ -4924,7 +4924,7 @@ a,
 
 .body1 {
   font-family: Cardo, serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: italic;
   font-size: 22pt; }
 
@@ -4960,6 +4960,19 @@ em {
 
 .pad-bottom-20 {
   padding-bottom: 20px; }
+
+.spacer-30 {
+  display: block;
+  height: 30px; }
+
+.pad-both-30 {
+  padding: 30px 0; }
+
+.pad-top-30 {
+  padding-top: 30px; }
+
+.pad-bottom-30 {
+  padding-bottom: 30px; }
 
 .spacer-40 {
   display: block;
@@ -5271,3 +5284,21 @@ body,
   font-size: 16px; }
   .volunteering .entry-content .other-opps img {
     height: 600px; }
+
+.sunday-gathering .entry-content h2 {
+  color: #74d8a9; }
+.sunday-gathering .time {
+  position: relative; }
+  .sunday-gathering .time .service-time:first-child {
+    margin-right: 150px; }
+  .sunday-gathering .time:after {
+    content: "";
+    height: 150px;
+    width: 2px;
+    background: #e4e4e3;
+    position: absolute;
+    left: 49%;
+    top: -30px;
+    transform: rotate(45deg); }
+.sunday-gathering .location {
+  margin-top: 80px; }

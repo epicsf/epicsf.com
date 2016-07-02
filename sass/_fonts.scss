@@ -135,7 +135,7 @@ a,
 }
 
 .body1 {
-  @include cardo;
+  @include cardo(100);
   @include italic;
   font-size: 22pt;
 }
