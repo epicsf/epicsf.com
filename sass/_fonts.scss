@@ -52,7 +52,7 @@
 h1 {
   @include cardo;
   @include italic;
-  font-size: 50pt;
+  font-size: 50px;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -60,13 +60,13 @@ h1 {
 h2 {
   @include cardo;
   @include italic;
-  font-size: 36pt;
+  font-size: 36px;
   letter-spacing: 0;
 }
 
 h3 {
   @include lato(600);
-  font-size: 20pt;
+  font-size: 20px;
   letter-spacing: 100;
   text-transform: uppercase;
 }
@@ -74,25 +74,25 @@ h3 {
 h4 {
   @include cardo;
   @include italic;
-  font-size: 24pt;
+  font-size: 24px;
   color: $light-green;
 }
 
 .time {
   @include lato;
-  font-size: 40pt;
+  font-size: 40px;
   letter-spacing: 50;
   text-transform: uppercase;
 
   .meridiem {
-    font-size: 32pt;
+    font-size: 32px;
   }
 }
 
 .title-1 {
   @include lato;
   @include italic;
-  font-size: 18pt;
+  font-size: 18px;
   font-style: italic;
   letter-spacing: 20;
 }
@@ -100,12 +100,12 @@ h4 {
 .title-2 {
   @include cardo;
   @include italic;
-  font-size: 18pt;
+  font-size: 18px;
 }
 
 .title-3 {
   @include lato(600);
-  font-size: 14pt;
+  font-size: 14px;
   letter-spacing: 150;
   text-transform: uppercase;
 }
@@ -114,21 +114,21 @@ h4 {
   @include lato;
   @include italic;
   @include bold;
-  font-size: 14pt;
+  font-size: 14px;
   letter-spacing: 20;
 }
 
 .title-5 {
   @include lato;
   @include italic;
-  font-size: 12pt;
+  font-size: 12px;
   letter-spacing: 120;
   text-transform: uppercase;
 }
 
 .link {
   @include lato;
-  font-size: 12pt;
+  font-size: 12px;
   letter-spacing: 120;
   text-transform: uppercase;
 }
@@ -136,17 +136,17 @@ h4 {
 .body1 {
   @include cardo(100);
   @include italic;
-  font-size: 22pt;
+  font-size: 22px;
 }
 
 .body2 {
   @include lato;
-  font-size: 15pt;
+  font-size: 15px;
 }
 
 .body3 {
   @include lato;
-  font-size: 13pt;
+  font-size: 13px;
   letter-spacing: 20;
 }
 
