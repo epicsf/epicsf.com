@@ -1,0 +1,54 @@
+.ministries {
+  .entry-header {
+    display: none;
+  }
+
+  .img-circle {
+    height: 404px;
+    margin-top: 55px;
+  }
+
+  h1 {
+    color: $light-green;
+    margin-bottom: 30px;
+    text-transform: none;
+  }
+
+  ul {
+    margin-bottom: 0;
+
+    li {
+      @include title-2;
+
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: "";
+        width: 30px;
+        height: 1px;
+        background: $light-green;
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+    }
+  }
+
+  .parents {
+    margin-top: 100px;
+  }
+
+  .parents-img {
+    height: 450px;
+  }
+
+  .next-steps-img {
+    margin-top: 100px;
+  }
+}

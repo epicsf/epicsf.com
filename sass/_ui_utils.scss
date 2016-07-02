@@ -1,4 +1,4 @@
-@each $size in (20, 30, 40, 60, 80, 100, 140) {
+@each $size in (10, 20, 30, 40, 60, 80, 100, 140) {
   .spacer-#{$size} {
     display: block;
     height: #{$size}px;
@@ -14,6 +14,11 @@
 
   .pad-bottom-#{$size} {
     padding-bottom: #{$size}px;
+  }
+
+  .pad-lr-#{$size} {
+    padding-left: #{$size}px;
+    padding-right: #{$size}px;
   }
 }
 

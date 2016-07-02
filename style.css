@@ -4843,7 +4843,7 @@ h1 {
   font-family: Cardo, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 50pt;
+  font-size: 50px;
   letter-spacing: 0;
   text-transform: uppercase; }
 
@@ -4851,13 +4851,13 @@ h2 {
   font-family: Cardo, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 36pt;
+  font-size: 36px;
   letter-spacing: 0; }
 
 h3 {
   font-family: Lato, sans-serif;
   font-weight: 600;
-  font-size: 20pt;
+  font-size: 20px;
   letter-spacing: 100;
   text-transform: uppercase; }
 
@@ -4865,23 +4865,23 @@ h4 {
   font-family: Cardo, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 24pt;
+  font-size: 24px;
   color: #74d8a9; }
 
 .time {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  font-size: 40pt;
+  font-size: 40px;
   letter-spacing: 50;
   text-transform: uppercase; }
   .time .meridiem {
-    font-size: 32pt; }
+    font-size: 32px; }
 
 .title-1 {
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 18pt;
+  font-size: 18px;
   font-style: italic;
   letter-spacing: 20; }
 
@@ -4889,12 +4889,12 @@ h4 {
   font-family: Cardo, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 18pt; }
+  font-size: 18px; }
 
 .title-3 {
   font-family: Lato, sans-serif;
   font-weight: 600;
-  font-size: 14pt;
+  font-size: 14px;
   letter-spacing: 150;
   text-transform: uppercase; }
 
@@ -4903,21 +4903,21 @@ h4 {
   font-weight: 400;
   font-style: italic;
   font-weight: 700;
-  font-size: 14pt;
+  font-size: 14px;
   letter-spacing: 20; }
 
 .title-5 {
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 12pt;
+  font-size: 12px;
   letter-spacing: 120;
   text-transform: uppercase; }
 
 .link {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  font-size: 12pt;
+  font-size: 12px;
   letter-spacing: 120;
   text-transform: uppercase; }
 
@@ -4925,17 +4925,17 @@ h4 {
   font-family: Cardo, serif;
   font-weight: 100;
   font-style: italic;
-  font-size: 22pt; }
+  font-size: 22px; }
 
 .body2 {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  font-size: 15pt; }
+  font-size: 15px; }
 
 .body3 {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  font-size: 13pt;
+  font-size: 13px;
   letter-spacing: 20; }
 
 dt {
@@ -4946,6 +4946,23 @@ dd {
 
 em {
   font-weight: 300; }
+
+.spacer-10 {
+  display: block;
+  height: 10px; }
+
+.pad-both-10 {
+  padding: 10px 0; }
+
+.pad-top-10 {
+  padding-top: 10px; }
+
+.pad-bottom-10 {
+  padding-bottom: 10px; }
+
+.pad-lr-10 {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .spacer-20 {
   display: block;
@@ -4960,6 +4977,10 @@ em {
 .pad-bottom-20 {
   padding-bottom: 20px; }
 
+.pad-lr-20 {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .spacer-30 {
   display: block;
   height: 30px; }
@@ -4972,6 +4993,10 @@ em {
 
 .pad-bottom-30 {
   padding-bottom: 30px; }
+
+.pad-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .spacer-40 {
   display: block;
@@ -4986,6 +5011,10 @@ em {
 .pad-bottom-40 {
   padding-bottom: 40px; }
 
+.pad-lr-40 {
+  padding-left: 40px;
+  padding-right: 40px; }
+
 .spacer-60 {
   display: block;
   height: 60px; }
@@ -4998,6 +5027,10 @@ em {
 
 .pad-bottom-60 {
   padding-bottom: 60px; }
+
+.pad-lr-60 {
+  padding-left: 60px;
+  padding-right: 60px; }
 
 .spacer-80 {
   display: block;
@@ -5012,6 +5045,10 @@ em {
 .pad-bottom-80 {
   padding-bottom: 80px; }
 
+.pad-lr-80 {
+  padding-left: 80px;
+  padding-right: 80px; }
+
 .spacer-100 {
   display: block;
   height: 100px; }
@@ -5025,6 +5062,10 @@ em {
 .pad-bottom-100 {
   padding-bottom: 100px; }
 
+.pad-lr-100 {
+  padding-left: 100px;
+  padding-right: 100px; }
+
 .spacer-140 {
   display: block;
   height: 140px; }
@@ -5037,6 +5078,10 @@ em {
 
 .pad-bottom-140 {
   padding-bottom: 140px; }
+
+.pad-lr-140 {
+  padding-left: 140px;
+  padding-right: 140px; }
 
 .divider-1 {
   background: #61d6a1;
@@ -5313,3 +5358,39 @@ body,
   margin-top: 80px; }
 .sunday-gathering .social-links a {
   color: #373a3c; }
+
+.ministries .entry-header {
+  display: none; }
+.ministries .img-circle {
+  height: 404px;
+  margin-top: 55px; }
+.ministries h1 {
+  color: #74d8a9;
+  margin-bottom: 30px;
+  text-transform: none; }
+.ministries ul {
+  margin-bottom: 0; }
+  .ministries ul li {
+    font-family: Cardo, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px; }
+    .ministries ul li:last-child {
+      margin-bottom: 0; }
+    .ministries ul li:before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: #74d8a9;
+      position: absolute;
+      left: 0;
+      top: 50%; }
+.ministries .parents {
+  margin-top: 100px; }
+.ministries .parents-img {
+  height: 450px; }
+.ministries .next-steps-img {
+  margin-top: 100px; }

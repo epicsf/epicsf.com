@@ -97,17 +97,26 @@ h4 {
   letter-spacing: 20;
 }
 
-.title-2 {
+@mixin title-2 {
   @include cardo;
   @include italic;
   font-size: 18px;
 }
 
-.title-3 {
+.title-2 {
+  @include title-2;
+}
+
+
+@mixin title-3 {
   @include lato(600);
   font-size: 14px;
   letter-spacing: 150;
   text-transform: uppercase;
+}
+
+.title-3 {
+  @include title-3;
 }
 
 .title-4 {
