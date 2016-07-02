@@ -4893,7 +4893,7 @@ h4 {
 
 .title-3 {
   font-family: Lato, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14pt;
   letter-spacing: 150;
   text-transform: uppercase; }
@@ -4914,7 +4914,6 @@ h4 {
   letter-spacing: 120;
   text-transform: uppercase; }
 
-a,
 .link {
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -5302,3 +5301,5 @@ body,
     transform: rotate(45deg); }
 .sunday-gathering .location {
   margin-top: 80px; }
+.sunday-gathering .social-links a {
+  color: #373a3c; }
