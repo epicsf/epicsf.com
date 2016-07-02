@@ -55,6 +55,12 @@ h1 {
   font-size: 50px;
   letter-spacing: 0;
   text-transform: uppercase;
+
+  &.variation {
+    text-transform: none;
+    color: $light-green;
+    margin-bottom: 30px;
+  }
 }
 
 h2 {

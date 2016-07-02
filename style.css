@@ -4807,19 +4807,6 @@ a:focus {
 p {
   font-weight: 400; }
 
-a,
-a:focus,
-a:hover {
-  color: #fc4c00; }
-
-.btn {
-  color: #fc4c00;
-  padding: 16pt 20pt;
-  border: 2px solid #fc4c00; }
-
-.btn-sm {
-  padding: .25rem .75rem; }
-
 .italic {
   font-style: italic; }
 
@@ -4846,6 +4833,10 @@ h1 {
   font-size: 50px;
   letter-spacing: 0;
   text-transform: uppercase; }
+  h1.variation {
+    text-transform: none;
+    color: #74d8a9;
+    margin-bottom: 30px; }
 
 h2 {
   font-family: Cardo, serif;
@@ -4946,6 +4937,43 @@ dd {
 
 em {
   font-weight: 300; }
+
+a,
+a:focus,
+a:hover {
+  color: #fc4c00; }
+
+.btn {
+  color: #fc4c00;
+  padding: 16px 20px;
+  border: 2px solid #fc4c00; }
+
+.btn-sm {
+  padding: .25rem .75rem; }
+
+.epic-list {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0; }
+  .epic-list li {
+    font-family: Cardo, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px; }
+    .epic-list li:last-child {
+      margin-bottom: 0; }
+    .epic-list li:before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: #74d8a9;
+      position: absolute;
+      left: 0;
+      top: 50%; }
 
 .spacer-10 {
   display: block;
@@ -5364,33 +5392,14 @@ body,
 .ministries .img-circle {
   height: 404px;
   margin-top: 55px; }
-.ministries h1 {
-  color: #74d8a9;
-  margin-bottom: 30px;
-  text-transform: none; }
-.ministries ul {
-  margin-bottom: 0; }
-  .ministries ul li {
-    font-family: Cardo, serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 18px;
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 10px; }
-    .ministries ul li:last-child {
-      margin-bottom: 0; }
-    .ministries ul li:before {
-      content: "";
-      width: 30px;
-      height: 1px;
-      background: #74d8a9;
-      position: absolute;
-      left: 0;
-      top: 50%; }
 .ministries .parents {
   margin-top: 100px; }
 .ministries .parents-img {
   height: 450px; }
 .ministries .next-steps-img {
   margin-top: 100px; }
+
+.get-connected .entry-header {
+  display: none; }
+.get-connected .img-circle {
+  height: 404px; }

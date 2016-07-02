@@ -20,8 +20,9 @@ p {
   font-weight: 400;
 }
 
-@import 'sass/theme';
+@import 'sass/colors';
 @import 'sass/fonts';
+@import 'sass/theme';
 @import 'sass/ui_utils';
 @import 'sass/components/nav';
 @import 'sass/components/footer';
@@ -31,3 +32,4 @@ p {
 @import 'sass/pages/volunteering';
 @import 'sass/pages/sundays';
 @import 'sass/pages/ministries';
+@import 'sass/pages/get-connected';
