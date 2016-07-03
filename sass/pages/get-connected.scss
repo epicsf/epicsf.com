@@ -5,5 +5,37 @@
 
   .img-circle {
     height: 404px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .full-width {
+    position: relative;
+    top: -80px;
+    z-index: 0;
+  }
+
+  .volunteer {
+    position: relative;
+    top: -40px;
+
+    .volunteer-ops {
+      position: relative;
+      top: -140px;
+    }
+  }
+
+  .hero {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #CCC url(/wordpress/wp-content/uploads/2016/02/home02.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 117px;
+
+    .time {
+      margin-top: 80px;
+    }
   }
 }

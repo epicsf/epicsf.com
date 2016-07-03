@@ -42,3 +42,25 @@ a:hover {
     }
   }
 }
+
+.time {
+  position: relative;
+  text-align: center;
+
+  .service-time {
+    &:first-child {
+      margin-right: 150px;
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 150px;
+    width: 2px;
+    background: #e4e4e3;
+    position: absolute;
+    left: 49%;
+    top: -45px;
+    transform: rotate(45deg);
+  }
+}

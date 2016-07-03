@@ -4975,6 +4975,21 @@ a:hover {
       left: 0;
       top: 50%; }
 
+.time {
+  position: relative;
+  text-align: center; }
+  .time .service-time:first-child {
+    margin-right: 150px; }
+  .time:after {
+    content: "";
+    height: 150px;
+    width: 2px;
+    background: #e4e4e3;
+    position: absolute;
+    left: 49%;
+    top: -45px;
+    transform: rotate(45deg); }
+
 .spacer-10 {
   display: block;
   height: 10px; }
@@ -5369,19 +5384,6 @@ body,
 
 .sunday-gathering .entry-content h2 {
   color: #74d8a9; }
-.sunday-gathering .time {
-  position: relative; }
-  .sunday-gathering .time .service-time:first-child {
-    margin-right: 150px; }
-  .sunday-gathering .time:after {
-    content: "";
-    height: 150px;
-    width: 2px;
-    background: #e4e4e3;
-    position: absolute;
-    left: 49%;
-    top: -30px;
-    transform: rotate(45deg); }
 .sunday-gathering .location {
   margin-top: 80px; }
 .sunday-gathering .social-links a {
@@ -5402,4 +5404,26 @@ body,
 .get-connected .entry-header {
   display: none; }
 .get-connected .img-circle {
-  height: 404px; }
+  height: 404px;
+  position: relative;
+  z-index: 1; }
+.get-connected .full-width {
+  position: relative;
+  top: -80px;
+  z-index: 0; }
+.get-connected .volunteer {
+  position: relative;
+  top: -40px; }
+  .get-connected .volunteer .volunteer-ops {
+    position: relative;
+    top: -140px; }
+.get-connected .hero {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #cccccc url(/wordpress/wp-content/uploads/2016/02/home02.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 117px; }
+  .get-connected .hero .time {
+    margin-top: 80px; }
