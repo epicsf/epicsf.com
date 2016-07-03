@@ -55,6 +55,15 @@ get_header(); ?>
     endif;
     ?>
 
+    <?php
+      if ( is_home() ) {
+        $page = get_page_by_title('Home');
+        if ( $page ) {
+          echo $page->post_content;
+        }
+      }
+    ?>
+
     </main><!-- .site-main -->
   </div><!-- .content-area -->
 

@@ -8,6 +8,8 @@ a:hover {
   color: $link-color;
   padding: 16px 20px;
   border: 2px solid $link-color;
+  border-radius: 0;
+  text-transform: uppercase;
 }
 
 .btn-sm {
@@ -62,5 +64,17 @@ a:hover {
     left: 49%;
     top: -45px;
     transform: rotate(45deg);
+  }
+}
+
+.epic-info-hero {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #CCC url(/wordpress/wp-content/uploads/2016/02/home02.jpg) no-repeat;
+  background-size: cover;
+
+  .time {
+    margin-top: 80px;
   }
 }

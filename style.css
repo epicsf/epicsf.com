@@ -4850,7 +4850,15 @@ h3 {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 100;
+  padding-bottom: 30px;
   text-transform: uppercase; }
+  h3:after {
+    content: "";
+    display: block;
+    margin-top: 30px;
+    width: 100px;
+    height: 0;
+    border-bottom: 2px solid #93deb8; }
 
 h4 {
   font-family: Cardo, serif;
@@ -4920,6 +4928,7 @@ h4 {
 .body2 {
   font-family: Lato, sans-serif;
   font-weight: 400;
+  line-height: 26px;
   font-size: 15px; }
 
 .body3 {
@@ -4945,7 +4954,9 @@ a:hover {
 .btn {
   color: #fc4c00;
   padding: 16px 20px;
-  border: 2px solid #fc4c00; }
+  border: 2px solid #fc4c00;
+  border-radius: 0;
+  text-transform: uppercase; }
 
 .btn-sm {
   padding: .25rem .75rem; }
@@ -4988,6 +4999,15 @@ a:hover {
     left: 49%;
     top: -45px;
     transform: rotate(45deg); }
+
+.epic-info-hero {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #cccccc url(/wordpress/wp-content/uploads/2016/02/home02.jpg) no-repeat;
+  background-size: cover; }
+  .epic-info-hero .time {
+    margin-top: 80px; }
 
 .spacer-10 {
   display: block;
@@ -5416,16 +5436,9 @@ body,
   .get-connected .volunteer .volunteer-ops {
     position: relative;
     top: -140px; }
-.get-connected .hero {
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: #cccccc url(/wordpress/wp-content/uploads/2016/02/home02.jpg) no-repeat;
-  background-size: cover;
+.get-connected .epic-info-hero {
   position: relative;
   top: 117px; }
-  .get-connected .hero .time {
-    margin-top: 80px; }
 
 .faq .entry-header {
   display: none; }
@@ -5437,3 +5450,6 @@ body,
   top: -220px; }
 .partnerships .picture-row img {
   height: 350px; }
+
+#main .offset-200 {
+  margin-top: 200px; }
