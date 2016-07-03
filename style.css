@@ -5432,3 +5432,9 @@ body,
   display: none; }
 .faq .title-1 {
   color: #74d8a9; }
+
+.partnerships .square-img {
+  position: relative;
+  top: -220px; }
+.partnerships .picture-row img {
+  height: 350px; }
