@@ -5427,3 +5427,8 @@ body,
   top: 117px; }
   .get-connected .hero .time {
     margin-top: 80px; }
+
+.faq .entry-header {
+  display: none; }
+.faq .title-1 {
+  color: #74d8a9; }
