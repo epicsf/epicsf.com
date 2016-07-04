@@ -5225,6 +5225,23 @@ iframe {
       padding-top: 20px;
       border-left: 0; } }
 
+.carousel {
+  margin-top: 40px; }
+  .carousel .carousel-inner {
+    height: 180px; }
+
+.carousel-controls {
+  border-bottom: 2px solid #f2f3f4; }
+  .carousel-controls .carousel-control {
+    font-size: 26px;
+    background: none;
+    position: static;
+    color: #fdb397;
+    text-shadow: none; }
+    .carousel-controls .carousel-control.right {
+      margin-left: 6px;
+      color: #fc4c00; }
+
 html,
 body,
 #page {

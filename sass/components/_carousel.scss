@@ -1,0 +1,25 @@
+.carousel {
+  margin-top: 40px;
+
+  .carousel-inner {
+    height: 180px;
+  }
+}
+
+.carousel-controls {
+  border-bottom: 2px solid #f2f3f4;
+
+  // Override bootstrap defaults.
+  .carousel-control {
+    font-size: 26px;
+    background: none;
+    position: static;
+    color: #fdb397;
+    text-shadow: none;
+
+    &.right {
+      margin-left: 6px;
+      color: $link-color;
+    }
+  }
+}

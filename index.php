@@ -30,13 +30,47 @@ get_header(); ?>
           </div>
         </div>
         <div class="row">
-          <div class="carousel">
-            <?php
-            // while ()
-            ?>
-            <?php epic_post_thumbnail() ?>
+          <div class="col-md-11 col-md-offset-1">
+            <div class="carousel slide" id="carousel" data-ride="carousel">
+              <div class="carousel-inner">
+              <?php
+                $all_posts = epic_get_events();
+                $i = 0;
+                $posts = array_slice($all_posts, $i, 3);
+                while(count($posts)): ?>
+                <div class="carousel-item <?php echo $i === 0 ? 'active' : 'next'; ?>">
+                  <div class="row">
+                <?php foreach($posts as $post): ?>
+                  <div class="col-md-4">
+                    <?php epic_post_thumbnail() ?>
+                  </div>
+                <?php endforeach; ?>
+                  </div> <!-- row -->
+                </div> <!-- item -->
+                <?php
+                  $i+= 3;
+                  $posts = array_slice($all_posts, $i, 3);
+                endwhile;
+                ?>
+              </div> <!-- inner -->
+            </div> <!-- carousel.slide -->
+          </div> <!-- col -->
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="carousel-controls text-md-right">
+              <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
-        </div>
+        </div> <!-- row -->
+        <div class="spacer-80"></div>
       <?php endif; ?>
 
       <?php
@@ -64,12 +98,7 @@ get_header(); ?>
       } else {
         $page = the_title(null, null, false);
         if ( strtolower( $page ) === 'events' ) {
-          $posts = get_posts(array(
-            'category_name' => 'event',
-            'post_status'   => 'publish',
-            'orderby'       => 'date',
-            'order'         => 'DESC',
-          ));
+          $posts = epic_get_events();
 
           if (count($posts) > 0) {
             $post = $posts[0];

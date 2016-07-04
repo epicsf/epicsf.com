@@ -101,6 +101,17 @@ if (!function_exists('epic_event_month')) {
   }
 }
 
+if (!function_exists('epic_get_events')) {
+  function epic_get_events() {
+    return get_posts(array(
+      'category_name' => 'event',
+      'post_status'   => 'publish',
+      'orderby'       => 'date',
+      'order'         => 'DESC',
+    ));
+  }
+}
+
 /**
  * Enqueues scripts and styles.
  *

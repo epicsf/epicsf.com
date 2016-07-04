@@ -9,7 +9,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="<?php echo implode(' ', get_post_class(basename(get_permalink()))); ?>">
-  <?php if (!is_home()): ?>
   <header class="entry-header">
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
@@ -17,19 +16,9 @@
       </div>
     </div>
   </header><!-- .entry-header -->
-  <?php endif; ?>
 
-  <?php if ( is_home() ): ?>
-  <div class="row">
-    <div class="carousel">
-      <?php epic_post_thumbnail() ?>
-    </div>
-  </div>
-
-  <?php else: ?>
   <div class="entry-content">
     <?php the_content(); ?>
   </div><!-- .entry-content -->
-  <? endif; ?>
 
 </article><!-- #post-## -->
