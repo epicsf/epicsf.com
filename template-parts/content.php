@@ -9,19 +9,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="<?php echo implode(' ', get_post_class(basename(get_permalink()))); ?>">
+  <?php if (!is_home()): ?>
   <header class="entry-header">
     <div class="row">
-      <?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
-        <span class="sticky-post"><?php _e( 'Featured', 'epic' ); ?></span>
-      <?php endif; ?>
-
       <div class="col-md-10 col-md-offset-2">
         <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
       </div>
     </div>
   </header><!-- .entry-header -->
+  <?php endif; ?>
 
   <?php if ( is_home() ): ?>
+  <div class="row">
+    <div class="carousel">
+      <?php epic_post_thumbnail() ?>
+    </div>
+  </div>
+
   <?php else: ?>
   <div class="entry-content">
     <?php the_content(); ?>

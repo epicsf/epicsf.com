@@ -21,15 +21,27 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-      <?php if ( is_home() && ! is_front_page() ) : ?>
-        <header>
-          <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-        </header>
+      <?php if ( is_home() ) : ?>
+        <header class="home-header"></header>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="variation">Featured</h1>
+            <p>Check out the latest message and see the upcoming events at our church.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="carousel">
+            <?php
+            // while ()
+            ?>
+            <?php epic_post_thumbnail() ?>
+          </div>
+        </div>
       <?php endif; ?>
 
       <?php
       // Start the loop.
-      while ( have_posts() ) : the_post();
+      while ( !is_home() && have_posts() ) : the_post();
         /*
          * Include the Post-Format-specific template for the content.
          * If you want to override this in a child theme, then include a file
@@ -39,17 +51,6 @@ get_header(); ?>
 
       // End the loop.
       endwhile;
-
-      // Previous/next page navigation.
-      the_posts_pagination( array(
-        'prev_text'          => __( 'Previous page', 'epic' ),
-        'next_text'          => __( 'Next page', 'epic' ),
-        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'epic' ) . ' </span>',
-      ) );
-
-    // If no content, include the "No posts found" template.
-    else :
-      get_template_part( 'template-parts/content', 'none' );
 
     endif;
     ?>
