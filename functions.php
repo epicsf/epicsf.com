@@ -36,6 +36,13 @@ if (!function_exists('epic_setup')) {
     ));
 
     /*
+     * Enable support for Post Thumbnails on posts and pages.
+     *
+     * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+     */
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 825, 510, true );
+    /*
      * This theme styles the visual editor to resemble the theme style,
      * specifically font, colors, icons, and column width.
      */
