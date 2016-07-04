@@ -86,6 +86,21 @@ if (!function_exists('epic_fonts_url')) {
   }
 }
 
+if (!function_exists('epic_event_month')) {
+  function epic_event_month($event_description) {
+    $months = array('January', 'February', 'March', 'April', 'May',
+      'June', 'July', 'August', 'September', 'October', 'November', 'December');
+
+    foreach ($months as $month) {
+      if (strpos($event_description, $month) !== false) {
+        return $month;
+      }
+    }
+
+    return '';
+  }
+}
+
 /**
  * Enqueues scripts and styles.
  *

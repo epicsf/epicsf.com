@@ -5468,3 +5468,14 @@ body,
   top: -150px; }
   .event-snippets .event-snippet {
     margin-bottom: 40px; }
+
+.event-detail {
+  position: relative;
+  top: -100px; }
+  .event-detail .event-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #414447;
+    color: white; }
+    .event-detail .event-header h1 {
+      color: white; }

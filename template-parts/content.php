@@ -21,10 +21,6 @@
     </div>
   </header><!-- .entry-header -->
 
-  <?php epic_excerpt(); ?>
-
-  <?php epic_post_thumbnail(); ?>
-
   <?php if ( is_home() ): ?>
   <?php else: ?>
   <div class="entry-content">

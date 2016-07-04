@@ -25,3 +25,19 @@
     margin-bottom: 40px;
   }
 }
+
+.event-detail {
+  position: relative;
+  top: -100px;
+
+  .event-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #414447;
+    color: white;
+
+    h1 {
+      color: white;
+    }
+  }
+}
