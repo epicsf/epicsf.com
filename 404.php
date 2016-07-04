@@ -13,20 +13,18 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
       <section class="error-404 not-found">
-        <header class="page-header">
-          <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'epic' ); ?></h1>
+        <header class="page-header text-md-center">
+          <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found', 'epic' ); ?></h1>
         </header><!-- .page-header -->
 
-        <div class="page-content">
-          <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'epic' ); ?></p>
+        <div class="page-content text-md-center">
+          <p><?php _e( 'It looks like nothing was found at this location.', 'epic' ); ?></p>
+          <em>Luke 19:10</em>
 
-          <?php get_search_form(); ?>
         </div><!-- .page-content -->
       </section><!-- .error-404 -->
 
     </main><!-- .site-main -->
-
-    <?php get_sidebar( 'content-bottom' ); ?>
 
   </div><!-- .content-area -->
 
