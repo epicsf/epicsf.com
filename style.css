@@ -5453,3 +5453,18 @@ body,
 
 #main .offset-200 {
   margin-top: 200px; }
+
+.main-event {
+  background: #e5e5e5;
+  margin-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .main-event .post-thumbnail {
+    position: relative;
+    top: -160px; }
+
+.event-snippets {
+  position: relative;
+  top: -150px; }
+  .event-snippets .event-snippet {
+    margin-bottom: 40px; }

@@ -1,0 +1,27 @@
+.upcoming-events {
+
+}
+
+.main-event {
+  $padding-top: 80px;
+  $offset: 80px;
+
+  background: $inlay-gray;
+  margin-top: 40px;
+  padding-top: $padding-top;
+  padding-bottom: $padding-top;
+
+  .post-thumbnail {
+    position: relative;
+    top: -$padding-top - $offset;
+  }
+}
+
+.event-snippets {
+  position: relative;
+  top: -150px;
+
+  .event-snippet {
+    margin-bottom: 40px;
+  }
+}

@@ -30,7 +30,6 @@ get_header(); ?>
       <?php
       // Start the loop.
       while ( have_posts() ) : the_post();
-
         /*
          * Include the Post-Format-specific template for the content.
          * If you want to override this in a child theme, then include a file
@@ -61,6 +60,34 @@ get_header(); ?>
         if ( $page ) {
           echo $page->post_content;
         }
+      } else {
+        $page = the_title(null, null, false);
+        if ( strtolower( $page ) === 'events' ) {
+          $posts = get_posts(array(
+            'category_name' => 'event',
+            'post_status'   => 'publish',
+            'orderby'       => 'date',
+            'order'         => 'DESC',
+          ));
+
+          if (count($posts) > 0) {
+            $post = $posts[0];
+            include( locate_template('template-parts/events/main-event.php') );
+          }
+
+        ?>
+        <div class="row event-snippets">
+          <div class="col-md-offset-1 col-md-10">
+            <div class="row">
+        <?php
+          foreach ( array_slice($posts, 1) as $post ) {
+            include( locate_template('template-parts/events/event-snippet.php') );
+          } ?>
+            </div>
+          </div>
+        </div>
+        <?php
+      }
       }
     ?>
 
