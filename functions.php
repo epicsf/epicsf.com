@@ -123,6 +123,28 @@ if (!function_exists('epic_get_media')) {
   }
 }
 
+if (!function_exists('epic_get_featured_post')) {
+  function epic_get_featured_post() {
+    $posts = get_posts(array(
+      'title'       => 'Featured',
+      'post_status' => 'publish',
+    ));
+
+    if ($posts[0]) return $posts[0];
+  }
+}
+
+if (!function_exists('epic_get_featured_messages_post')) {
+  function epic_get_featured_messages_post() {
+    $posts = get_posts(array(
+      'title'       => 'Featured Messages',
+      'post_status' => 'publish',
+    ));
+
+    if ($posts[0]) return $posts[0];
+  }
+}
+
 if (!function_exists('epic_is_media')) {
   // Intended to be called inside 'the loop'
   function epic_is_media() {

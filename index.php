@@ -23,10 +23,25 @@ get_header(); ?>
 
       <?php if ( is_home() ) : ?>
         <header class="home-header"></header>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1 class="variation">Featured</h1>
-            <p>Check out the latest message and see the upcoming events at our church.</p>
+        <div class="row home-featured">
+            <?php
+              $featured = epic_get_featured_post();
+              if ( $featured ) { ?>
+          <div class="col-md-10 col-md-offset-2">
+                <?php the_title( '<h1 class="variation">', '</h1>' ); ?>
+                <div class="body2"><?php get_the_subtitle($featured) ?></div>
+                <div class="spacer-30"></div>
+          </div>
+          <div class="col-md-5 col-md-offset-2">
+            <?php echo $featured->post_content; ?>
+          </div>
+            <?php } ?>
+          <div class="col-md-4 featured-messages">
+            <?php
+              $featured_messages = epic_get_featured_messages_post();
+              if ( $featured_messages ) { ?>
+              <?php echo $featured_messages->post_content; ?>
+              <?php } ?>
           </div>
         </div>
         <div class="row">

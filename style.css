@@ -5478,6 +5478,18 @@ body,
   position: relative;
   top: -100px; }
 
+.home-featured {
+  position: relative;
+  top: -20px; }
+
+.featured-messages .date {
+  color: #8a8c8d; }
+.featured-messages .row {
+  padding-top: 10px; }
+.featured-messages .row:first-child {
+  border-bottom: 2px solid #f2f3f4;
+  padding-top: 0; }
+
 .main-event {
   background: #e5e5e5;
   margin-top: 40px;
