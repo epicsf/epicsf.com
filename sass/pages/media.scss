@@ -1,0 +1,45 @@
+.media {
+  .entry-header {
+    display: none;
+  }
+}
+
+.main-media {
+  $padding-top: 80px;
+  $offset: 80px;
+
+  background: $inlay-gray;
+  margin-top: 40px;
+  padding-top: $padding-top;
+  padding-bottom: $padding-top;
+
+  .post-thumbnail {
+    position: relative;
+    top: -$padding-top - $offset;
+  }
+}
+
+.media-snippets {
+  position: relative;
+  top: -150px;
+
+  .media-snippet {
+    margin-bottom: 40px;
+  }
+}
+
+.media-detail {
+  position: relative;
+  top: -100px;
+
+  .media-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #414447;
+    color: white;
+
+    h1 {
+      color: white;
+    }
+  }
+}

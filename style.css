@@ -5503,3 +5503,32 @@ body,
     color: white; }
     .event-detail .event-header h1 {
       color: white; }
+
+.media .entry-header {
+  display: none; }
+
+.main-media {
+  background: #e5e5e5;
+  margin-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .main-media .post-thumbnail {
+    position: relative;
+    top: -160px; }
+
+.media-snippets {
+  position: relative;
+  top: -150px; }
+  .media-snippets .media-snippet {
+    margin-bottom: 40px; }
+
+.media-detail {
+  position: relative;
+  top: -100px; }
+  .media-detail .media-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #414447;
+    color: white; }
+    .media-detail .media-header h1 {
+      color: white; }

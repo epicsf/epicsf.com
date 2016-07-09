@@ -112,6 +112,43 @@ if (!function_exists('epic_get_events')) {
   }
 }
 
+if (!function_exists('epic_get_media')) {
+  function epic_get_media() {
+    return get_posts(array(
+      'category_name' => 'media',
+      'post_status'   => 'publish',
+      'orderby'       => 'date',
+      'order'         => 'DESC',
+    ));
+  }
+}
+
+if (!function_exists('epic_is_media')) {
+  // Intended to be called inside 'the loop'
+  function epic_is_media() {
+    $cats = get_the_category();
+
+    foreach ($cats as $cat) {
+      if ($cat->name === 'media') return true;
+    }
+
+    return false;
+  }
+}
+
+if (!function_exists('epic_is_event')) {
+  // Intended to be called inside 'the loop'
+  function epic_is_event() {
+    $cats = get_the_category();
+
+    foreach ($cats as $cat) {
+      if ($cat->name === 'event') return true;
+    }
+
+    return false;
+  }
+}
+
 /**
  * Enqueues scripts and styles.
  *

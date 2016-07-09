@@ -96,16 +96,15 @@ get_header(); ?>
           echo $page->post_content;
         }
       } else {
-        $page = the_title(null, null, false);
-        if ( strtolower( $page ) === 'events' ) {
+        $page = strtolower( the_title(null, null, false) );
+        if ( $page === 'events' ) {
           $posts = epic_get_events();
 
           if (count($posts) > 0) {
             $post = $posts[0];
             include( locate_template('template-parts/events/main-event.php') );
           }
-
-        ?>
+          ?>
         <div class="row event-snippets">
           <div class="col-md-offset-1 col-md-10">
             <div class="row">
@@ -117,7 +116,26 @@ get_header(); ?>
           </div>
         </div>
         <?php
-      }
+        } else if ( $page === 'media' ) {
+          $posts = epic_get_media();
+
+          if (count($posts) > 0) {
+            $post = $posts[0];
+            include( locate_template('template-parts/media/main-media.php') );
+          }
+          ?>
+        <div class="row media-snippets">
+          <div class="col-md-offset-1 col-md-10">
+            <div class="row">
+        <?php
+          foreach ( array_slice($posts, 1) as $post ) {
+            include( locate_template('template-parts/media/media-snippet.php') );
+          } ?>
+            </div>
+          </div>
+        </div>
+        <?php
+        }
       }
     ?>
 
