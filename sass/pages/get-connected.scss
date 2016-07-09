@@ -7,6 +7,10 @@
     height: 404px;
     position: relative;
     z-index: 1;
+
+    @media (max-width: 34em) {
+      height: auto;
+    }
   }
 
   .full-width {
@@ -22,6 +26,14 @@
     .volunteer-ops {
       position: relative;
       top: -140px;
+    }
+
+    @media (max-width: 34em) {
+      top: 0;
+
+      .volunteer-ops {
+        top: 0;
+      }
     }
   }
 

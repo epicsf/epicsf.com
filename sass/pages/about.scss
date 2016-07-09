@@ -54,6 +54,16 @@
       top: 40%;
       transform: translateY(-40%);
     }
+
+    @media (max-width: 34em) {
+      height: 150px;
+
+      > div,
+      > em {
+        position: static;
+        transform: none;
+      }
+    }
   }
 
   .ben {
@@ -145,11 +155,21 @@
       position: absolute;
       height: 840px;
     }
+
+    @media (max-width: 34em) {
+      &:before {
+        content: none;
+      }
+    }
   }
 
   .beliefs {
     h2 {
       margin-top: 250px;
+
+      @media (max-width: 34em) {
+        margin-top: 100px;
+      }
     }
 
     h3 {

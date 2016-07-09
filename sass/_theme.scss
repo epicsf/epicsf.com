@@ -52,6 +52,11 @@ a:hover {
   .service-time {
     &:first-child {
       margin-right: 150px;
+
+      @media (max-width: 34em) {
+        margin: auto;
+        display: block;
+      }
     }
   }
 
@@ -64,6 +69,10 @@ a:hover {
     left: 49%;
     top: -45px;
     transform: rotate(45deg);
+
+    @media (max-width: 34em) {
+      content: none;
+    }
   }
 }
 
@@ -76,5 +85,19 @@ a:hover {
 
   .time {
     margin-top: 80px;
+
+    @media (max-width: 34em) {
+      margin-top: 0;
+    }
+  }
+}
+
+.col-xs-12 {
+  padding: 0 32px;
+}
+
+.full-width {
+  @media (max-width: 34em) {
+    display: none;
   }
 }

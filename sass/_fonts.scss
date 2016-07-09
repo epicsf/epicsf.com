@@ -61,6 +61,10 @@ h1 {
     color: $light-green;
     margin-bottom: 30px;
   }
+
+  @media (max-width: 34em) {
+    font-size: 38px !important;
+  }
 }
 
 h2 {

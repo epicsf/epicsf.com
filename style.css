@@ -4837,6 +4837,9 @@ h1 {
     text-transform: none;
     color: #74d8a9;
     margin-bottom: 30px; }
+  @media (max-width: 34em) {
+    h1 {
+      font-size: 38px !important; } }
 
 h2 {
   font-family: Cardo, serif;
@@ -4990,6 +4993,10 @@ a:hover {
   text-align: center; }
   .time .service-time:first-child {
     margin-right: 150px; }
+    @media (max-width: 34em) {
+      .time .service-time:first-child {
+        margin: auto;
+        display: block; } }
   .time:after {
     content: "";
     height: 150px;
@@ -4999,6 +5006,9 @@ a:hover {
     left: 49%;
     top: -45px;
     transform: rotate(45deg); }
+    @media (max-width: 34em) {
+      .time:after {
+        content: none; } }
 
 .epic-info-hero {
   color: white;
@@ -5008,6 +5018,16 @@ a:hover {
   background-size: cover; }
   .epic-info-hero .time {
     margin-top: 80px; }
+    @media (max-width: 34em) {
+      .epic-info-hero .time {
+        margin-top: 0; } }
+
+.col-xs-12 {
+  padding: 0 32px; }
+
+@media (max-width: 34em) {
+  .full-width {
+    display: none; } }
 
 .spacer-10 {
   display: block;
@@ -5330,6 +5350,13 @@ body,
     position: absolute;
     top: 40%;
     transform: translateY(-40%); }
+  @media (max-width: 34em) {
+    .about .vertical-center {
+      height: 150px; }
+      .about .vertical-center > div,
+      .about .vertical-center > em {
+        position: static;
+        transform: none; } }
 .about .ben {
   width: 300px; }
 .about h3 {
@@ -5399,8 +5426,14 @@ body,
     top: 30%;
     position: absolute;
     height: 840px; }
+  @media (max-width: 34em) {
+    .about .beliefs-dropbackground:before {
+      content: none; } }
 .about .beliefs h2 {
   margin-top: 250px; }
+  @media (max-width: 34em) {
+    .about .beliefs h2 {
+      margin-top: 100px; } }
 .about .beliefs h3 {
   color: #414447;
   padding-bottom: 30px; }
@@ -5443,6 +5476,9 @@ body,
   height: 404px;
   position: relative;
   z-index: 1; }
+  @media (max-width: 34em) {
+    .get-connected .img-circle {
+      height: auto; } }
 .get-connected .full-width {
   position: relative;
   top: -80px;
@@ -5453,6 +5489,11 @@ body,
   .get-connected .volunteer .volunteer-ops {
     position: relative;
     top: -140px; }
+  @media (max-width: 34em) {
+    .get-connected .volunteer {
+      top: 0; }
+      .get-connected .volunteer .volunteer-ops {
+        top: 0; } }
 .get-connected .epic-info-hero {
   position: relative;
   top: 117px; }
