@@ -6,17 +6,34 @@
   .img-circle {
     height: 404px;
     margin-top: 55px;
+
+    @media (max-width: 34em) {
+      height: auto;
+      margin-top: auto;
+    }
   }
 
   .parents {
     margin-top: 100px;
+
+    @media (max-width: 34em) {
+      margin-top: auto;
+    }
   }
 
   .parents-img {
     height: 450px;
+
+    @media (max-width: 34em) {
+      height: auto;
+    }
   }
 
   .next-steps-img {
     margin-top: 100px;
+
+    @media (max-width: 34em) {
+      margin-top: auto;
+    }
   }
 }

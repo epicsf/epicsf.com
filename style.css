@@ -5463,12 +5463,25 @@ body,
 .ministries .img-circle {
   height: 404px;
   margin-top: 55px; }
+  @media (max-width: 34em) {
+    .ministries .img-circle {
+      height: auto;
+      margin-top: auto; } }
 .ministries .parents {
   margin-top: 100px; }
+  @media (max-width: 34em) {
+    .ministries .parents {
+      margin-top: auto; } }
 .ministries .parents-img {
   height: 450px; }
+  @media (max-width: 34em) {
+    .ministries .parents-img {
+      height: auto; } }
 .ministries .next-steps-img {
   margin-top: 100px; }
+  @media (max-width: 34em) {
+    .ministries .next-steps-img {
+      margin-top: auto; } }
 
 .get-connected .entry-header {
   display: none; }
