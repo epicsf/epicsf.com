@@ -5450,6 +5450,9 @@ body,
   font-size: 16px; }
   .volunteering .entry-content .other-opps img {
     height: 600px; }
+    @media (max-width: 34em) {
+      .volunteering .entry-content .other-opps img {
+        height: auto; } }
 
 .sunday-gathering .entry-content h2 {
   color: #74d8a9; }

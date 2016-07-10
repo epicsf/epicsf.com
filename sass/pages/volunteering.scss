@@ -11,6 +11,10 @@
 
       img {
         height: 600px;
+
+        @media (max-width: 34em) {
+          height: auto;
+        }
       }
     }
   }
