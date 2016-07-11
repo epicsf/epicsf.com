@@ -17,6 +17,14 @@ body,
   .push {
     height: $footer-height / 3;
   }
+
+  @media (max-width: 34em) {
+    margin-top: 20px;
+
+    .push {
+      height: 32px;
+    }
+  }
 }
 
 .entry-title {

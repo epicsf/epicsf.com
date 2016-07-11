@@ -31,21 +31,21 @@
       <div id="site-header-menu" class="site-header-menu">
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <nav id="site-navigation" class="navbar navbar-full navbar-light" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
+            <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
               &#9776;
             </button>
-            <div class="collapse navbar-toggleable-xs" id="epicCollapsingNavbar">
+            <div class="collapse navbar-toggleable-sm" id="epicCollapsingNavbar">
             <div>
               <a href="/" class="navbar-brand" id="epic-logo">
                 <span class="screen-reader-text">Epic</span>
-                <img src="//placehold.it/150x60" alt="">
+                <img src="//placehold.it/150x60" alt="" class="hidden-md-down">
+                <span class="hidden-md-up">Home</span>
               </a>
             </div>
             <?php
               wp_nav_menu(array(
                 'theme_location' => 'primary',
-                // 'menu_class'     => 'primary-menu',
-                'menu_class'     => 'nav navbar-nav pull-xs-right',
+                'menu_class'     => 'nav navbar-nav pull-md-right',
                ));
             ?>
             </div>

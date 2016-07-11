@@ -29,6 +29,22 @@
       &:last-child {
         margin-right: 0;
       }
+
+      @media (max-width: 34em) {
+        margin-right: 0;
+        display: block;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
     }
+
+    @media (max-width: 34em) {
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 34em) {
+    height: auto;
   }
 }
