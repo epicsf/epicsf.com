@@ -17,6 +17,16 @@
     position: relative;
     top: -$padding-top - $offset;
   }
+
+  @media (max-width: 34em) {
+    margin-top: auto;
+    margin-bottom: 80px;
+
+    .post-thumbnail {
+      position: static;
+      display: block;
+    }
+  }
 }
 
 .media-snippets {
@@ -25,6 +35,10 @@
 
   .media-snippet {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: 34em) {
+    position: static;
   }
 }
 

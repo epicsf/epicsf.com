@@ -15,6 +15,13 @@
     position: relative;
     top: -$padding-top - $offset;
   }
+
+  @media (max-width: 34em) {
+    .post-thumbnail {
+      position: static;
+      display: block;
+    }
+  }
 }
 
 .event-snippets {
@@ -23,6 +30,10 @@
 
   .event-snippet {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: 34em) {
+    position: static;
   }
 }
 
@@ -40,4 +51,8 @@
       color: white;
     }
   }
+
+  // @media (max-width: 34em) {
+    // position: static;
+  // }
 }
