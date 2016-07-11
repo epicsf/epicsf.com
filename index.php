@@ -27,16 +27,16 @@ get_header(); ?>
             <?php
               $featured = epic_get_featured_post();
               if ( $featured ) { ?>
-          <div class="col-md-10 col-md-offset-2">
-                <?php the_title( '<h1 class="variation">', '</h1>' ); ?>
-                <div class="body2"><?php get_the_subtitle($featured) ?></div>
-                <div class="spacer-30"></div>
+          <div class="col-md-10 col-md-offset-2 col-xs-12">
+            <?php the_title( '<h1 class="variation">', '</h1>' ); ?>
+            <div class="body2"><?php get_the_subtitle($featured) ?></div>
+            <div class="spacer-30"></div>
           </div>
-          <div class="col-md-5 col-md-offset-2">
+          <div class="col-md-5 col-md-offset-2 col-xs-12">
             <?php echo $featured->post_content; ?>
           </div>
             <?php } ?>
-          <div class="col-md-4 featured-messages">
+          <div class="col-md-4 featured-messages col-xs-12">
             <?php
               $featured_messages = epic_get_featured_messages_post();
               if ( $featured_messages ) { ?>
@@ -44,8 +44,8 @@ get_header(); ?>
               <?php } ?>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-11 col-md-offset-1">
+        <div class="row hidden-xs-down">
+          <div class="col-md-11 col-md-offset-1 col-xs-12">
             <div class="carousel slide" id="carousel" data-ride="carousel">
               <div class="carousel-inner">
               <?php
@@ -56,7 +56,7 @@ get_header(); ?>
                 <div class="carousel-item <?php echo $i === 0 ? 'active' : 'next'; ?>">
                   <div class="row">
                 <?php foreach($posts as $post): ?>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-12">
                     <?php epic_post_thumbnail() ?>
                   </div>
                 <?php endforeach; ?>
@@ -71,14 +71,50 @@ get_header(); ?>
             </div> <!-- carousel.slide -->
           </div> <!-- col -->
         </div> <!-- row -->
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="carousel-controls text-md-right">
+        <div class="row hidden-xs-down">
+          <div class="col-md-10 col-md-offset-1 col-xs-12">
+            <div class="carousel-controls text-md-right text-xs-right">
               <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                 <i class="fa fa-angle-left"></i>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div> <!-- row -->
+
+        <div class="row hidden-sm-up">
+          <div class="col-xs-12">
+            <div class="carousel slide" id="carousel-mobile" data-ride="carousel">
+              <div class="carousel-inner">
+              <?php
+                $all_posts = epic_get_events();
+                $i = 0; ?>
+                <?php foreach($all_posts as $post): ?>
+                <div class="carousel-item <?php echo $i === 0 ? 'active' : 'next'; ?>">
+                  <div class="row">
+                  <div class="col-xs-12">
+                    <?php epic_post_thumbnail() ?>
+                  </div>
+                  </div> <!-- row -->
+                </div> <!-- item -->
+                <?php $i++; ?>
+                <?php endforeach; ?>
+              </div> <!-- inner -->
+            </div> <!-- carousel.slide -->
+          </div> <!-- col -->
+        </div> <!-- row -->
+        <div class="row hidden-sm-up">
+          <div class="col-md-10 col-md-offset-1 col-xs-12">
+            <div class="carousel-controls text-md-right text-xs-right">
+              <a class="left carousel-control" href="#carousel-mobile" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-mobile" role="button" data-slide="next">
                 <i class="fa fa-angle-right"></i>
                 <span class="sr-only">Next</span>
               </a>
