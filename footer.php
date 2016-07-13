@@ -4,8 +4,8 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Epic
- * @since Epic 1.0
+ * @package EpicSF
+ * @since EpicSF 1.0
  */
 ?>
       <div class='push'></div>

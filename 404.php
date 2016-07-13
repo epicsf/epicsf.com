@@ -3,8 +3,8 @@
  * The template for displaying 404 pages (not found)
  *
  * @package WordPress
- * @subpackage Epic
- * @since Epic 1.0
+ * @subpackage EpicSF
+ * @since EpicSF 1.0
  */
 
 get_header(); ?>

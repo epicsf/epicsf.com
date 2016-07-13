@@ -10,8 +10,8 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Epic
- * @since Epic 1.0
+ * @subpackage EpicSF
+ * @since EpicSF 1.0
  */
 
 get_header(); ?>

@@ -3,8 +3,8 @@
  * The template used for displaying page content
  *
  * @package WordPress
- * @subpackage Epic
- * @since Epic 1.0
+ * @subpackage EpicSF
+ * @since EpicSF 1.0
  */
 ?>
 

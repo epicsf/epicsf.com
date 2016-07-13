@@ -61,7 +61,7 @@ if (!function_exists('epic_fonts_url')) {
    *
    * Create your own epic_fonts_url() function to override in a child theme.
    *
-   * @since Epic 1.0
+   * @since EpicSF 1.0
    *
    * @return string Google fonts URL for the theme.
    */
@@ -174,7 +174,7 @@ if (!function_exists('epic_is_event')) {
 /**
  * Enqueues scripts and styles.
  *
- * @since Epic 1.0
+ * @since EpicSF 1.0
  */
 function epic_scripts() {
   // Add custom fonts, used in the main stylesheet.
@@ -205,7 +205,7 @@ add_action('wp_enqueue_scripts', 'epic_scripts');
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since Epic 1.0
+ * @since EpicSF 1.0
  *
  * @param array $classes Classes for the body element.
  * @return array (Maybe) filtered body classes.
@@ -239,6 +239,6 @@ add_filter('body_class', 'epic_body_classes');
 /**
  * Custom template tags for this theme.
  *
- * @since Epic 1.0
+ * @since EpicSF 1.0
  */
 require get_template_directory() . '/inc/template-tags.php';
