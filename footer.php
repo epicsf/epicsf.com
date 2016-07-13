@@ -77,10 +77,10 @@
         <div class="col-md-3 col-sm-5 col-xs-12 aside-content">
           <div class="row">
             <div class="col-md-5">
-              <a href=""><strong>Giving</strong></a>
+              <a href="/giving"><strong>Giving</strong></a>
             </div> <!-- .col-md-5 -->
             <div class="col-md-7">
-              <a href=""><strong>Contact</strong></a>
+              <a href="/contact"><strong>Contact</strong></a>
             </div> <!-- .col-md-7 -->
           </div> <!-- .row -->
           <div class="row social-links">
