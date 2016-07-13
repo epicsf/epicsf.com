@@ -2,7 +2,7 @@
   <div class="entry-content">
     <div class="row event-header">
       <div class="col-md-4 col-md-offset-1 col-xs-12">
-        <a href="/wordpress/upcoming-events" class="link">Back to all events</a>
+        <a href="/events" class="link">Back to all events</a>
         <div class="spacer-140 hidden-xs-down"></div>
         <div class="spacer-20 hidden-sm-up"></div>
         <div class="title-2"><?php
