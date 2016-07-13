@@ -19,7 +19,7 @@
         <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
           <div class="col-md-3 col-sm-6">
             <strong class="hidden-sm-down">About Us</strong>
-            <a href="" class="hidden-md-up"><strong>About Us</strong></a>
+            <a href="/about" class="hidden-md-up"><strong>About Us</strong></a>
             <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
@@ -33,7 +33,7 @@
         <?php if ( has_nav_menu( 'footer-media' ) ) : ?>
           <div class="col-md-3 col-sm-6">
             <strong class="hidden-sm-down">Media</strong>
-            <a href="" class="hidden-md-up"><strong>Media</strong></a>
+            <a href="/media" class="hidden-md-up"><strong>Media</strong></a>
             <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
@@ -47,7 +47,7 @@
         <?php if ( has_nav_menu( 'footer-get-connected' ) ) : ?>
           <div class="col-md-3 col-sm-6">
             <strong class="hidden-sm-down" data-abbrev="Connect">Get Connected</strong>
-            <a href="" class="hidden-md-up"><strong>Get Connected</strong></a>
+            <a href="/get-connected" class="hidden-md-up"><strong>Get Connected</strong></a>
             <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
@@ -61,7 +61,7 @@
         <?php if ( has_nav_menu( 'footer-ministries' ) ) : ?>
           <div class="col-md-3 col-sm-6">
             <strong class="hidden-sm-down">Ministries</strong>
-            <a href="" class="hidden-md-up"><strong>Ministries</strong></a>
+            <a href="/ministries" class="hidden-md-up"><strong>Ministries</strong></a>
             <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer Ministries Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(

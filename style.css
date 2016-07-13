@@ -1,3 +1,11 @@
+/*
+Theme Name: EpicSF
+Theme URI: http://github.com/epicsf/
+Description: Theme for Epic Church's Website
+Author: Brett Bukowski
+Author URI: http://epicsf.com/
+Version: 0.1.0
+*/
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5013,7 +5021,7 @@ a:hover {
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #cccccc url(/wordpress/wp-content/uploads/2016/02/home02.jpg) no-repeat;
+  background: #cccccc url(/wp-content/uploads/2016/02/home02.jpg) no-repeat;
   background-size: cover; }
   .epic-info-hero .time {
     margin-top: 80px; }
@@ -5547,7 +5555,7 @@ body,
       margin-top: 50px; } }
 
 .home-header {
-  background: url(http://localhost:8888/wordpress/wp-content/uploads/2016/02/home01.jpg) no-repeat;
+  background: url(/wp-content/uploads/2016/02/home01.jpg) no-repeat;
   background-size: cover;
   height: 400px;
   position: relative;

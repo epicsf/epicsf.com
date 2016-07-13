@@ -28,7 +28,7 @@ get_header(); ?>
               $featured = epic_get_featured_post();
               if ( $featured ) { ?>
           <div class="col-md-10 col-md-offset-2 col-xs-12">
-            <?php the_title( '<h1 class="variation">', '</h1>' ); ?>
+            <h1 class="variation"><?php echo get_the_title($featured); ?></h1>
             <div class="body2"><?php get_the_subtitle($featured) ?></div>
             <div class="spacer-30"></div>
           </div>
@@ -71,6 +71,7 @@ get_header(); ?>
             </div> <!-- carousel.slide -->
           </div> <!-- col -->
         </div> <!-- row -->
+        <?php if (count($all_posts) > 3): ?>
         <div class="row hidden-xs-down">
           <div class="col-md-10 col-md-offset-1 col-xs-12">
             <div class="carousel-controls text-md-right text-xs-right">
@@ -85,6 +86,7 @@ get_header(); ?>
             </div>
           </div>
         </div> <!-- row -->
+        <?php endif; ?>
 
         <div class="row hidden-sm-up">
           <div class="col-xs-12">
