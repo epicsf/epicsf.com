@@ -12,7 +12,7 @@
     </div><!-- .site-content -->
 
     <footer id="footer" class="site-footer" role="contentinfo">
-      <nav class="navbar" role="navigation">
+      <nav class="navbar container-fluid" role="navigation">
         <div class="row">
           <div class="col-md-9 col-sm-7 col-xs-12">
         <div class="row">

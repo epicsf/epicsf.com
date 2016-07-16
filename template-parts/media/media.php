@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" class="media-detail <?php echo implode(' ', get_post_class(basename(get_permalink()))); ?>">
-  <div class="entry-content">
+  <div class="entry-content container-fluid">
     <div class="row media-header">
       <div class="col-md-4 col-md-offset-1 col-xs-12">
         <div class="spacer-60 hidden-xs-down"></div>

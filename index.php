@@ -158,6 +158,7 @@ get_header(); ?>
             include( locate_template('template-parts/events/main-event.php') );
           }
           ?>
+        <div class="container-fluid">
         <div class="row event-snippets">
           <div class="col-md-offset-1 col-md-10">
             <div class="row">
@@ -168,6 +169,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
+        </div>
         <?php
         } else if ( $page === 'media' ) {
           $posts = epic_get_media();
@@ -177,6 +179,7 @@ get_header(); ?>
             include( locate_template('template-parts/media/main-media.php') );
           }
           ?>
+        <div class="container-fluid">
         <div class="row media-snippets">
           <div class="col-md-offset-1 col-md-10">
             <div class="row">
@@ -186,6 +189,7 @@ get_header(); ?>
           } ?>
             </div>
           </div>
+        </div>
         </div>
         <?php
         }

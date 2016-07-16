@@ -15,7 +15,7 @@
 
   <?php epic_post_thumbnail(); ?>
 
-  <div class="entry-content">
+  <div class="entry-content container-fluid">
     <?php
     the_content();
 

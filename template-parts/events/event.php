@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" class="event-detail <?php echo implode(' ', get_post_class(basename(get_permalink()))); ?>">
-  <div class="entry-content">
+  <div class="entry-content container-fluid">
     <div class="row event-header">
       <div class="col-md-4 col-md-offset-1 col-xs-12">
         <a href="/events" class="link">Back to all events</a>
