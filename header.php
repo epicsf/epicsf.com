@@ -39,7 +39,7 @@
               <a href="/" class="navbar-brand" id="epic-logo">
                 <span class="screen-reader-text">Epic</span>
                 <img src="//placehold.it/150x60" alt="" class="hidden-md-down">
-                <span class="hidden-md-up">Home</span>
+                <!-- <span class="hidden-md-up">Home</span> -->
               </a>
             </div>
             <?php

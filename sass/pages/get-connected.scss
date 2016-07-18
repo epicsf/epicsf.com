@@ -40,5 +40,9 @@
   .epic-info-hero {
     position: relative;
     top: 117px;
+
+    @media (max-width: 34em) {
+      top: 32px;
+    }
   }
 }

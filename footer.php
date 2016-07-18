@@ -20,6 +20,7 @@
           <div class="col-md-3 col-sm-6">
             <strong class="hidden-sm-down">About Us</strong>
             <a href="/about" class="hidden-md-up"><strong>About Us</strong></a>
+            <a href="/sunday-gathering" class="hidden-md-up"><strong>Sunday Gathering</strong></a>
             <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(

@@ -38,6 +38,7 @@ get_header(); ?>
             </div>
               <?php } ?>
             <div class="col-md-4 featured-messages col-xs-12">
+              <div class="spacer-30 hidden-sm-up"></div>
               <?php
                 $featured_messages = epic_get_featured_messages_post();
                 if ( $featured_messages ) { ?>

@@ -60,6 +60,10 @@ a:hover {
     }
   }
 
+  @media (max-width: 34em) {
+    text-align: left;
+  }
+
   &:after {
     content: "";
     height: 150px;
