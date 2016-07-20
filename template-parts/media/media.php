@@ -15,7 +15,7 @@
       </div>
     </div> <!-- row -->
     <div class="row">
-      <div class="col-md-6 col-md-offset-5 col-xs-12">
+      <div class="col-md-6 col-md-offset-5 col-xs-12 text-md-center">
         <div class="spacer-60"></div>
         <h2>Message Archive</h2>
         <div class="spacer-40"></div>

@@ -5603,9 +5603,12 @@ body,
     position: relative;
     top: -160px; }
   @media (max-width: 34em) {
-    .main-event .post-thumbnail {
-      position: static;
-      display: block; } }
+    .main-event {
+      background: none;
+      padding-top: 0; }
+      .main-event .post-thumbnail {
+        position: static;
+        display: block; } }
 
 .event-snippets {
   position: relative;
@@ -5626,6 +5629,9 @@ body,
     color: white; }
     .event-detail .event-header h1 {
       color: white; }
+  @media (max-width: 34em) {
+    .event-detail {
+      top: -20px; } }
 
 .media .entry-header {
   display: none; }
@@ -5641,7 +5647,8 @@ body,
   @media (max-width: 34em) {
     .main-media {
       margin-top: auto;
-      margin-bottom: 80px; }
+      padding-top: 0;
+      background: none; }
       .main-media .post-thumbnail {
         position: static;
         display: block; } }
@@ -5665,3 +5672,6 @@ body,
     color: white; }
     .media-detail .media-header h1 {
       color: white; }
+  @media (max-width: 34em) {
+    .media-detail {
+      top: -20px; } }

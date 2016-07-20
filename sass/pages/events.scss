@@ -17,6 +17,9 @@
   }
 
   @media (max-width: 34em) {
+    background: none;
+    padding-top: 0;
+
     .post-thumbnail {
       position: static;
       display: block;
@@ -52,7 +55,7 @@
     }
   }
 
-  // @media (max-width: 34em) {
-    // position: static;
-  // }
+  @media (max-width: 34em) {
+    top: -20px;
+  }
 }
