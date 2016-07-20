@@ -2,6 +2,10 @@
   .square-img {
     position: relative;
     top: -220px;
+
+    @media (max-width: 34em) {
+      position: static;
+    }
   }
 
   .picture-row {

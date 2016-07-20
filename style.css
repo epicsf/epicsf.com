@@ -5024,7 +5024,7 @@ a:hover {
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #cccccc url(/wordpress/wp-content/uploads/2016/07/home02.jpg) no-repeat;
+  background: #cccccc url(/wp-content/uploads/2016/07/home02.jpg) no-repeat;
   background-size: cover; }
   .epic-info-hero .time {
     margin-top: 80px; }
@@ -5550,7 +5550,7 @@ body,
   top: 117px; }
   @media (max-width: 34em) {
     .get-connected .epic-info-hero {
-      top: 32px; } }
+      top: 50px; } }
 
 .faq .entry-header {
   display: none; }
@@ -5560,6 +5560,9 @@ body,
 .partnerships .square-img {
   position: relative;
   top: -220px; }
+  @media (max-width: 34em) {
+    .partnerships .square-img {
+      position: static; } }
 .partnerships .picture-row img {
   height: 350px; }
 
@@ -5570,7 +5573,7 @@ body,
       margin-top: 50px; } }
 
 .home-header {
-  background: url(/wordpress/wp-content/uploads/2016/07/home01.jpg) no-repeat;
+  background: url(/wp-content/uploads/2016/07/home01.jpg) no-repeat;
   background-size: cover;
   height: 400px;
   position: relative;
