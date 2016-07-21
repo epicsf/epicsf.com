@@ -3,6 +3,18 @@
 
   height: 90px;
 
+  padding-left: 80px;
+  padding-right: 80px;
+
+  @media (max-width: 1276px) {
+    padding: .5rem 1rem;
+
+    .navbar-nav .nav-item + .nav-item {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+
   a,
   a:hover,
   a:focus {
@@ -14,6 +26,23 @@
     a {
       color: #77d9aa;
       text-transform: uppercase;
+    }
+  }
+
+  .navbar-brand {
+    margin-top: 10px;
+    // margin: 10px 0 0 70px;
+    img {
+      width: 100px;
+    }
+
+    @media (max-width: 34em) {
+      float: right;
+      margin-right: 0;
+
+      img {
+        width: 50px;
+      }
     }
   }
 
@@ -30,7 +59,7 @@
         margin-right: 0;
       }
 
-      @media (max-width: 34em) {
+      @media (max-width: 48em) {
         margin-right: 0;
         display: block;
         float: none;

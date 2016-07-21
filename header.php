@@ -34,12 +34,12 @@
             <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
               &#9776;
             </button>
+            <img src="/wp-content/uploads/2016/07/logo-mobile.png" alt="" class="hidden-sm-up navbar-brand pull-right">
             <div class="collapse navbar-toggleable-sm" id="epicCollapsingNavbar">
             <div>
               <a href="/" class="navbar-brand" id="epic-logo">
                 <span class="screen-reader-text">Epic</span>
-                <img src="//placehold.it/150x60" alt="" class="hidden-md-down">
-                <!-- <span class="hidden-md-up">Home</span> -->
+                <img src="/wp-content/uploads/2016/07/logo-desktop.png" alt="" class="hidden-sm-down">
               </a>
             </div>
             <?php
