@@ -5032,8 +5032,9 @@ a:hover {
       .epic-info-hero .time {
         margin-top: 0; } }
 
-.col-xs-12 {
-  padding: 0 32px; }
+@media (max-width: 34em) {
+  .col-xs-12 {
+    padding: 0 32px; } }
 
 .spacer-10 {
   display: block;
@@ -5344,6 +5345,31 @@ body,
   text-transform: uppercase; }
 .about .center-block {
   text-align: center; }
+.about .video-placeholder {
+  cursor: pointer; }
+  .about .video-placeholder:before {
+    content: "";
+    background: url(/wp-content/uploads/2016/07/about01.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    z-index: 1000000; }
+  .about .video-placeholder:after {
+    content: "\f04b";
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1000001;
+    color: white; }
 .about h1 {
   text-transform: none;
   color: #74d8a9;

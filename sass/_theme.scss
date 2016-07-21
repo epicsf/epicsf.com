@@ -97,6 +97,8 @@ a:hover {
 }
 
 .col-xs-12 {
-  padding: 0 32px;
+  @media (max-width: 34em) {
+    padding: 0 32px;
+  }
 }
 

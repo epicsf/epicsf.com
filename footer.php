@@ -115,7 +115,16 @@
 
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-<script>$('.carousel').carousel({interval: 10000});</script>
+<script>
+$('.carousel').carousel({interval: 10000});
+$('.video-placeholder').click(function(){
+  $(this).removeClass('video-placeholder');
+  var iframe = $(this).find('iframe')[0];
+  var player = new Vimeo.Player(iframe);
+  player.play();
+});
+</script>
 </body>
 </html>
