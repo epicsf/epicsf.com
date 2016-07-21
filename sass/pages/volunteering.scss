@@ -6,13 +6,20 @@
     }
 
     .other-opps {
-      // TK vertically center CTA
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 16px;
+
+      @media (max-width: 34em) {
+        display: block;
+      }
 
       img {
         height: 600px;
 
         @media (max-width: 34em) {
+          margin-top: 20px;
           height: auto;
         }
       }

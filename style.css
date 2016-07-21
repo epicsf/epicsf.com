@@ -5475,11 +5475,18 @@ body,
   color: #74d8a9;
   margin-bottom: 40px; }
 .volunteering .entry-content .other-opps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px; }
+  @media (max-width: 34em) {
+    .volunteering .entry-content .other-opps {
+      display: block; } }
   .volunteering .entry-content .other-opps img {
     height: 600px; }
     @media (max-width: 34em) {
       .volunteering .entry-content .other-opps img {
+        margin-top: 20px;
         height: auto; } }
 
 .sunday-gathering .entry-content h2 {
