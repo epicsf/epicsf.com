@@ -126,7 +126,7 @@ if (!function_exists('epic_get_media')) {
 if (!function_exists('epic_get_featured_post')) {
   function epic_get_featured_post() {
     $posts = get_posts(array(
-      'title'       => 'Featured',
+      'name'        => 'featured',
       'post_status' => 'publish',
     ));
 
