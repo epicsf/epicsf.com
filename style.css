@@ -5217,15 +5217,14 @@ iframe {
     color: #77d9aa;
     text-transform: uppercase; }
   #site-navigation .navbar-brand {
-    margin-top: 10px; }
+    margin-top: 14px; }
     #site-navigation .navbar-brand img {
       width: 100px; }
     @media (max-width: 34em) {
       #site-navigation .navbar-brand {
         float: right;
-        margin-right: 0; }
-        #site-navigation .navbar-brand img {
-          width: 50px; } }
+        margin-right: 0;
+        width: 50px; } }
   #site-navigation .nav.navbar-nav {
     margin-top: 25px;
     padding: 0 30px; }
