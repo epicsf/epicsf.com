@@ -41,7 +41,7 @@ if (!function_exists('epic_setup')) {
      * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
      */
     add_theme_support( 'post-thumbnails' );
-    set_post_thumbnail_size( 825, 510, true );
+    set_post_thumbnail_size( 900, 507, false );
     /*
      * This theme styles the visual editor to resemble the theme style,
      * specifically font, colors, icons, and column width.
