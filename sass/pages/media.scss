@@ -2,6 +2,10 @@
   .entry-header {
     display: none;
   }
+
+  h2 {
+    font-size: 50px;
+  }
 }
 
 .main-media {
@@ -16,6 +20,10 @@
   .post-thumbnail {
     position: relative;
     top: -$padding-top - $offset;
+  }
+
+  h2 {
+    font-size: 50px;
   }
 
   @media (max-width: 34em) {

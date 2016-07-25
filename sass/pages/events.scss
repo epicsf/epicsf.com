@@ -1,5 +1,7 @@
-.upcoming-events {
-
+.events {
+  h2 {
+    font-size: 50px;
+  }
 }
 
 .main-event {
@@ -14,6 +16,10 @@
   .post-thumbnail {
     position: relative;
     top: -$padding-top - $offset;
+  }
+
+  h2 {
+    font-size: 50px;
   }
 
   @media (max-width: 34em) {

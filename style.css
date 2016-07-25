@@ -5643,6 +5643,9 @@ body,
   border-bottom: 2px solid #f2f3f4;
   padding-top: 0; }
 
+.events h2 {
+  font-size: 50px; }
+
 .main-event {
   background: #e5e5e5;
   margin-top: 40px;
@@ -5651,6 +5654,8 @@ body,
   .main-event .post-thumbnail {
     position: relative;
     top: -160px; }
+  .main-event h2 {
+    font-size: 50px; }
   @media (max-width: 34em) {
     .main-event {
       background: none;
@@ -5684,6 +5689,8 @@ body,
 
 .media .entry-header {
   display: none; }
+.media h2 {
+  font-size: 50px; }
 
 .main-media {
   background: #e5e5e5;
@@ -5693,6 +5700,8 @@ body,
   .main-media .post-thumbnail {
     position: relative;
     top: -160px; }
+  .main-media h2 {
+    font-size: 50px; }
   @media (max-width: 34em) {
     .main-media {
       margin-top: auto;
