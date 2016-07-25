@@ -57,6 +57,7 @@ h1 {
   text-transform: uppercase;
 
   &.variation {
+    font-style: normal;
     text-transform: none;
     color: $light-green;
     margin-bottom: 30px;

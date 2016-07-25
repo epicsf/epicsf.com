@@ -4841,6 +4841,7 @@ h1 {
   letter-spacing: 0;
   text-transform: uppercase; }
   h1.variation {
+    font-style: normal;
     text-transform: none;
     color: #74d8a9;
     margin-bottom: 30px; }
