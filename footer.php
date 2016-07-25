@@ -81,7 +81,7 @@
               <a href="/giving"><strong>Giving</strong></a>
             </div> <!-- .col-md-5 -->
             <div class="col-md-7">
-              <a href="/contact"><strong>Contact</strong></a>
+              <a href="/sunday-gathering#contact"><strong>Contact</strong></a>
             </div> <!-- .col-md-7 -->
           </div> <!-- .row -->
           <div class="row social-links">
