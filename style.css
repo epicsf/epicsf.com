@@ -5546,7 +5546,6 @@ body,
 .ministries .entry-header {
   display: none; }
 .ministries .img-circle {
-  height: 404px;
   margin-top: 55px; }
   @media (max-width: 34em) {
     .ministries .img-circle {
@@ -5575,7 +5574,6 @@ body,
 .get-connected .entry-header {
   display: none; }
 .get-connected .img-circle {
-  height: 404px;
   position: relative;
   z-index: 1; }
   @media (max-width: 34em) {
