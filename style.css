@@ -4853,7 +4853,7 @@ h2 {
   font-family: Cardo, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 36px;
+  font-size: 50px;
   letter-spacing: 0; }
 
 h3 {
@@ -5420,8 +5420,8 @@ body,
   .about .vertical-center > div,
   .about .vertical-center > em {
     position: absolute;
-    top: 40%;
-    transform: translateY(-40%); }
+    top: 30%;
+    transform: translateY(-30%); }
   @media (max-width: 34em) {
     .about .vertical-center {
       height: 150px; }
@@ -5447,10 +5447,10 @@ body,
   font-size: 13pt;
   margin: 0 0 8px; }
 .about .spacer {
-  height: 140px; }
+  height: 35px; }
 .about .values {
   counter-reset: li;
-  margin-top: 80px;
+  margin-top: 43px;
   margin-left: 0;
   padding-left: 0; }
   .about .values > li {
@@ -5462,7 +5462,7 @@ body,
     /* Add some spacing around the content */
     list-style: none;
     /* Disable the normal item numbering */
-    margin-bottom: 75px; }
+    margin-bottom: 43px; }
     .about .values > li:before {
       font-size: 24px;
       counter-increment: li;
@@ -5494,7 +5494,7 @@ body,
     content: "";
     background: #e5e5e5;
     right: 10%;
-    left: 45%;
+    left: 36%;
     top: 30%;
     position: absolute;
     height: 840px; }
