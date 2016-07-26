@@ -2,7 +2,11 @@
   margin-top: 40px;
 
   .carousel-inner {
-    height: 180px;
+    height: 234px;
+
+    @media (max-width: 34em) {
+      height: 180px;
+    }
   }
 }
 

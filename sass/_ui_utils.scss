@@ -22,6 +22,12 @@
   }
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .divider-1 {
   background: #61d6a1;
   display: block;
