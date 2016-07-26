@@ -5173,6 +5173,11 @@ a:hover {
   padding-left: 140px;
   padding-right: 140px; }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .divider-1 {
   background: #61d6a1;
   display: block;
@@ -5289,7 +5294,10 @@ iframe {
 .carousel {
   margin-top: 40px; }
   .carousel .carousel-inner {
-    height: 180px; }
+    height: 234px; }
+    @media (max-width: 34em) {
+      .carousel .carousel-inner {
+        height: 180px; } }
 
 .carousel-controls {
   border-bottom: 2px solid #f2f3f4; }
@@ -5639,7 +5647,7 @@ body,
   color: #8a8c8d; }
 .featured-messages .row {
   padding-top: 10px; }
-.featured-messages .row:first-child {
+.featured-messages .featured-message {
   border-bottom: 2px solid #f2f3f4;
   padding-top: 0; }
 
@@ -5733,3 +5741,8 @@ body,
   @media (max-width: 34em) {
     .media-detail {
       top: -20px; } }
+  .media-detail .body3 {
+    color: #b3b4b5; }
+  .media-detail .sermon {
+    border-bottom: 1px solid #f4f3f3;
+    padding-top: 30px; }
