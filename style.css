@@ -5239,9 +5239,9 @@ iframe {
     color: #77d9aa;
     text-transform: uppercase; }
   #site-navigation .navbar-brand {
-    margin-top: 14px; }
+    margin-top: 18px; }
     #site-navigation .navbar-brand img {
-      width: 100px; }
+      width: 70px; }
     @media (max-width: 34em) {
       #site-navigation .navbar-brand {
         float: right;
