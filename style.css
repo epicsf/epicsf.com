@@ -4892,7 +4892,6 @@ h4 {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
-  font-style: italic;
   letter-spacing: 20; }
 
 .title-2 {
@@ -5155,6 +5154,23 @@ a:hover {
 .pad-lr-100 {
   padding-left: 100px;
   padding-right: 100px; }
+
+.spacer-130 {
+  display: block;
+  height: 130px; }
+
+.pad-both-130 {
+  padding: 130px 0; }
+
+.pad-top-130 {
+  padding-top: 130px; }
+
+.pad-bottom-130 {
+  padding-bottom: 130px; }
+
+.pad-lr-130 {
+  padding-left: 130px;
+  padding-right: 130px; }
 
 .spacer-140 {
   display: block;
@@ -5581,6 +5597,8 @@ body,
 
 .get-connected .entry-header {
   display: none; }
+.get-connected .title-2 {
+  font-size: 22px; }
 .get-connected .img-circle {
   position: relative;
   z-index: 1; }
