@@ -5630,18 +5630,30 @@ body,
   top: -40px; }
   .get-connected .volunteer .volunteer-ops {
     position: relative;
-    top: -140px; }
+    top: -140px;
+    margin-bottom: -100px; }
   @media (max-width: 34em) {
     .get-connected .volunteer {
       top: 0; }
       .get-connected .volunteer .volunteer-ops {
-        top: 0; } }
+        top: 0;
+        margin-bottom: 60px; } }
 .get-connected .epic-info-hero {
   position: relative;
-  top: 117px; }
+  top: 44px;
+  margin-bottom: -49px; }
   @media (max-width: 34em) {
     .get-connected .epic-info-hero {
-      top: 50px; } }
+      top: 50px;
+      margin-bottom: 0; } }
+.get-connected .event-previews .post-thumbnail {
+  margin-bottom: 20px;
+  display: block; }
+.get-connected .event-previews .heading {
+  margin-top: 120px; }
+  @media (max-width: 34em) {
+    .get-connected .event-previews .heading {
+      margin-top: 40px; } }
 
 .faq .entry-header {
   display: none; }

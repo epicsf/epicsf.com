@@ -29,6 +29,7 @@
     .volunteer-ops {
       position: relative;
       top: -140px;
+      margin-bottom: -100px;
     }
 
     @media (max-width: 34em) {
@@ -36,16 +37,34 @@
 
       .volunteer-ops {
         top: 0;
+        margin-bottom: 60px;
       }
     }
   }
 
   .epic-info-hero {
     position: relative;
-    top: 117px;
+    top: 44px;
+    margin-bottom: -49px;
 
     @media (max-width: 34em) {
       top: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  .event-previews {
+    .post-thumbnail {
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .heading {
+      margin-top: 120px;
+
+      @media (max-width: 34em) {
+        margin-top: 40px;
+      }
     }
   }
 }
