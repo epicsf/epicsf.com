@@ -74,6 +74,10 @@
         bottom: 0;
       }
     }
+
+    @media (max-width: 34em) {
+      margin-bottom: 60px;
+    }
   }
 
   .vertical-center {
@@ -200,7 +204,7 @@
       margin-top: 250px;
 
       @media (max-width: 34em) {
-        margin-top: 100px;
+        margin-top: 60px;
       }
     }
 

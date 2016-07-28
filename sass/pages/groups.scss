@@ -5,6 +5,12 @@
         padding-left: 10%;
       }
     }
+
+    .inlay {
+      @media (max-width: 34em) {
+        background: none;
+      }
+    }
   }
 
   #ctiframe {

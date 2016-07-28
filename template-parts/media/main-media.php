@@ -2,7 +2,8 @@
   <div class="row main-media">
     <div class="col-md-3 col-md-offset-1 col-xs-12">
       <div class="title-2">current series</div>
-      <div class="spacer-40"></div>
+      <div class="spacer-40 hidden-sm-down"></div>
+      <div class="spacer-20 hidden-sm-up"></div>
       <h2><?php the_title() ?></h2>
       <div class="spacer-30"></div>
       <div class="divider-1"></div>

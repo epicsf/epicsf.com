@@ -8,6 +8,10 @@
       height: 180px;
     }
   }
+
+  @media (max-width: 34em) {
+    margin-top: 20px;
+  }
 }
 
 .carousel-controls {
@@ -24,6 +28,11 @@
     &.right {
       margin-left: 6px;
       color: $link-color;
+    }
+
+    @media (max-width: 34em) {
+      display: inline-block;
+      padding: 10px;
     }
   }
 }

@@ -124,7 +124,8 @@ get_header(); ?>
               </div>
             </div>
           </div> <!-- row -->
-          <div class="spacer-80"></div>
+          <div class="spacer-80 hidden-sm-down"></div>
+          <div class="spacer-60 hidden-sm-up"></div>
         </div>
       <?php endif; ?>
 
