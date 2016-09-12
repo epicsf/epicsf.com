@@ -195,7 +195,10 @@ function epic_scripts() {
   // Theme stylesheet.
   wp_enqueue_style(
     'epic-style',
-    get_stylesheet_uri()
+    get_stylesheet_uri(),
+    null,
+    // Increment this to match the theme version to bust the cache.
+    '1.0.1'
   );
 
 }
