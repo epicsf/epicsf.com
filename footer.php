@@ -98,7 +98,7 @@
           <div class="row">
             <div class="col-md-12 service-times">
               <p>
-                Join us at <strong>9:30am</strong> or <strong>11:00am</strong>
+                Join us at <strong>9:00am</strong>, <strong>10:30am</strong> or <strong>12:00pm</strong>
                 <br>
                 <em>250 Stevenson Street, SF</em>
               </p>

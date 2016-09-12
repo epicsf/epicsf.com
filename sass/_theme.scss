@@ -46,38 +46,7 @@ a:hover {
 }
 
 .time {
-  position: relative;
   text-align: center;
-
-  .service-time {
-    &:first-child {
-      margin-right: 150px;
-
-      @media (max-width: 34em) {
-        margin: auto;
-        display: block;
-      }
-    }
-  }
-
-  @media (max-width: 34em) {
-    text-align: left;
-  }
-
-  &:after {
-    content: "";
-    height: 150px;
-    width: 2px;
-    background: #e4e4e3;
-    position: absolute;
-    left: 49%;
-    top: -45px;
-    transform: rotate(45deg);
-
-    @media (max-width: 34em) {
-      content: none;
-    }
-  }
 }
 
 .epic-info-hero {

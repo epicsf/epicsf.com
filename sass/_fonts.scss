@@ -112,6 +112,21 @@ h4 {
   .meridiem {
     font-size: 32px;
   }
+
+  @media (max-width: 70em) {
+    font-size: 30px;
+
+    .meridiem {
+      font-size: 26px;
+    }
+  }
+  @media (max-width: 34em) {
+    font-size: 40px;
+
+    .meridiem {
+      font-size: 32px;
+    }
+  }
 }
 
 .title-1 {

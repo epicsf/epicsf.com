@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.0
+Version: 1.0.1
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -4889,6 +4889,16 @@ h4 {
   text-transform: uppercase; }
   .time .meridiem {
     font-size: 32px; }
+  @media (max-width: 70em) {
+    .time {
+      font-size: 30px; }
+      .time .meridiem {
+        font-size: 26px; } }
+  @media (max-width: 34em) {
+    .time {
+      font-size: 40px; }
+      .time .meridiem {
+        font-size: 32px; } }
 
 .title-1 {
   font-family: Lato, sans-serif;
@@ -4999,29 +5009,7 @@ a:hover {
       top: 50%; }
 
 .time {
-  position: relative;
   text-align: center; }
-  .time .service-time:first-child {
-    margin-right: 150px; }
-    @media (max-width: 34em) {
-      .time .service-time:first-child {
-        margin: auto;
-        display: block; } }
-  @media (max-width: 34em) {
-    .time {
-      text-align: left; } }
-  .time:after {
-    content: "";
-    height: 150px;
-    width: 2px;
-    background: #e4e4e3;
-    position: absolute;
-    left: 49%;
-    top: -45px;
-    transform: rotate(45deg); }
-    @media (max-width: 34em) {
-      .time:after {
-        content: none; } }
 
 .epic-info-hero {
   color: white;
