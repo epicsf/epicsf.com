@@ -104,10 +104,11 @@ if (!function_exists('epic_event_month')) {
 if (!function_exists('epic_get_events')) {
   function epic_get_events() {
     return get_posts(array(
-      'category_name' => 'event',
-      'post_status'   => 'publish',
-      'orderby'       => 'date',
-      'order'         => 'DESC',
+      'category_name'  => 'event',
+      'post_status'    => 'publish',
+      'orderby'        => 'date',
+      'order'          => 'DESC',
+      'posts_per_page' => 100,
     ));
   }
 }
@@ -115,10 +116,11 @@ if (!function_exists('epic_get_events')) {
 if (!function_exists('epic_get_media')) {
   function epic_get_media() {
     return get_posts(array(
-      'category_name' => 'media',
-      'post_status'   => 'publish',
-      'orderby'       => 'date',
-      'order'         => 'DESC',
+      'category_name'  => 'media',
+      'post_status'    => 'publish',
+      'orderby'        => 'date',
+      'order'          => 'DESC',
+      'posts_per_page' => 500, // :D
     ));
   }
 }
