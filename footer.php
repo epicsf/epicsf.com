@@ -11,8 +11,8 @@
       <div class='push'></div>
     </div><!-- .site-content -->
 
-    <footer id="footer" class="site-footer" role="contentinfo">
-      <nav class="navbar container-fluid" role="navigation">
+    <footer id="footer" class="site-footer">
+      <nav class="navbar container-fluid">
         <div class="row">
           <div class="col-md-9 col-sm-7 col-xs-12">
         <div class="row">

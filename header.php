@@ -38,7 +38,7 @@
     <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
       <div id="site-header-menu" class="site-header-menu">
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
-          <nav id="site-navigation" class="navbar navbar-full navbar-light" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
+          <nav id="site-navigation" class="navbar navbar-full navbar-light" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
             <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
               &#9776;
             </button>
