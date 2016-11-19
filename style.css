@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.3
+Version: 1.0.4
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -4979,7 +4979,8 @@ a:hover {
   padding: 16px 20px;
   border: 2px solid #fc4c00;
   border-radius: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  white-space: normal; }
 
 .btn-sm {
   padding: .25rem .75rem; }
