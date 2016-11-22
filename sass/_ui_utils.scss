@@ -43,8 +43,9 @@
 }
 
 .full-width {
-  width: 100%;
+  height: auto;
   position: relative;
+  width: 100%;
 
   @media (max-width: 34em) {
     display: none;
