@@ -236,6 +236,10 @@ function epic_body_classes($classes) {
     $classes[] = 'hfeed';
   }
 
+  if (!array_key_exists('seensplash', $_COOKIE)) {
+    $classes[] = 'display-splash';
+  }
+
   return $classes;
 }
 

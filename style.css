@@ -5213,6 +5213,9 @@ a:hover {
 iframe {
   z-index: 1000; }
 
+.hide {
+  display: none !important; }
+
 #site-navigation {
   height: 90px;
   padding-left: 80px;
@@ -5261,6 +5264,27 @@ iframe {
   @media (max-width: 34em) {
     #site-navigation {
       height: auto; } }
+
+.splash {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000000000;
+  background: #d6d5d5;
+  display: none;
+  align-items: center; }
+  body.display-splash .splash {
+    display: flex; }
+  .splash h2 {
+    text-align: center;
+    margin-bottom: 2em; }
+  .splash .cta {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .site-footer .navbar {
   background: #414447;

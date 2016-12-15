@@ -125,6 +125,14 @@ $('.video-placeholder').click(function(){
   var player = new Vimeo.Player(iframe);
   player.play();
 });
+$(function() {
+  $(document).delegate('.splash a', 'click', function() {
+    document.cookie = 'seensplash=1';
+    $('.splash').fadeOut(function () {
+      $(this).remove();
+    });
+  });
+});
 </script>
 </body>
 </html>

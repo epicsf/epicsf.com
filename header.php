@@ -32,6 +32,24 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+  <div class="splash">
+    <div class="container-fluid">
+      <div class="row">
+        <h2>Merry Christmas from Epic</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/christmas-at-epic"><img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/christmasschedule_red.png"></a>
+        </div>
+        <div class="col-md-6">
+          <a href="/online-giving"><img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/Slide-copy.png"></a>
+        </div>
+      </div>
+      <div class="row cta">
+        <a class="btn" href="#">Continue to Epicsf.com</a>
+      </div>
+    </div>
+  </div>
   <div class="site-inner">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'epic' ); ?></a>
 
