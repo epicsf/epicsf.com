@@ -35,13 +35,16 @@
   <div class="splash">
     <div class="container-fluid">
       <div class="row">
-        <h2>Merry Christmas from Epic</h2>
+        <div class="col-md-12">
+          <h2>Merry Christmas</h2>
+          <h3>from epic</h3>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row images">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1">
           <a href="/christmas-at-epic"><img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/christmasschedule_red.png"></a>
         </div>
-        <div class="col-md-6">
+        <div class="col-xs-12 col-sm-8 col-md-5">
           <a href="/online-giving"><img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/Slide-copy.png"></a>
         </div>
       </div>

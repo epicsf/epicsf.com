@@ -5213,9 +5213,6 @@ a:hover {
 iframe {
   z-index: 1000; }
 
-.hide {
-  display: none !important; }
-
 #site-navigation {
   height: 90px;
   padding-left: 80px;
@@ -5272,19 +5269,59 @@ iframe {
   left: 0;
   right: 0;
   z-index: 10000000000;
-  background: #d6d5d5;
+  background: url(http://localhost:8888/wordpress/wp-content/uploads/2016/12/ink-large.png) no-repeat center 20px;
+  background-color: #f1f2ec;
   display: none;
   align-items: center; }
   body.display-splash .splash {
     display: flex; }
+    @media (max-width: 34em) {
+      body.display-splash .splash {
+        display: block; } }
   .splash h2 {
+    margin-top: .8em;
     text-align: center;
+    color: white; }
+  .splash h3 {
+    font-family: Cardo;
+    text-transform: none;
+    text-align: center;
+    border: 0;
+    color: white;
     margin-bottom: 2em; }
+    .splash h3:after {
+      content: none; }
+    @media (max-width: 34em) {
+      .splash h3 {
+        margin-bottom: 1em; } }
   .splash .cta {
-    margin-top: 2em;
+    margin-top: 3em;
     display: flex;
     align-items: center;
     justify-content: center; }
+    .splash .cta .btn {
+      border-color: #089e75;
+      color: #089e75; }
+  @media (max-width: 34em) {
+    .splash .images div:first-child {
+      margin-bottom: 16px; } }
+  .splash:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: url(http://localhost:8888/wordpress/wp-content/uploads/2016/12/ink-large.png) no-repeat center 20px; }
+  .splash:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: #089e75;
+    z-index: -1; }
 
 .site-footer .navbar {
   background: #414447;

@@ -1,28 +1,92 @@
 .splash {
+  $background-color: #f1f2ec;
+  // $heading-color: #49565f;
+  $accent-color: #089e75;
+
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 10000000000;
-  background: #d6d5d5;
+  // background: #d6d5d5;
+  // background: #eedecc;
+  background: url(http://localhost:8888/wordpress/wp-content/uploads/2016/12/ink-large.png) no-repeat center 20px;
+  background-color: $background-color;
+
   display: none;
-  body.display-splash & { display: flex; }
+  body.display-splash & {
+    display: flex;
+    @media (max-width: 34em) {
+      display: block;
+    }
+  }
   align-items: center;
 
   h2 {
+    margin-top: .8em;
     text-align: center;
+    color: white;
+  }
+
+  h3 {
+    font-family: Cardo;
+    text-transform: none;
+    text-align: center;
+    border: 0;
+    color: white;
     margin-bottom: 2em;
+    &:after {
+      content: none;
+    }
+    @media (max-width: 34em) {
+      margin-bottom: 1em;
+    }
   }
 
   .cta {
-    margin-top: 2em;
+    margin-top: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .btn {
+      border-color: $accent-color;
+      color: $accent-color;
+    }
   }
   .row {
     // position: relative;
     // top: 50%;
+  }
+
+  .images {
+    div:first-child {
+      @media (max-width: 34em) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: url(http://localhost:8888/wordpress/wp-content/uploads/2016/12/ink-large.png) no-repeat center 20px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: $accent-color;
+    // background: $heading-color;
+    z-index: -1;
   }
 }
