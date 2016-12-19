@@ -5297,7 +5297,7 @@ iframe {
     font-style: italic; }
     .splash h3:after {
       content: none; }
-    @media (max-width: 34em) {
+    @media (max-width: 48em) {
       .splash h3 {
         margin-bottom: 1em; } }
   .splash .cta {
@@ -5308,11 +5308,19 @@ iframe {
     .splash .cta .btn {
       border-color: #089a72;
       color: #089a72; }
+    @media (max-width: 48em) {
+      .splash .cta {
+        margin-top: 1em; } }
   @media (max-width: 48em) {
     .splash .images div:first-child {
       margin-bottom: 16px; } }
   .splash .images img {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: auto; }
+    @media (max-width: 48em) {
+      .splash .images img {
+        max-height: 180px; } }
   .splash:before {
     content: "";
     position: absolute;
