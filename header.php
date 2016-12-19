@@ -45,7 +45,7 @@
       <div class="row images">
         <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1">
           <div class="col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-2">
-            <a href="/christmas-at-epic"><img class="img-fluid" src="/wp-content/uploads/2016/12/christmasschedule_red.png"></a>
+            <a href="/christmas-at-epic"><img class="img-fluid" src="/wp-content/uploads/2016/11/christmasschedule_red.png"></a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5">
