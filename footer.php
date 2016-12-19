@@ -127,7 +127,7 @@ $('.video-placeholder').click(function(){
 });
 $(function() {
   $(document).delegate('.splash a', 'click', function() {
-    document.cookie = 'seensplash=1';
+    document.cookie = 'seensplash=1;path=/';
     $('.splash').fadeOut(function () {
       $(this).remove();
     });
