@@ -236,7 +236,12 @@ function epic_body_classes($classes) {
     $classes[] = 'hfeed';
   }
 
-  if (!array_key_exists('seensplash', $_COOKIE)) {
+  $current_date = getdate();
+  // Jan 2, 2017
+  $in_range = time() < 1483315200;
+
+  if (!array_key_exists('seensplash', $_COOKIE) &&
+    $in_range) {
     $classes[] = 'display-splash';
   }
 
