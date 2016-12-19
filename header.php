@@ -39,19 +39,18 @@
           <h2>Merry Christmas</h2>
           <h3>from
             <span class="epic">epic</span>
-            <!-- <img src="/wordpress/wp-content/uploads/2016/07/logo-desktop.png"> -->
           </h3>
         </div>
       </div>
       <div class="row images">
         <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1">
           <div class="col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-2">
-            <a href="/christmas-at-epic"><img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/christmasschedule_red.png"></a>
+            <a href="/christmas-at-epic"><img class="img-fluid" src="/wp-content/uploads/2016/12/christmasschedule_red.png"></a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5">
           <div class="col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-2">
-            <a href="/online-giving"><img class="img-fluid" src="http://localhost:8888/wordpress/wp-content/uploads/2016/12/Slide-copy.png"></a>
+            <a href="/online-giving"><img class="img-fluid" src="/wp-content/uploads/2016/12/Slide-copy.png"></a>
           </div>
         </div>
       </div>
