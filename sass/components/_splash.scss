@@ -15,13 +15,25 @@
   background-color: $background-color;
 
   display: none;
+
   body.display-splash & {
     display: flex;
-    @media (max-width: 34em) {
+
+    @media (max-width: 48em) {
+    // @media (max-width: 34em) {
       display: block;
     }
   }
   align-items: center;
+
+  // h3
+
+  .epic {
+    text-transform: lowercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 100;
+  }
 
   h2 {
     margin-top: .8em;
@@ -36,6 +48,7 @@
     border: 0;
     color: white;
     margin-bottom: 2em;
+    font-style: italic;
     &:after {
       content: none;
     }
@@ -50,9 +63,11 @@
     align-items: center;
     justify-content: center;
 
+    $cta-color: darken($accent-color, .9);
+
     .btn {
-      border-color: $accent-color;
-      color: $accent-color;
+      border-color: $cta-color;
+      color: $cta-color;
     }
   }
   .row {
@@ -62,9 +77,13 @@
 
   .images {
     div:first-child {
-      @media (max-width: 34em) {
+      @media (max-width: 48em) {
         margin-bottom: 16px;
       }
+    }
+
+    img {
+      box-shadow: 0 0 3px rgba(0, 0, 0, .3);
     }
   }
 
