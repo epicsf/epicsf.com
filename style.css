@@ -5269,7 +5269,7 @@ iframe {
   left: 0;
   right: 0;
   z-index: 10000000000;
-  background: url(http://localhost:8888/wordpress/wp-content/uploads/2016/12/ink-large.png) no-repeat center 20px;
+  background: url(/wp-content/uploads/2016/12/ink-large.png) no-repeat center 20px;
   background-color: #f1f2ec;
   display: none;
   align-items: center; }
