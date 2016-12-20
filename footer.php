@@ -127,7 +127,9 @@ $('.video-placeholder').click(function(){
 });
 $(function() {
   $(document).delegate('.splash a', 'click', function() {
-    document.cookie = 'seensplash=1;path=/';
+    var date = new Date();
+    date.setTime(+ date + (30 * 86400000));
+    document.cookie = 'seensplash=1;expires=' + date.toGMTString() + 'path=/';
     $('.splash').fadeOut(function () {
       $(this).remove();
     });
