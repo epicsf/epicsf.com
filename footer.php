@@ -126,7 +126,10 @@ $('.video-placeholder').click(function(){
   player.play();
 });
 $(function() {
-  $(document).delegate('.splash a', 'click', function() {
+  $(document).delegate('.splash a', 'click', function(e) {
+    if (e.target.href.indexOf('#') === e.target.href.length - 1) {
+      e.preventDefault();
+    }
     var date = new Date();
     date.setTime(+ date + (30 * 86400000));
     document.cookie = 'seensplash=1;expires=' + date.toGMTString() + 'path=/';
