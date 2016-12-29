@@ -1,29 +1,9 @@
 # Epic
 
-Contributors: Brett Bukowski
+The WordPress theme for <https://www.epicsf.com>.
+
 Requires at least: WordPress 4.4
 Tested up to: WordPress 4.4
-Version: 1.0
-License: MIT
-License URI: https://opensource.org/licenses/MIT
-Tags: black, blue, gray, green, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
-# Description
-
-Epic is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-
-* Mobile-first, Responsive Layout
-* Custom Colors
-* Custom Header
-* Post Formats
-* MIT license. :) Use it to make something cool.
-
-# Installation
-
-1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in Epic in the search form and press the 'Enter' key on your keyboard.
-3. Click on the 'Activate' button to use your new theme right away.
-
 
 # Page structure
 
@@ -103,7 +83,7 @@ Verify that the homepage was updated and looks correct.
 
 # Copyright
 
-Copyright (c) 2016 Epic Church
+Copyright (c) 2017 Epic Church
 
 MIT License
 
