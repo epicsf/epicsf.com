@@ -132,7 +132,7 @@ $(function() {
     }
     var date = new Date();
     date.setTime(+ date + (30 * 86400000));
-    document.cookie = 'seensplash=1;expires=' + date.toGMTString() + 'path=/';
+    document.cookie = 'seensplash=1;expires=' + date.toGMTString() + ';path=/';
     $('.splash').fadeOut(function () {
       $(this).remove();
     });
