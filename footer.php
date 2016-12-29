@@ -127,7 +127,7 @@ $('.video-placeholder').click(function(){
 });
 $(function() {
   $(document).delegate('.splash a', 'click', function(e) {
-    if (e.target.href.indexOf('#') === e.target.href.length - 1) {
+    if (e.currentTarget.href.indexOf('#') === e.currentTarget.href.length - 1) {
       e.preventDefault();
     }
     var date = new Date();
