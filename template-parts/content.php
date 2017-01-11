@@ -43,7 +43,8 @@
   </div>
   <div class="col-md-6 col-md-offset-1 col-xs-12">
    <div class="time">
-    <span class="service-time">9:30<span class="meridiem">AM</span></span> <span class="service-time">11:00<span class="meridiem">AM</span></span>
+    <span class="service-time">9:00<span class="meridiem">AM</span></span> <span class="service-time">10:30<span class="meridiem">AM</span></span>
+    <br><span class="service-time">12:00<span class="meridiem">PM</span></span>
    </div>
   </div>
 </div>
