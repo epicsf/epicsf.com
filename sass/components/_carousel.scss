@@ -16,6 +16,7 @@
 
 .carousel-controls {
   border-bottom: 2px solid #f2f3f4;
+  padding-bottom: 20px;
 
   // Override bootstrap defaults.
   .carousel-control {
@@ -26,7 +27,7 @@
     text-shadow: none;
 
     &.right {
-      margin-left: 6px;
+      margin-left: 50px;
       color: $link-color;
     }
 

@@ -47,7 +47,7 @@ get_header(); ?>
             </div>
           </div> <!-- .home-featured -->
           <div class="row hidden-xs-down">
-            <div class="col-md-11 col-md-offset-1 col-xs-12">
+            <div class="col-md-10 col-md-offset-1 col-xs-12">
               <div class="carousel slide" id="carousel" data-ride="carousel">
                 <div class="carousel-inner">
                 <?php
@@ -78,11 +78,11 @@ get_header(); ?>
             <div class="col-md-10 col-md-offset-1 col-xs-12">
               <div class="carousel-controls text-md-right text-xs-right">
                 <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
+                  <i class="fa fa-angle-left fa-lg"></i>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
+                  <i class="fa fa-angle-right fa-lg"></i>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
@@ -114,11 +114,11 @@ get_header(); ?>
             <div class="col-md-10 col-md-offset-1 col-xs-12">
               <div class="carousel-controls text-md-right text-xs-right">
                 <a class="left carousel-control" href="#carousel-mobile" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
+                  <i class="fa fa-angle-left fa-lg"></i>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#carousel-mobile" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
+                  <i class="fa fa-angle-right fa-lg"></i>
                   <span class="sr-only">Next</span>
                 </a>
               </div>

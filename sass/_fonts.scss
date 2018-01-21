@@ -81,8 +81,8 @@ h2 {
 
 h3 {
   @include lato(600);
-  font-size: 20px;
-  letter-spacing: 100;
+  font-size: 22px;
+  letter-spacing: 3px;
   padding-bottom: 30px;
   text-transform: uppercase;
 
@@ -110,7 +110,8 @@ h4 {
   text-transform: uppercase;
 
   .meridiem {
-    font-size: 32px;
+    font-size: 26px;
+    margin-left: 6px;
   }
 
   @media (max-width: 70em) {
@@ -189,7 +190,7 @@ h4 {
 
 .body2 {
   @include lato;
-  line-height: 26px;
+  line-height: 24px;
   font-size: 15px;
 }
 

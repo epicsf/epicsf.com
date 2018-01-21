@@ -11,37 +11,37 @@
     text-align: center;
   }
 
-  .video-placeholder {
-    cursor: pointer;
+  // .video-placeholder {
+  //   cursor: pointer;
 
-    &:before {
-      content: "";
-      background: url(/wp-content/uploads/2017/10/about01.jpg) no-repeat;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      z-index: 1000000;
-    }
+  //   &:before {
+  //     content: "";
+  //     background: url(/wordpress/wp-content/uploads/2017/10/about01.jpg) no-repeat;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     background-size: cover;
+  //     z-index: 1000000;
+  //   }
 
-    &:after {
-      content: "\f04b";
-      font: normal normal normal 14px/1 FontAwesome;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-size: 50px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      z-index: 1000001;
-      color: white;
-    }
+  //   &:after {
+  //     content: "\f04b";
+  //     font: normal normal normal 14px/1 FontAwesome;
+  //     text-rendering: auto;
+  //     -webkit-font-smoothing: antialiased;
+  //     -moz-osx-font-smoothing: grayscale;
+  //     font-size: 50px;
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translateX(-50%) translateY(-50%);
+  //     z-index: 1000001;
+  //     color: white;
+  //   }
 
-  }
+  // }
 
   h1 {
     text-transform: none;

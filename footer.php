@@ -119,12 +119,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script>
 $('.carousel').carousel({interval: 10000});
-$('.video-placeholder').click(function(){
-  $(this).removeClass('video-placeholder');
-  var iframe = $(this).find('iframe')[0];
-  var player = new Vimeo.Player(iframe);
-  player.play();
-});
 $('#prayerModal').on('show.bs.modal', function(e) {
   var button = $(e.relatedTarget);
   var post = button.parents('.forty-day');

@@ -4872,8 +4872,8 @@ h2 {
 h3 {
   font-family: Lato, sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 100;
+  font-size: 22px;
+  letter-spacing: 3px;
   padding-bottom: 30px;
   text-transform: uppercase; }
   h3:after {
@@ -4898,7 +4898,8 @@ h4 {
   letter-spacing: 50;
   text-transform: uppercase; }
   .time .meridiem {
-    font-size: 32px; }
+    font-size: 26px;
+    margin-left: 6px; }
   @media (max-width: 70em) {
     .time {
       font-size: 30px; }
@@ -4961,7 +4962,7 @@ h4 {
 .body2 {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 24px;
   font-size: 15px; }
 
 .body3 {
@@ -5327,7 +5328,8 @@ iframe {
       margin-top: 20px; } }
 
 .carousel-controls {
-  border-bottom: 2px solid #f2f3f4; }
+  border-bottom: 2px solid #f2f3f4;
+  padding-bottom: 20px; }
   .carousel-controls .carousel-control {
     font-size: 26px;
     background: none;
@@ -5335,7 +5337,7 @@ iframe {
     color: #fdb397;
     text-shadow: none; }
     .carousel-controls .carousel-control.right {
-      margin-left: 6px;
+      margin-left: 50px;
       color: #fc4c00; }
     @media (max-width: 34em) {
       .carousel-controls .carousel-control {
@@ -5420,31 +5422,6 @@ body,
   text-transform: uppercase; }
 .about .center-block {
   text-align: center; }
-.about .video-placeholder {
-  cursor: pointer; }
-  .about .video-placeholder:before {
-    content: "";
-    background: url(/wp-content/uploads/2017/10/about01.jpg) no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    z-index: 1000000; }
-  .about .video-placeholder:after {
-    content: "\f04b";
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 1000001;
-    color: white; }
 .about h1 {
   text-transform: none;
   color: #74d8a9;
@@ -5696,11 +5673,15 @@ body,
       margin-top: 50px; } }
 
 .home-header {
-  background: url(/wp-content/uploads/2016/07/home01.jpg) no-repeat;
+  background: url(/wordpress/wp-content/uploads/2018/01/home-img-01@3x.jpg) no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 400px;
   position: relative;
   top: -100px; }
+  @media (max-width: 48em) {
+    .home-header {
+      height: 200px; } }
   @media (max-width: 34em) {
     .home-header {
       display: none; } }
