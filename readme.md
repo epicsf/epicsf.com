@@ -83,7 +83,7 @@ Verify that the homepage was updated and looks correct.
 
 # Copyright
 
-Copyright (c) 2017 Epic Church
+Copyright (c) 2018 Epic Church
 
 MIT License
 
