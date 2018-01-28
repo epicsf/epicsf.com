@@ -114,14 +114,32 @@ if (!function_exists('epic_get_events')) {
 }
 
 if (!function_exists('epic_get_media')) {
-  function epic_get_media() {
+  function epic_get_media($sub_category = 'media') {
     return get_posts(array(
-      'category_name'  => 'media',
+      'category_name'  => $sub_category,
       'post_status'    => 'publish',
       'orderby'        => 'date',
       'order'          => 'DESC',
       'posts_per_page' => 500, // :D
     ));
+  }
+}
+
+if (!function_exists('epic_get_story_media')) {
+  function epic_get_story_media() {
+    return epic_get_media('stories');
+  }
+}
+
+if (!function_exists('epic_get_baptism_media')) {
+  function epic_get_baptism_media() {
+    return epic_get_media('baptisms');
+  }
+}
+
+if (!function_exists('epic_get_sermon_series_media')) {
+  function epic_get_sermon_series_media() {
+    return epic_get_media('sermon-series');
   }
 }
 

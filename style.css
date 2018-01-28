@@ -5786,3 +5786,8 @@ body,
   .media-detail .sermon {
     border-bottom: 1px solid #f4f3f3;
     padding-top: 30px; }
+
+.stories .entry-header {
+  display: none; }
+.stories h2 {
+  font-size: 50px; }

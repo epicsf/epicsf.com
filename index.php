@@ -200,6 +200,42 @@ get_header(); ?>
         </div>
         </div>
         <?php
+        } else if ( $page === 'stories' ) {
+          $posts = epic_get_story_media();
+        ?>
+        <div class="container-fluid">
+        <div class="row story-snippets">
+          <div class="col-md-offset-1 col-md-10">
+        <?php
+          foreach ( array_chunk( $posts, 3) as $row ) { ?>
+            <div class="row">
+            <?php foreach ($row as $post) {
+            include( locate_template('template-parts/stories/story-snippet.php') );
+            } ?>
+            </div>
+        <?php } ?>
+          </div>
+        </div>
+        </div>
+        <?php
+        } else if ( $page === 'baptisms' ) {
+          $posts = epic_get_baptism_media();
+        ?>
+        <div class="container-fluid">
+        <div class="row baptism-snippets">
+          <div class="col-md-offset-1 col-md-10">
+        <?php
+          foreach ( array_chunk( $posts, 3) as $row ) { ?>
+            <div class="row">
+            <?php foreach ($row as $post) {
+            include( locate_template('template-parts/stories/story-snippet.php') );
+            } ?>
+            </div>
+        <?php } ?>
+          </div>
+        </div>
+        </div>
+        <?php
         }
       }
     ?>
