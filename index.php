@@ -167,12 +167,14 @@ get_header(); ?>
         <div class="container-fluid">
         <div class="row event-snippets">
           <div class="col-md-offset-1 col-md-10">
-            <div class="row">
         <?php
-          foreach ( array_slice($posts, 1) as $post ) {
+          foreach ( array_chunk( array_slice($posts, 1), 2) as $row ) { ?>
+            <div class="row">
+            <?php foreach($row as $post) {
             include( locate_template('template-parts/events/event-snippet.php') );
-          } ?>
+            } ?>
             </div>
+          <?php } ?>
           </div>
         </div>
         </div>
