@@ -5787,7 +5787,7 @@ body,
     border-bottom: 1px solid #f4f3f3;
     padding-top: 30px; }
 
-.stories .entry-header {
+.baptisms .entry-header, .stories .entry-header {
   display: none; }
-.stories h2 {
+.baptisms h2, .stories h2 {
   font-size: 50px; }
