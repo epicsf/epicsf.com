@@ -218,7 +218,7 @@ function epic_scripts() {
     get_stylesheet_uri(),
     null,
     // Increment this to match the theme version to bust the cache.
-    '1.0.6'
+    '1.0.7'
   );
 
 }
