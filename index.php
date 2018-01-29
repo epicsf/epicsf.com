@@ -227,11 +227,11 @@ get_header(); ?>
         <div class="row baptism-snippets">
           <div class="col-md-offset-1 col-md-10">
         <?php
-          foreach ( array_chunk( $posts, 3) as $row ) { ?>
+          foreach ( $posts as $post ) { ?>
             <div class="row">
-            <?php foreach ($row as $post) {
-            include( locate_template('template-parts/stories/story-snippet.php') );
-            } ?>
+              <div class="col-md-12">
+            <?php include( locate_template('template-parts/baptisms/baptism-snippet.php') ); ?>
+              </div>
             </div>
         <?php } ?>
           </div>
