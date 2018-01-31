@@ -207,13 +207,27 @@ get_header(); ?>
         ?>
         <div class="container-fluid">
         <div class="row story-snippets">
+          <div class="col-md-offset-1 col-md-10 col-xs-12">
+            <div class="row">
+              <div class="col-md-offset-2 col-md-8">
+              <?php
+                if (count($posts) > 0) {
+                  $post = $posts[0];
+                  include( locate_template('template-parts/stories/story-snippet.php') );
+              } ?>
+              <div class="spacer-40"></div>
+              </div>
+            </div>
+          </div>
           <div class="col-md-offset-1 col-md-10">
         <?php
-          foreach ( array_chunk( $posts, 3) as $row ) { ?>
+          foreach ( array_chunk( array_slice( $posts, 1), 3) as $row ) { ?>
             <div class="row">
-            <?php foreach ($row as $post) {
-            include( locate_template('template-parts/stories/story-snippet.php') );
-            } ?>
+              <?php foreach ($row as $post) { ?>
+              <div class="col-md-4 media-snippet col-xs-12">
+                <?php include( locate_template('template-parts/stories/story-snippet.php') ); ?>
+              </div>
+              <?php } ?>
             </div>
         <?php } ?>
           </div>
@@ -225,13 +239,27 @@ get_header(); ?>
         ?>
         <div class="container-fluid">
         <div class="row baptism-snippets">
+          <div class="col-md-offset-1 col-md-10 col-xs-12">
+            <div class="row">
+              <div class="col-md-offset-2 col-md-8">
+              <?php
+                if (count($posts) > 0) {
+                  $post = $posts[0];
+                  include( locate_template('template-parts/baptisms/baptism-snippet.php') );
+              } ?>
+              <div class="spacer-40"></div>
+              </div>
+            </div>
+          </div>
           <div class="col-md-offset-1 col-md-10">
         <?php
-          foreach ( $posts as $post ) { ?>
+          foreach ( array_chunk( array_slice( $posts, 1), 3) as $row ) { ?>
             <div class="row">
-              <div class="col-md-12">
-            <?php include( locate_template('template-parts/baptisms/baptism-snippet.php') ); ?>
+              <?php foreach ($row as $post) { ?>
+              <div class="col-md-4 media-snippet col-xs-12">
+                <?php include( locate_template('template-parts/baptisms/baptism-snippet.php') ); ?>
               </div>
+              <?php } ?>
             </div>
         <?php } ?>
           </div>

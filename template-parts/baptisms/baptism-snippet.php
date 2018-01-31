@@ -1,4 +1,4 @@
-<div class="col-md-12 media-snippet col-xs-12">
+<div>
   <div class="embed-responsive embed-responsive-16by9">
     <?php
       $post = get_post();
@@ -8,5 +8,5 @@
   <div class="spacer-20"></div>
   <div class="title-3"><?php the_title() ?></div>
   <div class="title-2"><?php the_subtitle() ?></div>
-  <div class="spacer-60"></div>
+  <div class="spacer-20"></div>
 </div>

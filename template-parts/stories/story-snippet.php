@@ -1,4 +1,4 @@
-<div class="col-md-4 media-snippet col-xs-12">
+<div>
   <div class="embed-responsive embed-responsive-16by9">
     <?php
       $post = get_post();
