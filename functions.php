@@ -125,6 +125,12 @@ if (!function_exists('epic_get_media')) {
   }
 }
 
+if (!function_exists('epic_get_40_days_media')) {
+  function epic_get_40_days_media() {
+    return epic_get_media('40-days-of-prayer');
+  }
+}
+
 if (!function_exists('epic_get_story_media')) {
   function epic_get_story_media() {
     return epic_get_media('stories');
