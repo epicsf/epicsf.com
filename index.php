@@ -245,7 +245,7 @@ get_header(); ?>
               <?php
                 if (count($posts) > 0) {
                   $post = $posts[0];
-                  include( locate_template('template-parts/40-days/40-day-snippet.php') );
+                  include( locate_template('template-parts/40-days/featured-40-day-snippet.php') );
               } ?>
               <div class="spacer-40"></div>
               </div>
