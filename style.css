@@ -5328,6 +5328,19 @@ iframe {
         display: inline-block;
         padding: 10px; } }
 
+.modal .modal-header {
+  border: 0; }
+.modal .modal-title {
+  float: left; }
+.modal .modal-content {
+  padding: 2rem 0; }
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+    max-width: 1200px; }
+    .modal-xl .modal-content {
+      padding: 2rem 2rem; } }
 html,
 body,
 #page {
@@ -5794,3 +5807,6 @@ body,
 
 .post-706 .entry-header {
   display: none; }
+
+.forty-day-entry-content {
+  white-space: pre-wrap; }

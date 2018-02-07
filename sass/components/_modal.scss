@@ -1,0 +1,24 @@
+.modal {
+  .modal-header {
+    border: 0;
+  }
+
+  .modal-title {
+    float: left;
+  }
+
+  .modal-content {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+    max-width:1200px;
+
+    .modal-content {
+      padding: 2rem 2rem;
+    }
+  }
+}

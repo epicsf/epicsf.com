@@ -265,6 +265,7 @@ get_header(); ?>
           </div>
         </div>
         </div>
+        <?php include( locate_template('template-parts/40-days/modal.php') ); ?>
         <?php
         } else if ( $page === 'baptisms' ) {
           $posts = epic_get_baptism_media();

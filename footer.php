@@ -125,6 +125,15 @@ $('.video-placeholder').click(function(){
   var player = new Vimeo.Player(iframe);
   player.play();
 });
+$('#prayerModal').on('show.bs.modal', function(e) {
+  var button = $(e.relatedTarget);
+  var post = button.parents('.forty-day');
+  var title = post.find('.title-2');
+  var body = post.find('.forty-day-content');
+  var modal = $(this);
+  modal.find('#prayerModalLabel').html(title.text());
+  modal.find('.modal-body').html(body.html());
+});
 </script>
 </body>
 </html>
