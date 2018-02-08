@@ -5330,10 +5330,20 @@ iframe {
 
 .modal .modal-header {
   border: 0; }
+  .modal .modal-header:after {
+    content: "";
+    background: #61d6a1;
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 26px;
+    width: 100px; }
 .modal .modal-title {
   float: left; }
 .modal .modal-content {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  border: 0;
+  border-radius: 0; }
 
 @media (min-width: 768px) {
   .modal-xl {
@@ -5810,3 +5820,15 @@ body,
 
 .forty-day-entry-content {
   white-space: pre-wrap; }
+  .forty-day-entry-content em:first-child {
+    font-size: 26px;
+    display: inline-block;
+    line-height: 36px;
+    margin-bottom: 14px; }
+
+.main-event.forty-day {
+  margin-bottom: 60px; }
+
+.forty-day-entry-content.body2 {
+  font-size: 17px;
+  line-height: 30px; }

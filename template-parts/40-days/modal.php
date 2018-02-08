@@ -8,6 +8,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+      <div class="spacer-20"></div>
       <div class="modal-body">
       </div>
     </div>

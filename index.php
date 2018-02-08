@@ -237,20 +237,13 @@ get_header(); ?>
         } else if ( $page === '40 days of prayer' ) {
           $posts = epic_get_40_days_media();
         ?>
+          <?php
+            if (count($posts) > 0) {
+              $post = $posts[0];
+              include( locate_template('template-parts/40-days/featured-40-day-snippet.php') );
+          } ?>
         <div class="container-fluid">
         <div class="row story-snippets">
-          <div class="col-md-offset-1 col-md-10 col-xs-12">
-            <div class="row">
-              <div class="col-md-offset-2 col-md-8">
-              <?php
-                if (count($posts) > 0) {
-                  $post = $posts[0];
-                  include( locate_template('template-parts/40-days/featured-40-day-snippet.php') );
-              } ?>
-              <div class="spacer-40"></div>
-              </div>
-            </div>
-          </div>
           <div class="col-md-offset-1 col-md-10">
         <?php
           foreach ( array_chunk( array_slice( $posts, 1), 3) as $row ) { ?>

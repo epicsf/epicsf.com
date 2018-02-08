@@ -6,4 +6,20 @@
 }
 .forty-day-entry-content {
   white-space: pre-wrap;
+  em:first-child {
+    font-size: 26px;
+    display: inline-block;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+}
+
+.main-event.forty-day {
+  margin-bottom: 60px;
+}
+
+.forty-day-entry-content.body2 {
+  // boost font
+  font-size: 17px;
+  line-height: 30px;
 }
