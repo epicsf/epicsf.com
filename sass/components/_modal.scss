@@ -2,16 +2,6 @@
 .modal {
   .modal-header {
     border: 0;
-
-    &:after {
-      content: "";
-      background: #61d6a1;
-      display: block;
-      height: 2px;
-      position: relative;
-      top: 26px;
-      width: 100px;
-    }
   }
 
   .modal-title {
