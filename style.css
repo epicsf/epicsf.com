@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.8
+Version: 1.0.11
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -5807,19 +5807,40 @@ body,
 .baptisms h2, .stories h2 {
   font-size: 50px; }
 
+.post-771 .entry-content {
+  height: 500px;
+  background: no-repeat url(/wp-content/uploads/2018/02/40-Days-of-Prayer_Banner.png) white center center;
+  background-size: cover;
+  margin-top: -190px; }
+  @media (min-width: 100em) {
+    .post-771 .entry-content {
+      height: 800px; } }
+  @media (max-width: 70em) {
+    .post-771 .entry-content {
+      background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_medium.png) white center center;
+      background-size: cover;
+      height: 400px;
+      margin-bottom: 100px; } }
+  @media (max-width: 34em) {
+    .post-771 .entry-content {
+      background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_small.png) white center center;
+      height: 300px;
+      margin-top: -100px;
+      margin-bottom: 0; } }
 .post-771 .entry-header {
   display: none; }
 
 .forty-day-entry-content {
   white-space: pre-wrap; }
   .forty-day-entry-content em:first-child {
-    font-size: 26px;
+    font-size: 23px;
     display: inline-block;
     line-height: 36px;
     margin-bottom: 14px; }
 
 .main-event.forty-day {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  background: none; }
   .main-event.forty-day .title-2 {
     font-size: 22px; }
 
