@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.13
+Version: 1.0.14
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -5823,10 +5823,10 @@ body,
       margin-bottom: 100px; } }
   @media (max-width: 34em) {
     .post-771 .entry-content {
-      background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_small_2.png) white center center;
+      background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_small_2.png) white -100px center;
       background-size: cover;
-      height: 300px;
-      margin-top: -100px;
+      height: 265px;
+      margin-top: -74px;
       margin-bottom: 0; } }
 .post-771 .entry-header {
   display: none; }
