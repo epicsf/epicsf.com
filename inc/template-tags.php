@@ -132,6 +132,37 @@ function epic_post_thumbnail() {
 }
 endif;
 
+if ( ! function_exists( 'epic_40_day_prayer_post_thumbnail' ) ) :
+/**
+ * Displays an optional post thumbnail.
+ *
+ * Wraps the post thumbnail in an anchor element on index views, or a div
+ * element when on single views.
+ *
+ * Create your own epic_post_thumbnail() function to override in a child theme.
+ *
+ * @since EpicSF 1.0
+ */
+function epic_40_day_prayer_post_thumbnail($link = true) {
+  if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+    return;
+  }
+
+  if ( !$link ) {
+?>
+    <?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => the_title_attribute( 'echo=0' ), 'class' => 'img-fluid' ) );
+return;
+}
+    ?>
+
+  <a class="forty-day-post-thumbnail" href="javascript:;" role="button" data-toggle="modal" data-target="#prayerModal">
+    <span class="sr-only">Click to open devotional</span>
+    <?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => the_title_attribute( 'echo=0' ), 'class' => 'img-fluid' ) ); ?>
+  </a>
+<?php
+}
+endif;
+
 if ( ! function_exists( 'epic_excerpt' ) ) :
   /**
    * Displays the optional excerpt.

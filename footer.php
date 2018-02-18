@@ -115,7 +115,7 @@
 
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
+<script async src="https://player.vimeo.com/api/player.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script>
 $('.carousel').carousel({interval: 10000});
@@ -124,6 +124,15 @@ $('.video-placeholder').click(function(){
   var iframe = $(this).find('iframe')[0];
   var player = new Vimeo.Player(iframe);
   player.play();
+});
+$('#prayerModal').on('show.bs.modal', function(e) {
+  var button = $(e.relatedTarget);
+  var post = button.parents('.forty-day');
+  var title = post.find('.title-2');
+  var body = post.find('.forty-day-content');
+  var modal = $(this);
+  modal.find('#prayerModalLabel').html(title.text());
+  modal.find('.modal-body').html(body.html());
 });
 </script>
 </body>

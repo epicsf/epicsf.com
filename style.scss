@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.6
+Version: 1.0.14
 */
 
 @import 'sass/components/bootstrap';
@@ -36,6 +36,7 @@ p {
 @import 'sass/components/nav';
 @import 'sass/components/footer';
 @import 'sass/components/carousel';
+@import 'sass/components/modal';
 @import 'sass/pages/pages';
 @import 'sass/pages/groups';
 @import 'sass/pages/about';
@@ -48,3 +49,5 @@ p {
 @import 'sass/pages/home';
 @import 'sass/pages/events';
 @import 'sass/pages/media';
+@import 'sass/pages/stories';
+@import 'sass/pages/40days';
