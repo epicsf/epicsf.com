@@ -116,6 +116,7 @@
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script async src="https://player.vimeo.com/api/player.js"></script>
+<script>window.Tether = {};</script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script>
 $('.carousel').carousel({interval: 10000});
