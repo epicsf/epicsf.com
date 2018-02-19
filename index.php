@@ -30,7 +30,7 @@ get_header(); ?>
                 if ( $featured ) { ?>
             <div class="col-md-10 col-md-offset-2 col-xs-12">
               <h1 class="variation"><?php echo get_the_title($featured); ?></h1>
-              <div class="body2"><?php get_the_subtitle($featured) ?></div>
+              <div class="body3"><?php get_the_subtitle($featured) ?></div>
               <div class="spacer-30"></div>
             </div>
             <div class="col-md-5 col-md-offset-2 col-xs-12">
@@ -48,6 +48,8 @@ get_header(); ?>
           </div> <!-- .home-featured -->
           <div class="row hidden-xs-down">
             <div class="col-md-10 col-md-offset-1 col-xs-12">
+              <div class="spacer-40"></div>
+              <div class="body3">Upcoming Events</div>
               <div class="carousel slide" id="carousel" data-ride="carousel">
                 <div class="carousel-inner">
                 <?php
