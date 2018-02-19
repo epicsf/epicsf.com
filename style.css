@@ -4898,12 +4898,13 @@ h4 {
 
 .time {
   font-family: Lato, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
-  letter-spacing: 50;
+  letter-spacing: .5px;
   text-transform: uppercase; }
   .time .meridiem {
     font-size: 26px;
+    letter-spacing: .3px;
     margin-left: 6px; }
   @media (max-width: 70em) {
     .time {
@@ -4960,7 +4961,8 @@ h4 {
   font-family: Cardo, serif;
   font-weight: 100;
   font-style: italic;
-  font-size: 22px; }
+  font-size: 22px;
+  line-height: 30px; }
 
 .body2 {
   font-family: Lato, sans-serif;
@@ -5040,9 +5042,9 @@ ul.unstyled {
 
 .epic-info-hero {
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: #cccccc url(/wp-content/uploads/2016/07/home02.jpg) no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #cccccc url(/wordpress/wp-content/uploads/2016/07/home02.jpg) no-repeat;
   background-size: cover; }
   .epic-info-hero .time {
     margin-top: 80px; }
@@ -5297,12 +5299,12 @@ iframe {
   font-family: Lato, sans-serif;
   font-weight: 400;
   color: #f2f3f4;
-  font-weight: 600;
   text-transform: uppercase; }
 .site-footer a {
   color: #f2f3f4; }
 .site-footer li a {
   color: #e8e9ea;
+  font-weight: 300;
   text-transform: none; }
 .site-footer .navbar {
   border-radius: 0; }

@@ -12,7 +12,6 @@
     @include lato;
 
     color: $footer-color;
-    font-weight: 600;
     text-transform: uppercase;
   }
 
@@ -22,6 +21,7 @@
 
   li a {
     color: #e8e9ea;
+    font-weight: 300;
     text-transform: none;
   }
 

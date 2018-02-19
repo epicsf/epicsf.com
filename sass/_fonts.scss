@@ -115,13 +115,14 @@ h4 {
 }
 
 .time {
-  @include lato;
+  @include lato(700);
   font-size: 40px;
-  letter-spacing: 50;
+  letter-spacing: .5px;
   text-transform: uppercase;
 
   .meridiem {
     font-size: 26px;
+    letter-spacing: .3px;
     margin-left: 6px;
   }
 
@@ -193,6 +194,7 @@ h4 {
   @include cardo(100);
   @include italic;
   font-size: 22px;
+  line-height: 30px;
 }
 
 .body2 {
