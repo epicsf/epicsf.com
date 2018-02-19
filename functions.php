@@ -68,18 +68,14 @@ if (!function_exists('epic_fonts_url')) {
   function epic_fonts_url() {
     $fonts_url = '';
     $fonts = array(
-      'Cardo',
-      'Lato',
-    );
-    $weights = array(
-      400,
-      700,
+      'Cardo:400,400i',
+      'Lato:400,700',
     );
 
     $fonts_url = add_query_arg(array(
       'family' => urlencode(
         implode('|', $fonts)
-      ) . ':' . implode(',', $weights),
+      ),
     ), 'https://fonts.googleapis.com/css');
 
     return $fonts_url;
