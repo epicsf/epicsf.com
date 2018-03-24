@@ -98,7 +98,7 @@
           <div class="row">
             <div class="col-md-12 service-times">
               <p>
-                Join us at <strong>9:00am</strong>, <strong>10:30am</strong> or <strong>12:00pm</strong>
+                Join us at:<br> <strong>9:00am</strong>, <strong>10:30am</strong> or <strong>12:00pm</strong>
                 <br>
                 <em>250 Stevenson Street, SF</em>
               </p>
@@ -119,7 +119,7 @@
 <script>window.Tether = {};</script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script>
-$('.carousel').carousel({interval: 10000});
+$('.carousel').carousel(/*{interval: 10000}*/);
 $('#prayerModal').on('show.bs.modal', function(e) {
   var button = $(e.relatedTarget);
   var post = button.parents('.forty-day');

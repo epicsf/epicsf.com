@@ -12,6 +12,7 @@
     @include lato;
 
     color: $footer-color;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
   }
 
@@ -44,7 +45,6 @@
   }
 
   .aside-content {
-    border-left: 1px solid #5f6264;
     padding-left: 30px;
     // So that the border aligns with the
     // bottom of the text.

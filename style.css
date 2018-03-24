@@ -5052,10 +5052,6 @@ ul.unstyled {
       .epic-info-hero .time {
         margin-top: 0; } }
 
-@media (max-width: 34em) {
-  .col-xs-12 {
-    padding: 0 32px; } }
-
 .spacer-10 {
   display: block;
   height: 10px; }
@@ -5299,6 +5295,7 @@ iframe {
   font-family: Lato, sans-serif;
   font-weight: 400;
   color: #f2f3f4;
+  letter-spacing: 2.5px;
   text-transform: uppercase; }
 .site-footer a {
   color: #f2f3f4; }
@@ -5316,7 +5313,6 @@ iframe {
   float: none;
   margin: 10px 0 0; }
 .site-footer .aside-content {
-  border-left: 1px solid #5f6264;
   padding-left: 30px;
   max-height: 152px; }
   .site-footer .aside-content .row {

@@ -49,7 +49,11 @@ get_header(); ?>
           <div class="row hidden-xs-down">
             <div class="col-md-10 col-md-offset-1 col-xs-12">
               <div class="spacer-40"></div>
-              <div class="body3">Upcoming Events</div>
+              <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                  <div class="body3">Upcoming Events</div>
+                </div>
+              </div>
               <div class="carousel slide" id="carousel" data-ride="carousel">
                 <div class="carousel-inner">
                 <?php
@@ -93,6 +97,12 @@ get_header(); ?>
           <?php endif; ?>
           <div class="row hidden-sm-up">
             <div class="col-xs-12">
+              <div class="spacer-20"></div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="body3">Upcoming Events</div>
+                </div>
+              </div>
               <div class="carousel slide" id="carousel-mobile" data-ride="carousel">
                 <div class="carousel-inner">
                 <?php
