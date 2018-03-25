@@ -4814,6 +4814,16 @@ a:focus {
 p {
   font-weight: 400; }
 
+ul, ol {
+  padding-left: 20px; }
+  ul li, ol li {
+    padding-left: 10px;
+    padding-bottom: 10px; }
+
+blockquote {
+  font-style: italic;
+  padding-left: 20px; }
+
 .italic {
   font-style: italic; }
 

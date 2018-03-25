@@ -29,6 +29,20 @@ p {
   font-weight: 400;
 }
 
+ul, ol {
+  padding-left: 20px;
+
+  li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 20px;
+}
+
 @import 'sass/colors';
 @import 'sass/fonts';
 @import 'sass/theme';
