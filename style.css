@@ -5293,7 +5293,7 @@ iframe {
   padding-bottom: 60px; }
 .site-footer strong {
   font-family: Lato, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #f2f3f4;
   letter-spacing: 2.5px;
   text-transform: uppercase; }
@@ -5301,6 +5301,7 @@ iframe {
   color: #f2f3f4; }
 .site-footer li a {
   color: #e8e9ea;
+  font-size: 15px;
   font-weight: 300;
   text-transform: none; }
 .site-footer .navbar {
@@ -5312,26 +5313,20 @@ iframe {
 .site-footer .navbar-nav .nav-item {
   float: none;
   margin: 10px 0 0; }
-.site-footer .aside-content {
-  padding-left: 30px;
-  max-height: 152px; }
-  .site-footer .aside-content .row {
-    margin-bottom: 30px; }
-  @media (max-width: 34em) {
-    .site-footer .aside-content {
-      max-height: 200px; } }
-  .site-footer .aside-content .service-times strong {
-    text-transform: initial; }
-  .site-footer .aside-content p {
-    font-weight: 400; }
+.site-footer .aside-content .row {
+  margin-bottom: 30px; }
+  .site-footer .aside-content .row:last-child {
+    margin-bottom: 0; }
+@media (max-width: 34em) {
+  .site-footer .aside-content {
+    max-height: 200px; } }
+.site-footer .aside-content .service-times strong {
+  text-transform: initial; }
+.site-footer .aside-content p {
+  font-weight: 400; }
 
 .carousel {
   margin-top: 40px; }
-  .carousel .carousel-inner {
-    height: 234px; }
-    @media (max-width: 34em) {
-      .carousel .carousel-inner {
-        height: 180px; } }
   @media (max-width: 34em) {
     .carousel {
       margin-top: 20px; } }
@@ -5682,15 +5677,18 @@ body,
       margin-top: 50px; } }
 
 .home-header {
-  background: url(/wordpress/wp-content/uploads/2018/03/homepage-banner-2-2.jpg) no-repeat;
+  background: url(/wordpress/wp-content/uploads/2018/03/homepage-banner-2-4.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 400px;
+  height: 600px;
   position: relative;
   top: -100px; }
-  @media (max-width: 48em) {
+  @media (max-width: 100em) {
     .home-header {
-      height: 200px; } }
+      height: 400px; } }
+  @media (max-width: 70em) {
+    .home-header {
+      height: 300px; } }
   @media (max-width: 34em) {
     .home-header {
       display: none; } }

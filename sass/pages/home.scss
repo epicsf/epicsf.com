@@ -9,16 +9,19 @@
 }
 
 .home-header {
-  background: url(/wordpress/wp-content/uploads/2018/03/homepage-banner-2-2.jpg) no-repeat;
-  // background-size: 1400px 400px;
+  background: url(/wordpress/wp-content/uploads/2018/03/homepage-banner-2-4.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 400px;
+  height: 600px;
   position: relative;
   top: -100px;
 
-  @media (max-width: 48em) {
-    height: 200px;
+  @media (max-width: 100em) {
+    height: 400px;
+  }
+
+  @media (max-width: 70em) {
+    height: 300px;
   }
 
   @media (max-width: 34em) {

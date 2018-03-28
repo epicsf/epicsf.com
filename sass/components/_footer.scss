@@ -9,7 +9,7 @@
   }
 
   strong {
-    @include lato;
+    @include lato(700);
 
     color: $footer-color;
     letter-spacing: 2.5px;
@@ -22,6 +22,7 @@
 
   li a {
     color: #e8e9ea;
+    font-size: 15px;
     font-weight: 300;
     text-transform: none;
   }
@@ -30,8 +31,6 @@
     border-radius: 0;
 
     @media (max-width: 543px) {
-      // margin-bottom: 20px;
-
       a {
         display: block;
         margin-bottom: 10px;
@@ -45,21 +44,16 @@
   }
 
   .aside-content {
-    padding-left: 30px;
-    // So that the border aligns with the
-    // bottom of the text.
-    max-height: 152px;
-
     .row {
       margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     @media (max-width: 34em) {
       max-height: 200px;
-    }
-
-    .social-links {
-      // font-size: 2px;
     }
 
     .service-times {
@@ -71,10 +65,5 @@
     p {
       font-weight: 400;
     }
-
-    // @media (max-width: 543px) {
-      // padding-top: 20px;
-      // border-left: 0;
-    // }
   }
 }

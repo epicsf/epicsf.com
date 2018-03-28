@@ -64,7 +64,7 @@ get_header(); ?>
                   <div class="carousel-item <?php echo $i === 0 ? 'active' : 'next'; ?>">
                     <div class="row">
                   <?php foreach($posts as $post): ?>
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                       <?php epic_post_thumbnail() ?>
                     </div>
                   <?php endforeach; ?>
