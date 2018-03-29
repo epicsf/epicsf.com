@@ -38,7 +38,7 @@ get_header(); ?>
             </div>
               <?php } ?>
             <div class="col-md-4 featured-messages col-xs-12">
-              <div class="spacer-30 hidden-sm-up"></div>
+              <div class="spacer-30 hidden-md-up"></div>
               <?php
                 $featured_messages = epic_get_featured_messages_post();
                 if ( $featured_messages ) { ?>
@@ -47,13 +47,10 @@ get_header(); ?>
             </div>
           </div> <!-- .home-featured -->
           <div class="row hidden-xs-down">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="body3">Upcoming Events</div>
+            </div>
             <div class="col-md-10 col-md-offset-1 col-xs-12">
-              <div class="spacer-40"></div>
-              <div class="row">
-                <div class="col-md-11 col-md-offset-1">
-                  <div class="body3">Upcoming Events</div>
-                </div>
-              </div>
               <div class="carousel slide" id="carousel" data-ride="carousel">
                 <div class="carousel-inner">
                 <?php
