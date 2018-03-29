@@ -5682,7 +5682,8 @@ body,
   background-position: center top;
   height: 600px;
   position: relative;
-  top: -100px; }
+  top: -100px;
+  transition: all .5s; }
   @media (max-width: 100em) {
     .home-header {
       height: 400px; } }

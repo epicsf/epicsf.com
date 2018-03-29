@@ -15,6 +15,7 @@
   height: 600px;
   position: relative;
   top: -100px;
+  transition: all .5s;
 
   @media (max-width: 100em) {
     height: 400px;
