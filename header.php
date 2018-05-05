@@ -54,6 +54,8 @@
               wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'menu_class'     => 'nav navbar-nav pull-md-right',
+                'walker'         => new WP_Bootstrap_Navwalker(),
+                'depth' => 2,
                ));
             ?>
             </div>

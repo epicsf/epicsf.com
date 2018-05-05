@@ -220,7 +220,7 @@ function epic_scripts() {
     get_stylesheet_uri(),
     null,
     // Increment this to match the theme version to bust the cache.
-    '1.0.17'
+    '1.0.18'
   );
 
 }
@@ -267,3 +267,6 @@ add_filter('body_class', 'epic_body_classes');
  * @since EpicSF 1.0
  */
 require get_template_directory() . '/inc/template-tags.php';
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
