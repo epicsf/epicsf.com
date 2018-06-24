@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.18
+Version: 1.0.19
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -4977,6 +4977,10 @@ h4 {
   font-size: 18px;
   line-height: 40px; }
 
+.body4 {
+  font-family: Lato, sans-serif;
+  font-weight: 300; }
+
 dt {
   text-transform: uppercase; }
 
@@ -5238,7 +5242,6 @@ iframe {
   z-index: 1000; }
 
 #site-navigation {
-  height: 90px;
   padding-left: 80px;
   padding-right: 80px; }
   @media (max-width: 1276px) {
@@ -5266,22 +5269,65 @@ iframe {
         margin-top: 10px;
         width: 50px; } }
   #site-navigation .nav.navbar-nav {
-    margin-top: 25px;
+    margin-top: 18px;
     padding: 0 30px 0 0; }
     #site-navigation .nav.navbar-nav li {
       margin-right: 50px; }
       #site-navigation .nav.navbar-nav li:last-child {
         margin-right: 0; }
-      @media (max-width: 47em) {
+      @media (max-width: 48em) {
         #site-navigation .nav.navbar-nav li {
           margin-right: 0;
           display: block;
           float: none;
           margin-left: 0;
           margin-bottom: 10px; } }
+  #site-navigation .dropdown-toggle::after {
+    margin-left: .6rem;
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    border: 0;
+    vertical-align: initial; }
+  #site-navigation .dropdown-menu {
+    border-radius: 0;
+    padding: 0; }
     @media (max-width: 34em) {
-      #site-navigation .nav.navbar-nav {
-        padding-left: 20px; } }
+      #site-navigation .dropdown-menu {
+        border: 0;
+        position: static;
+        float: none; }
+        #site-navigation .dropdown-menu::before, #site-navigation .dropdown-menu::after {
+          content: none !important; } }
+    #site-navigation .dropdown-menu .nav-item {
+      margin-left: 0;
+      float: none;
+      display: block;
+      margin-right: 0 !important;
+      padding: 0;
+      background: white; }
+    #site-navigation .dropdown-menu .dropdown-item {
+      padding: 10px 16px; }
+    #site-navigation .dropdown-menu a {
+      display: block; }
+    #site-navigation .dropdown-menu::before {
+      position: absolute;
+      top: -7px;
+      left: 9px;
+      display: inline-block;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #CCC;
+      border-left: 7px solid transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+      content: ''; }
+    #site-navigation .dropdown-menu::after {
+      position: absolute;
+      top: -6px;
+      left: 10px;
+      display: inline-block;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid white;
+      border-left: 6px solid transparent;
+      content: ''; }
   @media (max-width: 34em) {
     #site-navigation {
       height: auto; } }
@@ -5363,6 +5409,37 @@ iframe {
     max-width: 1200px; }
     .modal-xl .modal-content {
       padding: 2rem 2rem; } }
+#churchonline_counter {
+  text-align: right;
+  overflow: auto;
+  padding: 10px 105px 0 0;
+  opacity: 0;
+  height: 40px;
+  background: #f2f3f4; }
+  @media (max-width: 1276px) {
+    #churchonline_counter {
+      padding-right: 2.5rem; } }
+  @media (max-width: 34em) {
+    #churchonline_counter {
+      padding-right: 10px; } }
+  #churchonline_counter .hours, #churchonline_counter .days, #churchonline_counter .minutes {
+    font-weight: bold; }
+  #churchonline_counter .unit {
+    margin-left: -1px; }
+  #churchonline_counter .msg {
+    vertical-align: top; }
+  #churchonline_counter .countdown {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 4px; }
+    #churchonline_counter .countdown li {
+      float: left;
+      padding: 0 5px 0 0; }
+  #churchonline_counter .live {
+    display: none;
+    font-weight: bold; }
+
 html,
 body,
 #page {
@@ -5376,7 +5453,7 @@ body,
   margin: 0 auto-280px; }
   .site-content .push {
     height: 93.33333px; }
-  @media (max-width: 34em) {
+  @media (max-width: 47em) {
     .site-content {
       margin-top: 20px; }
       .site-content .push {

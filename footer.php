@@ -130,5 +130,98 @@ $('#prayerModal').on('show.bs.modal', function(e) {
   modal.find('.modal-body').html(body.html());
 });
 </script>
+<script>
+    jQuery(function() {
+    var days, goLive, hours, intervalId, minutes, seconds;
+
+    // Your churchonline.org url
+    var churchUrl = "http://live.epicsf.com"
+
+    goLive = function() {
+      if (!intervalId) {
+        $('#churchonline_counter').fadeTo('slow', 1);
+      }
+      $("#churchonline_counter .countdown").hide();
+      $("#churchonline_counter .msg").hide();
+      $("#churchonline_counter .live").show();
+    };
+    var loadCountdown = function(data){
+      var secondsTill, date, dateString;
+      if (data.response.item.isLive) {
+        return goLive();
+      } else {
+        // Parse ISO 8601 date string
+        date = data.response.item.eventStartTime.match(/^(\d{4})-0?(\d+)-0?(\d+)[T ]0?(\d+):0?(\d+):0?(\d+)Z$/)
+        dateString = date[2] + "/" + date[3] + "/" + date[1] + " " + date[4] + ":" + date[5] + ":" + date[6] + " +0000"
+
+        function updateTime() {
+          secondsTill = ((new Date(dateString)) - (new Date())) / 1000;
+          days = Math.floor(secondsTill / 86400);
+          hours = Math.floor((secondsTill % 86400) / 3600);
+          minutes = Math.floor((secondsTill % 3600) / 60);
+          seconds = Math.floor(secondsTill % 60);
+
+          if (--seconds < 0) {
+            seconds = 59;
+            if (--minutes < 0) {
+              minutes = 59;
+              if (--hours < 0) {
+                hours = 23;
+                if (--days < 0) {
+                  days = 0;
+                }
+              }
+            }
+          }
+          if (days === 0) {
+            $("#churchonline_counter .days").parent().hide();
+          } else {
+            $("#churchonline_counter .days").html(days);
+          }
+          $("#churchonline_counter .hours").html((hours.toString().length < 2 ? "0" + hours : hours));
+          $("#churchonline_counter .minutes").html((minutes.toString().length < 2 ? "0" + minutes : minutes));
+
+          if (!intervalId) {
+            $('#churchonline_counter').fadeTo('slow', 1);
+          }
+
+          if (seconds === 0 && minutes === 0 && hours === 0 && days === 0) {
+            goLive();
+            return clearInterval(intervalId);
+          }
+        }
+        updateTime();
+        intervalId = setInterval(updateTime, 30000);
+      }
+    }
+    days = void 0;
+    hours = void 0;
+    minutes = void 0;
+    seconds = void 0;
+    intervalId = void 0;
+    eventUrl = churchUrl + "/api/v1/events/current"
+    msie = /msie/.test(navigator.userAgent.toLowerCase())
+    if (msie && window.XDomainRequest) {
+        var xdr = new XDomainRequest();
+        xdr.open("get", eventUrl);
+        xdr.onload = function() {
+          loadCountdown(jQuery.parseJSON(xdr.responseText))
+        };
+        xdr.send();
+    } else {
+      $.ajax({
+        url: eventUrl,
+        dataType: "json",
+        crossDomain: true,
+        success: function(data) {
+          loadCountdown(data);
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+          return console.log(thrownError);
+        }
+      });
+    }
+  });
+</script>
 </body>
 </html>

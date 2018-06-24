@@ -1,8 +1,6 @@
 #site-navigation {
   // Container div
 
-  height: 90px;
-
   padding-left: 80px;
   padding-right: 80px;
 
@@ -47,7 +45,7 @@
   .nav.navbar-nav {
     // Nav section w/ links
 
-    margin-top: 25px;
+    margin-top: 18px;
     padding: 0 30px 0 0;
 
     li {
@@ -57,7 +55,7 @@
         margin-right: 0;
       }
 
-      @media (max-width: 47em) {
+      @media (max-width: 48em) {
         margin-right: 0;
         display: block;
         float: none;
@@ -65,9 +63,73 @@
         margin-bottom: 10px;
       }
     }
+  }
 
+  // Dropdown arrow
+  .dropdown-toggle::after {
+    margin-left: .6rem;
+
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    border: 0;
+    vertical-align: initial;
+  }
+
+  .dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+
+    // Make the dropdowns not-absolute for mobile
     @media (max-width: 34em) {
-      padding-left: 20px;
+      border: 0;
+      position: static;
+      float: none;
+
+      &::before,
+      &::after {
+        content: none !important;
+      }
+    }
+
+    .nav-item {
+      margin-left: 0;
+      float: none;
+      display: block;
+      margin-right: 0 !important;
+      padding: 0;
+      background: white;
+    }
+
+    .dropdown-item {
+      padding: 10px 16px;
+    }
+
+    a {
+      display: block;
+    }
+
+    // Dropdown menu's top arrow
+    &::before {
+      position: absolute;
+      top: -7px;
+      left: 9px;
+      display: inline-block;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #CCC;
+      border-left: 7px solid transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.2);
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: -6px;
+      left: 10px;
+      display: inline-block;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid white;
+      border-left: 6px solid transparent;
+      content: '';
     }
   }
 

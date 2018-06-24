@@ -210,6 +210,10 @@ h4 {
   line-height: 40px;
 }
 
+.body4 {
+  @include lato(300);
+}
+
 dt {
   text-transform: uppercase;
 }

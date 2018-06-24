@@ -37,6 +37,17 @@
 
     <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
       <div id="site-header-menu" class="site-header-menu">
+
+        <div id="churchonline_counter" class="body4">
+          <div class="live"><a href="http://live.epicsf.com" class="link">Watch Live</a></div>
+          <span class="msg">Watch live in</span>
+          <ul class="countdown clearfix">
+            <li><span class="days"></span> <span class="unit">days</span></li>
+            <li><span class="hours"></span> <span class="unit">hrs</span></li>
+            <li><span class="minutes"></span> <span class="unit">mins</span></li>
+          </ul>
+        </div>
+
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <nav id="site-navigation" class="navbar navbar-full navbar-light" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
             <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
