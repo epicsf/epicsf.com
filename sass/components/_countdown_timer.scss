@@ -5,6 +5,8 @@
   opacity: 0;
   height: 40px;
   background: #f2f3f4;
+  display: block;
+  color: $body-color;
 
   @media (max-width: 1276px) {
     padding-right: 2.5rem;
@@ -40,6 +42,6 @@
 
   .live {
     display: none;
-    font-weight: bold;
+    color: $link-color;
   }
 }

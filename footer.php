@@ -135,7 +135,7 @@ $('#prayerModal').on('show.bs.modal', function(e) {
     var days, goLive, hours, intervalId, minutes, seconds;
 
     // Your churchonline.org url
-    var churchUrl = "http://live.epicsf.com"
+    var churchUrl = "https://epicsf.churchonline.org"
 
     goLive = function() {
       if (!intervalId) {
@@ -217,6 +217,7 @@ $('#prayerModal').on('show.bs.modal', function(e) {
           loadCountdown(data);
         },
         error: function(xhr, ajaxOptions, thrownError) {
+          goLive();
           return console.log(thrownError);
         }
       });

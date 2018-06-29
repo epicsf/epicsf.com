@@ -129,7 +129,22 @@ if (!function_exists('epic_get_40_days_media')) {
 
 if (!function_exists('epic_get_story_media')) {
   function epic_get_story_media() {
-    return epic_get_media('stories');
+    $posts = epic_get_media('stories');
+    $sections = array();
+    foreach ($posts as $post) {
+      $tags = get_the_tags($post->ID);
+      if (!$tags || count($tags) < 1 || !$tags[0]->name) {
+        continue;
+      }
+
+      if (!isset($sections[$tags[0]->name])) {
+        $sections[$tags[0]->name] = array();
+      }
+
+      $sections[$tags[0]->name][] = $post;
+    }
+
+    return $sections;
   }
 }
 
@@ -220,7 +235,7 @@ function epic_scripts() {
     get_stylesheet_uri(),
     null,
     // Increment this to match the theme version to bust the cache.
-    '1.0.19'
+    '1.0.21'
   );
 
 }

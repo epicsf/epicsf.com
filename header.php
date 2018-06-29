@@ -38,15 +38,15 @@
     <?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
       <div id="site-header-menu" class="site-header-menu">
 
-        <div id="churchonline_counter" class="body4">
-          <div class="live"><a href="http://live.epicsf.com" class="link">Watch Live</a></div>
+        <a id="churchonline_counter" class="body4" href="http://live.epicsf.com">
+          <span class="live link">Watch Live</span>
           <span class="msg">Watch live in</span>
           <ul class="countdown clearfix">
             <li><span class="days"></span> <span class="unit">days</span></li>
             <li><span class="hours"></span> <span class="unit">hrs</span></li>
             <li><span class="minutes"></span> <span class="unit">mins</span></li>
           </ul>
-        </div>
+        </a>
 
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <nav id="site-navigation" class="navbar navbar-full navbar-light" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
@@ -66,7 +66,7 @@
                 'theme_location' => 'primary',
                 'menu_class'     => 'nav navbar-nav pull-md-right',
                 'walker'         => new WP_Bootstrap_Navwalker(),
-                'depth' => 2,
+                'depth'          => 2,
                ));
             ?>
             </div>

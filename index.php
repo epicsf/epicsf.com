@@ -212,13 +212,19 @@ get_header(); ?>
         </div>
         <?php
         } else if ( $page === 'stories' ) {
-          $posts = epic_get_story_media();
+          $categories = epic_get_story_media();
         ?>
         <div class="container-fluid">
+        <?php foreach($categories as $categoryName => $posts) { ?>
+        <div class="spacer-130 hidden-sm-down"></div>
         <div class="row story-snippets">
           <div class="col-md-offset-1 col-md-10 col-xs-12">
             <div class="row">
-              <div class="col-md-offset-2 col-md-8">
+              <div class="col-md-3 col-md-offset-1">
+                <div class="spacer-60"></div>
+                <h2><?php echo $categoryName; ?></h2>
+              </div>
+              <div class="col-md-7">
               <?php
                 if (count($posts) > 0) {
                   $post = $posts[0];
@@ -241,6 +247,7 @@ get_header(); ?>
         <?php } ?>
           </div>
         </div>
+        <?php } /* end - stories categories */ ?>
         </div>
         <?php
         } else if ( $page === '40 days of prayer' ) {
@@ -268,38 +275,6 @@ get_header(); ?>
         </div>
         </div>
         <?php include( locate_template('template-parts/40-days/modal.php') ); ?>
-        <?php
-        } else if ( $page === 'baptisms' ) {
-          $posts = epic_get_baptism_media();
-        ?>
-        <div class="container-fluid">
-        <div class="row baptism-snippets">
-          <div class="col-md-offset-1 col-md-10 col-xs-12">
-            <div class="row">
-              <div class="col-md-offset-2 col-md-8">
-              <?php
-                if (count($posts) > 0) {
-                  $post = $posts[0];
-                  include( locate_template('template-parts/baptisms/baptism-snippet.php') );
-              } ?>
-              <div class="spacer-40"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-offset-1 col-md-10">
-        <?php
-          foreach ( array_chunk( array_slice( $posts, 1), 3) as $row ) { ?>
-            <div class="row">
-              <?php foreach ($row as $post) { ?>
-              <div class="col-md-4 media-snippet col-xs-12">
-                <?php include( locate_template('template-parts/baptisms/baptism-snippet.php') ); ?>
-              </div>
-              <?php } ?>
-            </div>
-        <?php } ?>
-          </div>
-        </div>
-        </div>
         <?php
         }
       }
