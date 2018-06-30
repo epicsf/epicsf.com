@@ -220,11 +220,12 @@ get_header(); ?>
         <div class="row story-snippets">
           <div class="col-md-offset-1 col-md-10 col-xs-12">
             <div class="row">
-              <div class="col-md-3 col-md-offset-1">
+              <div class="col-md-4 col-sm-12">
                 <div class="spacer-60"></div>
                 <h2><?php echo $categoryName; ?></h2>
+                <div class="spacer-10 hidden-md-up"></div>
               </div>
-              <div class="col-md-7">
+              <div class="col-md-8 col-sm-12">
               <?php
                 if (count($posts) > 0) {
                   $post = $posts[0];
