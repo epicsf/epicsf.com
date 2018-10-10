@@ -57,6 +57,12 @@
   top: -100px;
 }
 
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 iframe {
   z-index: 1000;
 }

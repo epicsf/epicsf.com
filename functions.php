@@ -242,6 +242,17 @@ function epic_scripts() {
 
 add_action('wp_enqueue_scripts', 'epic_scripts');
 
+function disable_author_pages() {
+  global $wp_query;
+  if ( is_author() && !is_404() ) {
+    $wp_query->set_404();
+    status_header( 404 );
+    nocache_headers();
+  }
+}
+
+add_action('template_redirect', 'disable_author_pages');
+
 /**
  * Adds custom classes to the array of body classes.
  *

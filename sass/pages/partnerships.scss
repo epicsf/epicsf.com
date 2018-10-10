@@ -1,4 +1,8 @@
 .partnerships {
+  .entry-header {
+    display: none;
+  }
+
   .square-img {
     position: relative;
     top: -220px;
@@ -13,4 +17,23 @@
       height: 350px;
     }
   }
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.card {
+  border: 0;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem 0;
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 9px;
 }
