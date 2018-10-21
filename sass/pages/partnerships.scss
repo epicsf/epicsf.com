@@ -17,23 +17,33 @@
       height: 350px;
     }
   }
+
+  @media (max-width: 34em) {
+    .col-sm-12 > .col-sm-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .card {
+    border: 0;
+    // Width of images
+    max-width: 400px;
+  }
+
+  .card-img-top {
+    border-radius: 0;
+  }
+
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem 0;
+  }
+
+  .card-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 9px;
+  }
 }
 
-.card-img-top {
-  border-radius: 0;
-}
-
-.card {
-  border: 0;
-}
-
-.card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem 0;
-}
-
-.card-subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 9px;
-}

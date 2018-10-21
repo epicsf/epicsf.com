@@ -5768,19 +5768,20 @@ body,
       position: static; } }
 .partnerships .picture-row img {
   height: 350px; }
-
-.card-img-top {
+@media (max-width: 34em) {
+  .partnerships .col-sm-12 > .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0; } }
+.partnerships .card {
+  border: 0;
+  max-width: 400px; }
+.partnerships .card-img-top {
   border-radius: 0; }
-
-.card {
-  border: 0; }
-
-.card-body {
+.partnerships .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem 0; }
-
-.card-subtitle {
+.partnerships .card-subtitle {
   font-size: 1.1rem;
   margin-bottom: 9px; }
 

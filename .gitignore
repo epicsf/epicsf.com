@@ -1,2 +1,5 @@
 sass/*.css
+.sass-cache
+style.css.map
+style.scss.map
 .DS_Store
