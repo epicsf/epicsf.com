@@ -9,6 +9,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="<?php echo implode(' ', get_post_class(basename(get_permalink()))); ?>">
+  <?php if ( !should_hide_title() ) { ?>
   <header class="entry-header container-fluid">
     <div class="row">
       <div class="col-md-10 col-md-offset-2 col-xs-12">
@@ -16,6 +17,7 @@
       </div>
     </div>
   </header><!-- .entry-header -->
+  <?php } ?>
 
   <div class="entry-content container-fluid">
     <?php the_content(); ?>

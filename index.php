@@ -277,6 +277,15 @@ get_header(); ?>
         </div>
         <?php include( locate_template('template-parts/40-days/modal.php') ); ?>
         <?php
+        } else if ( $page === 'link tree') { ?>
+          <div class="container-fluid entry-content">
+            <div class="row link-tree-snippets">
+              <div class="col-md-offset-2 col-md-8 col-xs-12">
+                <?php include( locate_template('template-parts/link-tree/link-tree.php') ); ?>
+              </div>
+            </div>
+          </div>
+        <?php
         }
       }
     ?>

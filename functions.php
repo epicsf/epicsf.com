@@ -208,6 +208,23 @@ if (!function_exists('epic_is_event')) {
   }
 }
 
+if (!function_exists('should_hide_title')) {
+  function should_hide_title() {
+    $page = strtolower( the_title(null, null, false) );
+    return in_array($page, array(
+      'about',
+      'faq',
+      'get connected',
+      'media',
+      'link tree',
+      'ministries',
+      'partnerships',
+      'stories',
+      'baptisms',
+    ));
+  }
+}
+
 /**
  * Enqueues scripts and styles.
  *
