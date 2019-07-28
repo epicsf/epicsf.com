@@ -1,0 +1,16 @@
+.home {
+  h2 {
+    color: #006B90;
+
+    &.entry-title {
+      display: none;
+    }
+  }
+  p {
+    margin-bottom: 30px;
+  }
+
+  .big {
+    font-size: 20px;
+  }
+}
