@@ -6056,9 +6056,14 @@ body,
   color: #006B90; }
   .home h2.entry-title {
     display: none; }
+.home h3 {
+  color: #006B90; }
 .home p {
+  font-size: 1.1rem;
   margin-bottom: 30px; }
 .home .big {
-  font-size: 20px; }
+  font-size: 1.3rem; }
+  .home .big.bold {
+    font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */

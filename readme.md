@@ -81,9 +81,19 @@ Put in the right date, series, and sermon title. Link to the sermon series media
 
 Verify that the homepage was updated and looks correct.
 
+# Updating the theme
+
+If changing any of the css styles, update the version in style.scss and functions.php to bust wordpress's asset cache.
+
+1. Create a zip file of this directory.
+2. on /wp-admin go to Appearance > Themes > Add New
+3. Click Upload Theme and select the zip file from step one.
+4. Activate
+
+
 # Copyright
 
-Copyright (c) 2018 Epic Church
+Copyright (c) 2019 Epic Church
 
 MIT License
 
