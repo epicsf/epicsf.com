@@ -1,6 +1,36 @@
 .home {
   $campaign-blue: #006B90;
 
+  header {
+    height: 540px;
+    background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
+    background-size: cover;
+    margin: -95px 0 100px;
+
+    // @media (min-width:100em) {
+    //   height: 800px;
+    // }
+
+    // @media (max-width:70em) {
+    //   background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_medium.png) #FFF center center;
+    //   background-size: cover;
+    //   height: 400px;
+    //   margin-bottom: 100px;
+    // }
+
+    // @media (max-width:34em) {
+    //   background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_small_2.png) #FFF -100px center;
+    //   background-size: cover;
+    //   height: 265px;
+    //   margin-top: -74px;
+    //   margin-bottom: 0;
+    // }
+
+    // .entry-header {
+    //   display: none;
+    // }
+  }
+
   h2 {
     color: $campaign-blue;
 
