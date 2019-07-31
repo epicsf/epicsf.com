@@ -6057,12 +6057,46 @@ body,
   background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
   background-size: cover;
   margin: -95px 0 100px; }
+.home .cta-box {
+  padding: 20px 0;
+  text-align: center; }
+  .home .cta-box .btn {
+    background: #006B90;
+    color: #FFF;
+    border: 0;
+    border-radius: 2px;
+    width: 150px;
+    font-weight: 100;
+    text-align: center;
+    transition: all .4s; }
+    .home .cta-box .btn:hover, .home .cta-box .btn:focus {
+      background: #00769f; }
+  .home .cta-box #give {
+    margin-right: 10px; }
+.home #cta-box-top {
+  border-bottom: 1px solid #93deb8;
+  margin-top: -100px;
+  margin-bottom: 100px; }
+.home #cta-box-bottom {
+  padding-top: 100px;
+  border-top: 1px solid #93deb8; }
 .home h2 {
-  color: #006B90; }
+  color: #006B90;
+  border-top: 3px solid #006B90;
+  padding-top: 30px; }
   .home h2.entry-title {
-    display: none; }
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
 .home h3 {
   color: #006B90; }
+.home .content-column {
+  padding-top: 30px; }
 .home p {
   font-size: 1.1rem;
   margin-bottom: 30px; }

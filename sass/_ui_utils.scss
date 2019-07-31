@@ -1,3 +1,14 @@
+@mixin sr-only() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
 @each $size in (10, 20, 30, 40, 60, 80, 100, 130, 140) {
   .spacer-#{$size} {
     display: block;
