@@ -6052,6 +6052,8 @@ body,
   font-size: 17px;
   line-height: 30px; }
 
+.home .entry-content {
+  position: relative; }
 .home header {
   height: 540px;
   background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
@@ -6059,9 +6061,10 @@ body,
   margin: -95px 0 100px; }
 .home .cta-box {
   padding: 20px 0;
-  text-align: center; }
+  text-align: center;
+  background: #006B90; }
   .home .cta-box .btn {
-    background: #006B90;
+    background: #80b5c7;
     color: #FFF;
     border: 0;
     border-radius: 2px;
@@ -6070,16 +6073,23 @@ body,
     text-align: center;
     transition: all .4s; }
     .home .cta-box .btn:hover, .home .cta-box .btn:focus {
-      background: #00769f; }
+      background: #72adc1; }
   .home .cta-box #give {
     margin-right: 10px; }
 .home #cta-box-top {
-  border-bottom: 1px solid #93deb8;
+  padding: 50px 0;
+  border-bottom: 1px solid #80b5c7;
   margin-top: -100px;
-  margin-bottom: 100px; }
+  margin-bottom: 150px; }
 .home #cta-box-bottom {
-  padding-top: 100px;
-  border-top: 1px solid #93deb8; }
+  padding: 100px 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  bottom: -93.33333px; }
+  @media (max-width: 47em) {
+    .home #cta-box-bottom {
+      bottom: -50px; } }
 .home h2 {
   color: #006B90;
   border-top: 3px solid #006B90;

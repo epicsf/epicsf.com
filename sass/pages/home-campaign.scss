@@ -1,5 +1,10 @@
 .home {
   $campaign-blue: #006B90;
+  $campaign-complementary: #80b5c7;
+
+  .entry-content {
+    position: relative;
+  }
 
   header {
     height: 540px;
@@ -34,9 +39,10 @@
   .cta-box {
     padding: 20px 0;
     text-align: center;
+    background: $campaign-blue;
 
     .btn {
-      background: $campaign-blue;
+      background: $campaign-complementary;
       color: #FFF;
       border: 0;
       border-radius: 2px;
@@ -46,7 +52,7 @@
       transition: all .4s;
 
       &:hover, &:focus {
-        background: lighten($campaign-blue, 3);
+        background: darken($campaign-complementary, 4);
       }
     }
 
@@ -57,14 +63,24 @@
   }
 
   #cta-box-top {
-    border-bottom: 1px solid $light-gray;
+    padding: 50px 0;
+    border-bottom: 1px solid $campaign-complementary;
     margin-top: -100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   #cta-box-bottom {
-    padding-top: 100px;
-    border-top: 1px solid $light-gray;
-    // margin-bottom: 100px;
+    padding: 100px 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+    // position so it appears directly above footer
+    // without a gap.
+    bottom: -($footer-height / 3);
+
+    @media (max-width: 47em) {
+      bottom: -50px;
+    }
   }
 
   h2 {
@@ -96,5 +112,9 @@
     &.bold {
       font-size: 1.5rem;
     }
+  }
+
+  #photos-1 {
+
   }
 }
