@@ -6055,14 +6055,13 @@ body,
 .home .entry-content {
   position: relative; }
 .home header {
-  height: 540px;
+  height: 640px;
   background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
   background-size: cover;
   margin: -95px 0 100px; }
 .home .cta-box {
   padding: 20px 0;
-  text-align: center;
-  background: #006B90; }
+  text-align: center; }
   .home .cta-box .btn {
     background: #80b5c7;
     color: #FFF;
@@ -6077,11 +6076,14 @@ body,
   .home .cta-box #give {
     margin-right: 10px; }
 .home #cta-box-top {
+  position: absolute;
+  width: 100%;
+  top: -245px;
   padding: 50px 0;
   border-bottom: 1px solid #80b5c7;
-  margin-top: -100px;
   margin-bottom: 150px; }
 .home #cta-box-bottom {
+  background: #006B90;
   padding: 100px 0;
   position: absolute;
   z-index: 2;
@@ -6114,5 +6116,11 @@ body,
   font-size: 1.3rem; }
   .home .big.bold {
     font-size: 1.5rem; }
+.home #photos-1 .overlap {
+  position: relative;
+  right: -60px;
+  z-index: 100; }
+.home #photos-3 [class^="col-"] {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

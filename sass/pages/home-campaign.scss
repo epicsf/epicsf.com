@@ -7,7 +7,7 @@
   }
 
   header {
-    height: 540px;
+    height: 640px;
     background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
     background-size: cover;
     margin: -95px 0 100px;
@@ -39,7 +39,7 @@
   .cta-box {
     padding: 20px 0;
     text-align: center;
-    background: $campaign-blue;
+    // background: $campaign-blue;
 
     .btn {
       background: $campaign-complementary;
@@ -63,12 +63,16 @@
   }
 
   #cta-box-top {
+    position: absolute;
+    width: 100%;
+    top: -245px;
     padding: 50px 0;
     border-bottom: 1px solid $campaign-complementary;
-    margin-top: -100px;
+    // margin-top: -100px;
     margin-bottom: 150px;
   }
   #cta-box-bottom {
+    background: $campaign-blue;
     padding: 100px 0;
     position: absolute;
     z-index: 2;
@@ -115,6 +119,16 @@
   }
 
   #photos-1 {
+    .overlap {
+      position: relative;
+      right: -60px;
+      z-index: 100;
+    }
+  }
 
+  #photos-3 {
+    [class^="col-"] {
+      padding: 0;
+    }
   }
 }
