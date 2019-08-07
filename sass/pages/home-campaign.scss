@@ -119,10 +119,18 @@
   }
 
   #photos-1 {
-    .overlap {
+    overflow: hidden;
+
+    .overlap-big {
       position: relative;
-      right: -60px;
+      right: -80px;
       z-index: 100;
+      top: 30px;
+    }
+
+    .overlap-small {
+      position: relative;
+      top: -77px;
     }
   }
 

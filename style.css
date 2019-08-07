@@ -6116,10 +6116,16 @@ body,
   font-size: 1.3rem; }
   .home .big.bold {
     font-size: 1.5rem; }
-.home #photos-1 .overlap {
-  position: relative;
-  right: -60px;
-  z-index: 100; }
+.home #photos-1 {
+  overflow: hidden; }
+  .home #photos-1 .overlap-big {
+    position: relative;
+    right: -80px;
+    z-index: 100;
+    top: 30px; }
+  .home #photos-1 .overlap-small {
+    position: relative;
+    top: -77px; }
 .home #photos-3 [class^="col-"] {
   padding: 0; }
 
