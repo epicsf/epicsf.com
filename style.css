@@ -6140,7 +6140,7 @@ body,
   .home .big.bold {
     font-size: 1.5rem; }
 .home #photos-1 {
-  overflow: hidden; }
+  margin-top: 100px; }
   .home #photos-1 .overlap-big {
     position: relative;
     right: -80px;
@@ -6149,7 +6149,26 @@ body,
   .home #photos-1 .overlap-small {
     position: relative;
     top: -77px; }
-.home #photos-3 [class^="col-"] {
-  padding: 0; }
+  @media (max-width: 34em) {
+    .home #photos-1 {
+      margin: 0; } }
+.home #photos-3 .overlap-first {
+  position: relative;
+  right: -60px;
+  top: -60px;
+  margin-top: 60px; }
+.home #photos-3 .overlap-second {
+  z-index: 100;
+  top: 60px;
+  position: relative; }
+.home #photos-3 .overlap-third {
+  position: relative;
+  top: -220px;
+  left: -50px; }
+  @media (max-width: 34em) {
+    .home #photos-3 .overlap-third {
+      top: 40px;
+      left: -100px;
+      z-index: 101; } }
 
 /*# sourceMappingURL=style.css.map */
