@@ -6079,16 +6079,18 @@ body,
   padding: 20px 0;
   text-align: center; }
   .home .cta-box .btn {
-    background: #80b5c7;
+    background: #006B90;
     color: #FFF;
-    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 2px;
     width: 150px;
-    font-weight: 100;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-align: center;
     transition: all .4s; }
     .home .cta-box .btn:hover, .home .cta-box .btn:focus {
-      background: #72adc1; }
+      border: 1px solid #FFF;
+      background: #007aa4; }
   .home .cta-box #give {
     margin-right: 10px; }
 .home #cta-box-top {
