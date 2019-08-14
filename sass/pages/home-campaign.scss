@@ -8,32 +8,32 @@
 
   header {
     height: 640px;
-    background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
+    background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/banner.jpg) #FFF center center;
     background-size: cover;
     margin: -95px 0 100px;
 
-    // @media (min-width:100em) {
-    //   height: 800px;
-    // }
+    @media (min-width:100em) {
+      height: 800px;
+    }
 
-    // @media (max-width:70em) {
-    //   background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_medium.png) #FFF center center;
-    //   background-size: cover;
-    //   height: 400px;
-    //   margin-bottom: 100px;
-    // }
+    @media (max-width:70em) {
+      background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
+      background-size: cover;
+      height: 400px;
+      margin-bottom: 100px;
+    }
 
-    // @media (max-width:34em) {
-    //   background: no-repeat url(/wp-content/uploads/2018/02/40_Days_of_Prayer_Banner_small_2.png) #FFF -100px center;
-    //   background-size: cover;
-    //   height: 265px;
-    //   margin-top: -74px;
-    //   margin-bottom: 0;
-    // }
+    @media (max-width:34em) {
+      // background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
+      // background-size: cover;
+      height: 400px;
+      margin-top: -74px;
+      margin-bottom: 100px;
+    }
 
-    // .entry-header {
-    //   display: none;
-    // }
+    .entry-header {
+      display: none;
+    }
   }
 
   .cta-box {
@@ -70,6 +70,12 @@
     border-bottom: 1px solid $campaign-complementary;
     // margin-top: -100px;
     margin-bottom: 150px;
+    z-index: 2;
+
+    @media (max-width:34em) {
+      top: -120px;
+      border-bottom: 0;
+    }
   }
   #cta-box-bottom {
     background: $campaign-blue;

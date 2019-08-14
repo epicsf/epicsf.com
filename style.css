@@ -6056,9 +6056,25 @@ body,
   position: relative; }
 .home header {
   height: 640px;
-  background: no-repeat url(/wordpress2/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-7-19-9.00.21-PM.png) #FFF center center;
+  background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/banner.jpg) #FFF center center;
   background-size: cover;
   margin: -95px 0 100px; }
+  @media (min-width: 100em) {
+    .home header {
+      height: 800px; } }
+  @media (max-width: 70em) {
+    .home header {
+      background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
+      background-size: cover;
+      height: 400px;
+      margin-bottom: 100px; } }
+  @media (max-width: 34em) {
+    .home header {
+      height: 400px;
+      margin-top: -74px;
+      margin-bottom: 100px; } }
+  .home header .entry-header {
+    display: none; }
 .home .cta-box {
   padding: 20px 0;
   text-align: center; }
@@ -6081,7 +6097,12 @@ body,
   top: -245px;
   padding: 50px 0;
   border-bottom: 1px solid #80b5c7;
-  margin-bottom: 150px; }
+  margin-bottom: 150px;
+  z-index: 2; }
+  @media (max-width: 34em) {
+    .home #cta-box-top {
+      top: -120px;
+      border-bottom: 0; } }
 .home #cta-box-bottom {
   background: #006B90;
   padding: 100px 0;
