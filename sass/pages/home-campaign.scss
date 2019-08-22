@@ -24,9 +24,7 @@
     }
 
     @media (max-width:34em) {
-      // background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
-      // background-size: cover;
-      height: 400px;
+      height: 300px;
       margin-top: -74px;
       margin-bottom: 100px;
     }
@@ -39,7 +37,6 @@
   .cta-box {
     padding: 20px 0;
     text-align: center;
-    // background: $campaign-blue;
 
     .btn {
       background: $campaign-blue;
@@ -55,6 +52,13 @@
       &:hover, &:focus {
         border: 1px solid #FFF;
         background: lighten($campaign-blue, 4);
+        box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.03);
+      }
+
+      @media (max-width:20em) {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
       }
     }
 
@@ -77,6 +81,10 @@
     @media (max-width:34em) {
       top: -120px;
       border-bottom: 0;
+    }
+
+    @media (max-width:20em) {
+
     }
   }
   #cta-box-bottom {
@@ -128,6 +136,7 @@
 
   #photos-1 {
     margin-top: 100px;
+    overflow: hidden;
 
     .overlap-big {
       position: relative;
@@ -148,7 +157,7 @@
 
   #photos-2 {
     height: 350px;
-    background: url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat center center;
+    background: $gray50 url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat center center;
     background-size: cover;
 
     position: relative;
@@ -166,45 +175,89 @@
         background-size: cover;
         position: absolute;
         top: 80%;
-        left: 15%;
+        left: 9%;
         z-index: 1;
       }
     }
     .placeholder-2 {
       @media (max-width:34em) {
-        background: url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat -718px center;
-        width: 95%;
+        background: url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat -759px center;
+        width: 89%;
         height: 100%;
         background-size: cover;
         position: absolute;
         top: 0;
+        left: 15px;
       }
     }
   }
 
   #photos-3 {
     overflow-y: hidden;
-    max-height: 1000px;
+    max-height: 600px;
 
     .overlap-first {
       position: relative;
-      right: -60px;
-      top: -60px;
-      margin-top: 60px;
+      @media (max-width:34em) {
+        top: 40px;
+        right: -40px;
+      }
     }
     .overlap-second {
-      z-index: 100;
-      top: 60px;
+      top: -320px;
+      right: -60px;
       position: relative;
+      @media (max-width: 64em) {
+        top: -100px;
+      }
+      @media (max-width:34em) {
+        top: -14px;
+        left: 4px;
+      }
     }
     .overlap-third {
-      position: relative;
-      top: -220px;
-      left: -50px;
       @media (max-width:34em) {
         top: 40px;
         left: -100px;
         z-index: 101;
+      }
+    }
+  }
+
+  #photos-4 {
+    height: 350px;
+    background: $gray50 url(/wordpress2/wp-content/uploads/2019/08/home-8.jpg) no-repeat center center;
+    background-size: cover;
+
+
+    position: relative;
+
+    @media (max-width:34em) {
+      background: none;
+      margin-bottom: 200px;
+    }
+
+    .placeholder-1 {
+      @media (max-width:34em) {
+        background: url(/wordpress2/wp-content/uploads/2019/08/home-8.jpg) no-repeat -340px center;
+        width: 250px;
+        height: 90%;
+        background-size: cover;
+        position: absolute;
+        top: 80%;
+        left: 9%;
+        z-index: 1;
+      }
+    }
+    .placeholder-2 {
+      @media (max-width:34em) {
+        background: url(/wordpress2/wp-content/uploads/2019/08/home-8.jpg) no-repeat -759px center;
+        width: 89%;
+        height: 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 15px;
       }
     }
   }
