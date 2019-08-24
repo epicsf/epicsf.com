@@ -6073,7 +6073,7 @@ body,
   position: relative; }
 .home header {
   height: 640px;
-  background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/banner.jpg) #FFF center center;
+  background: no-repeat url(/wp-content/uploads/2019/08/banner.jpg) #FFF center center;
   background-size: cover;
   margin: -95px 0 100px; }
   @media (min-width: 100em) {
@@ -6081,7 +6081,7 @@ body,
       height: 800px; } }
   @media (max-width: 70em) {
     .home header {
-      background: no-repeat url(/wordpress2/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
+      background: no-repeat url(/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
       background-size: cover;
       height: 400px;
       margin-bottom: 100px; } }
@@ -6178,7 +6178,7 @@ body,
       margin-top: 0; } }
 .home #photos-2 {
   height: 350px;
-  background: #8a8c8d url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat center center;
+  background: #8a8c8d url(/wp-content/uploads/2019/08/home-community.png) no-repeat center center;
   background-size: cover;
   position: relative; }
   @media (max-width: 34em) {
@@ -6187,7 +6187,7 @@ body,
       margin-bottom: 200px; } }
   @media (max-width: 34em) {
     .home #photos-2 .placeholder-1 {
-      background: url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat 0 center;
+      background: url(/wp-content/uploads/2019/08/home-community.png) no-repeat 0 center;
       width: 250px;
       height: 90%;
       background-size: cover;
@@ -6197,7 +6197,7 @@ body,
       z-index: 1; } }
   @media (max-width: 34em) {
     .home #photos-2 .placeholder-2 {
-      background: url(/wordpress2/wp-content/uploads/2019/08/home-community.png) no-repeat -759px center;
+      background: url(/wp-content/uploads/2019/08/home-community.png) no-repeat -759px center;
       width: 89%;
       height: 100%;
       background-size: cover;
@@ -6231,7 +6231,7 @@ body,
       z-index: 101; } }
 .home #photos-4 {
   height: 350px;
-  background: #8a8c8d url(/wordpress2/wp-content/uploads/2019/08/home-8.jpg) no-repeat center center;
+  background: #8a8c8d url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat center center;
   background-size: cover;
   position: relative; }
   @media (max-width: 34em) {
@@ -6240,7 +6240,7 @@ body,
       margin-bottom: 200px; } }
   @media (max-width: 34em) {
     .home #photos-4 .placeholder-1 {
-      background: url(/wordpress2/wp-content/uploads/2019/08/home-8.jpg) no-repeat -340px center;
+      background: url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat -340px center;
       width: 250px;
       height: 90%;
       background-size: cover;
@@ -6250,7 +6250,7 @@ body,
       z-index: 1; } }
   @media (max-width: 34em) {
     .home #photos-4 .placeholder-2 {
-      background: url(/wordpress2/wp-content/uploads/2019/08/home-8.jpg) no-repeat -759px center;
+      background: url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat -759px center;
       width: 89%;
       height: 100%;
       background-size: cover;
