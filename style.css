@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.26
+Version: 1.0.28
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -6069,33 +6069,33 @@ body,
   font-size: 17px;
   line-height: 30px; }
 
-.home .entry-content {
+article.home .entry-content {
   position: relative; }
-.home header {
+article.home header {
   height: 640px;
-  background: no-repeat url(/wp-content/uploads/2019/08/banner.jpg) #FFF center center;
+  background: no-repeat url(/wp-content/uploads/2019/08/banner.jpg) #e6e6e6 center center;
   background-size: cover;
   margin: -95px 0 100px; }
   @media (min-width: 100em) {
-    .home header {
+    article.home header {
       height: 800px; } }
   @media (max-width: 70em) {
-    .home header {
-      background: no-repeat url(/wp-content/uploads/2019/08/home-banner-sm.jpg) #FFF center center;
+    article.home header {
+      background: no-repeat url(/wp-content/uploads/2019/08/home-banner-sm.jpg) #e6e6e6 center center;
       background-size: cover;
       height: 400px;
       margin-bottom: 100px; } }
   @media (max-width: 34em) {
-    .home header {
+    article.home header {
       height: 300px;
       margin-top: -74px;
       margin-bottom: 100px; } }
-  .home header .entry-header {
+  article.home header .entry-header {
     display: none; }
-.home .cta-box {
+article.home .cta-box {
   padding: 20px 0;
   text-align: center; }
-  .home .cta-box .btn {
+  article.home .cta-box .btn {
     background: #006B90;
     color: #FFF;
     border: 1px solid rgba(255, 255, 255, 0.7);
@@ -6105,30 +6105,29 @@ body,
     letter-spacing: 2px;
     text-align: center;
     transition: all .4s; }
-    .home .cta-box .btn:hover, .home .cta-box .btn:focus {
+    article.home .cta-box .btn:hover, article.home .cta-box .btn:focus {
       border: 1px solid #FFF;
       background: #007aa4;
       box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.03); }
     @media (max-width: 20em) {
-      .home .cta-box .btn {
+      article.home .cta-box .btn {
         display: block;
         width: 100%;
         margin-bottom: 8px; } }
-  .home .cta-box #give {
+  article.home .cta-box #give {
     margin-right: 10px; }
-.home #cta-box-top {
+article.home #cta-box-top {
   position: absolute;
   width: 100%;
   top: -245px;
   padding: 50px 0;
-  border-bottom: 1px solid #80b5c7;
   margin-bottom: 150px;
   z-index: 2; }
   @media (max-width: 34em) {
-    .home #cta-box-top {
+    article.home #cta-box-top {
       top: -120px;
       border-bottom: 0; } }
-.home #cta-box-bottom {
+article.home #cta-box-bottom {
   background: #006B90;
   padding: 100px 0;
   position: absolute;
@@ -6136,13 +6135,13 @@ body,
   width: 100%;
   bottom: -93.33333px; }
   @media (max-width: 47em) {
-    .home #cta-box-bottom {
+    article.home #cta-box-bottom {
       bottom: -50px; } }
-.home h2 {
+article.home h2 {
   color: #006B90;
   border-top: 3px solid #006B90;
   padding-top: 30px; }
-  .home h2.entry-title {
+  article.home h2.entry-title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -6151,42 +6150,42 @@ body,
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0; }
-.home h3 {
+article.home h3 {
   color: #006B90; }
-.home .content-column {
+article.home .content-column {
   padding-top: 30px; }
-.home p {
+article.home p {
   font-size: 1.1rem;
   margin-bottom: 30px; }
-.home .big {
+article.home .big {
   font-size: 1.3rem; }
-  .home .big.bold {
+  article.home .big.bold {
     font-size: 1.5rem; }
-.home #photos-1 {
+article.home #photos-1 {
   margin-top: 100px;
   overflow: hidden; }
-  .home #photos-1 .overlap-big {
+  article.home #photos-1 .overlap-big {
     position: relative;
     right: -80px;
     z-index: 100;
     top: 30px; }
-  .home #photos-1 .overlap-small {
+  article.home #photos-1 .overlap-small {
     position: relative;
     top: -77px; }
   @media (max-width: 34em) {
-    .home #photos-1 {
+    article.home #photos-1 {
       margin-top: 0; } }
-.home #photos-2 {
+article.home #photos-2 {
   height: 350px;
-  background: #8a8c8d url(/wp-content/uploads/2019/08/home-community.png) no-repeat center center;
+  background: #e6e6e6 url(/wp-content/uploads/2019/08/home-community.png) no-repeat center center;
   background-size: cover;
   position: relative; }
   @media (max-width: 34em) {
-    .home #photos-2 {
+    article.home #photos-2 {
       background: none;
       margin-bottom: 200px; } }
   @media (max-width: 34em) {
-    .home #photos-2 .placeholder-1 {
+    article.home #photos-2 .placeholder-1 {
       background: url(/wp-content/uploads/2019/08/home-community.png) no-repeat 0 center;
       width: 250px;
       height: 90%;
@@ -6196,7 +6195,7 @@ body,
       left: 9%;
       z-index: 1; } }
   @media (max-width: 34em) {
-    .home #photos-2 .placeholder-2 {
+    article.home #photos-2 .placeholder-2 {
       background: url(/wp-content/uploads/2019/08/home-community.png) no-repeat -759px center;
       width: 89%;
       height: 100%;
@@ -6204,42 +6203,42 @@ body,
       position: absolute;
       top: 0;
       left: 15px; } }
-.home #photos-3 {
+article.home #photos-3 {
   overflow-y: hidden;
   max-height: 600px; }
-  .home #photos-3 .overlap-first {
+  article.home #photos-3 .overlap-first {
     position: relative; }
     @media (max-width: 34em) {
-      .home #photos-3 .overlap-first {
+      article.home #photos-3 .overlap-first {
         top: 40px;
         right: -40px; } }
-  .home #photos-3 .overlap-second {
+  article.home #photos-3 .overlap-second {
     top: -320px;
     right: -60px;
     position: relative; }
     @media (max-width: 64em) {
-      .home #photos-3 .overlap-second {
+      article.home #photos-3 .overlap-second {
         top: -100px; } }
     @media (max-width: 34em) {
-      .home #photos-3 .overlap-second {
+      article.home #photos-3 .overlap-second {
         top: -14px;
         left: 4px; } }
   @media (max-width: 34em) {
-    .home #photos-3 .overlap-third {
+    article.home #photos-3 .overlap-third {
       top: 40px;
       left: -100px;
       z-index: 101; } }
-.home #photos-4 {
+article.home #photos-4 {
   height: 350px;
-  background: #8a8c8d url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat center center;
+  background: #e6e6e6 url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat center center;
   background-size: cover;
   position: relative; }
   @media (max-width: 34em) {
-    .home #photos-4 {
+    article.home #photos-4 {
       background: none;
       margin-bottom: 200px; } }
   @media (max-width: 34em) {
-    .home #photos-4 .placeholder-1 {
+    article.home #photos-4 .placeholder-1 {
       background: url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat -340px center;
       width: 250px;
       height: 90%;
@@ -6249,7 +6248,7 @@ body,
       left: 9%;
       z-index: 1; } }
   @media (max-width: 34em) {
-    .home #photos-4 .placeholder-2 {
+    article.home #photos-4 .placeholder-2 {
       background: url(/wp-content/uploads/2019/08/home-8.jpg) no-repeat -759px center;
       width: 89%;
       height: 100%;
