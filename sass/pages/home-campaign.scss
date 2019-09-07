@@ -8,7 +8,7 @@ article.home {
   }
 
   header {
-    height: 640px;
+    height: 540px;
     background: no-repeat url(/wp-content/uploads/2019/08/banner.jpg) $image-placeholder center center;
     background-size: cover;
     margin: -95px 0 100px;
@@ -44,11 +44,13 @@ article.home {
       color: #FFF;
       border: 1px solid rgba(255, 255, 255, .7);
       border-radius: 2px;
-      width: 150px;
+      width: 180px;
       font-weight: 400;
+      font-size: .9rem;
       letter-spacing: 2px;
       text-align: center;
       transition: all .4s;
+
 
       &:hover, &:focus {
         border: 1px solid #FFF;
@@ -64,6 +66,7 @@ article.home {
     }
 
     #give {
+      padding: 1.3rem 0;
       margin-right: 10px;
     }
 
@@ -72,10 +75,8 @@ article.home {
   #cta-box-top {
     position: absolute;
     width: 100%;
-    top: -245px;
+    top: -232px;
     padding: 50px 0;
-    // border-bottom: 1px solid $campaign-complementary;
-    // margin-top: -100px;
     margin-bottom: 150px;
     z-index: 2;
 
@@ -132,6 +133,14 @@ article.home {
 
     &.bold {
       font-size: 1.5rem;
+    }
+  }
+
+  .li {
+    display: list-item;
+
+    @media (max-width:47em) {
+      margin: 0 20px 30px;
     }
   }
 

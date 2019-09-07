@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.28
+Version: 1.0.30
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -6072,7 +6072,7 @@ body,
 article.home .entry-content {
   position: relative; }
 article.home header {
-  height: 640px;
+  height: 540px;
   background: no-repeat url(/wp-content/uploads/2019/08/banner.jpg) #e6e6e6 center center;
   background-size: cover;
   margin: -95px 0 100px; }
@@ -6100,8 +6100,9 @@ article.home .cta-box {
     color: #FFF;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 2px;
-    width: 150px;
+    width: 180px;
     font-weight: 400;
+    font-size: .9rem;
     letter-spacing: 2px;
     text-align: center;
     transition: all .4s; }
@@ -6115,11 +6116,12 @@ article.home .cta-box {
         width: 100%;
         margin-bottom: 8px; } }
   article.home .cta-box #give {
+    padding: 1.3rem 0;
     margin-right: 10px; }
 article.home #cta-box-top {
   position: absolute;
   width: 100%;
-  top: -245px;
+  top: -232px;
   padding: 50px 0;
   margin-bottom: 150px;
   z-index: 2; }
@@ -6161,6 +6163,11 @@ article.home .big {
   font-size: 1.3rem; }
   article.home .big.bold {
     font-size: 1.5rem; }
+article.home .li {
+  display: list-item; }
+  @media (max-width: 47em) {
+    article.home .li {
+      margin: 0 20px 30px; } }
 article.home #photos-1 {
   margin-top: 100px;
   overflow: hidden; }
