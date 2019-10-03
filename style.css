@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.30
+Version: 1.0.31
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -5444,7 +5444,8 @@ iframe {
   background: #414447;
   color: #f2f3f4;
   padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  z-index: 3; }
 .site-footer strong {
   font-family: Lato, sans-serif;
   font-weight: 700;
@@ -6100,24 +6101,29 @@ article.home .cta-box {
     color: #FFF;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 2px;
-    width: 180px;
     font-weight: 400;
     font-size: .9rem;
+    min-height: 64px;
     letter-spacing: 2px;
     text-align: center;
-    transition: all .4s; }
+    transition: all .4s;
+    width: 180px; }
     article.home .cta-box .btn:hover, article.home .cta-box .btn:focus {
       border: 1px solid #FFF;
       background: #007aa4;
       box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.03); }
-    @media (max-width: 20em) {
+    @media (max-width: 27em) {
       article.home .cta-box .btn {
-        display: block;
-        width: 100%;
-        margin-bottom: 8px; } }
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1.3rem !important;
+        min-height: 50px; } }
   article.home .cta-box #give {
     padding: 1.3rem 0;
     margin-right: 10px; }
+  article.home .cta-box #commit {
+    flex-grow: 1; }
 article.home #cta-box-top {
   position: absolute;
   width: 100%;
@@ -6129,6 +6135,21 @@ article.home #cta-box-top {
     article.home #cta-box-top {
       top: -120px;
       border-bottom: 0; } }
+  @media (max-width: 27em) {
+    article.home #cta-box-top {
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+      background: #006B90;
+      padding: 10px;
+      top: auto;
+      bottom: 0;
+      position: fixed;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      left: 0;
+      right: 0; }
+      article.home #cta-box-top .btn {
+        font-size: .7rem; } }
 article.home #cta-box-bottom {
   background: #006B90;
   padding: 100px 0;
