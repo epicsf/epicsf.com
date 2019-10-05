@@ -30,6 +30,10 @@ article.home {
       margin-bottom: 100px;
     }
 
+    @media (max-width: 27em) {
+      margin-bottom: 0;
+    }
+
     .entry-header {
       display: none;
     }
@@ -86,15 +90,15 @@ article.home {
     margin-bottom: 150px;
     z-index: 2;
 
-    @media (max-width:34em) {
+    @media (max-width: 34em) {
       top: -120px;
       border-bottom: 0;
     }
 
-    @media (max-width:27em) {
+    // Fixed footer bar
+    @media (max-width: 27em) {
       box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
-      background: $campaign-blue;// rgba(255, 255, 255, .4);
-      // top: -138px;
+      background: $campaign-blue;
       padding: 10px;
       top: auto;
       bottom: 0;
@@ -171,14 +175,18 @@ article.home {
 
     .overlap-big {
       position: relative;
-      right: -80px;
-      z-index: 100;
+      z-index: 1;
       top: 30px;
     }
 
     .overlap-small {
       position: relative;
       top: -77px;
+      z-index: 1;
+
+      @media (max-width: 27em) {
+        float: right;
+      }
     }
 
     @media (max-width:34em) {
