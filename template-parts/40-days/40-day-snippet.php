@@ -1,4 +1,4 @@
-<div class="forty-day">
+<div class="forty-day" data-id="<?php echo slugify(the_title('', '', false)) ?>">
   <div><?php epic_40_day_prayer_post_thumbnail() ?></div>
   <div class="title-2"><?php the_subtitle() ?></div>
   <div class="title-3"><?php the_title() ?></div>

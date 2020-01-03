@@ -93,7 +93,7 @@ If changing any of the css styles, update the version in style.scss and function
 
 # Copyright
 
-Copyright (c) 2019 Epic Church
+Copyright (c) 2020 Epic Church
 
 MIT License
 

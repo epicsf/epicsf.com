@@ -127,6 +127,12 @@ if (!function_exists('epic_get_40_days_media')) {
   }
 }
 
+if (!function_exists('epic_get_2020_prayer_media')) {
+  function epic_get_2020_prayer_media() {
+    return epic_get_media('2020-prayer-guide');
+  }
+}
+
 if (!function_exists('epic_get_story_media')) {
   function epic_get_story_media() {
     $posts = epic_get_media('stories');
@@ -252,7 +258,7 @@ function epic_scripts() {
     get_stylesheet_uri(),
     null,
     // Increment this to match the theme version to bust the cache.
-    '1.0.33'
+    '1.0.34'
   );
 
 }
@@ -303,6 +309,14 @@ function epic_body_classes($classes) {
 }
 
 add_filter('body_class', 'epic_body_classes');
+
+if (!function_exists('slugify')) {
+  function slugify( $str ) {
+    $str = strtolower( $str );
+    $str = preg_replace( '/\s/', '-', $str );
+    return $str;
+  }
+}
 
 /**
  * Custom template tags for this theme.

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row main-event hidden-sm-down forty-day">
+  <div class="row main-event hidden-sm-down forty-day" data-id="<?php echo slugify(the_title('', '', false)) ?>">
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  <div class="row event-snippets forty-day">
+  <div class="row event-snippets forty-day" data-id="<?php echo slugify(the_title('', '', false)) ?>">
     <div class="hidden-sm-up event-snippet col-xs-12">
       <div class="spacer-60"></div>
       <div><?php epic_40_day_prayer_post_thumbnail() ?></div>

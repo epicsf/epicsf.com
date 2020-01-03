@@ -251,8 +251,8 @@ get_header(); ?>
         <?php } /* end - stories categories */ ?>
         </div>
         <?php
-        } else if ( $page === '40 days of prayer' ) {
-          $posts = epic_get_40_days_media();
+        } else if ( $page === '40 days of prayer' || $page === '2020 prayer guide' ) {
+          $posts = $page === '40 days of prayer' ? epic_get_40_days_media() : epic_get_2020_prayer_media();
         ?>
           <?php
             if (count($posts) > 0) {

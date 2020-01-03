@@ -129,6 +129,19 @@ $('#prayerModal').on('show.bs.modal', function(e) {
   modal.find('#prayerModalLabel').html(title.text());
   modal.find('.modal-body').html(body.html());
 });
+jQuery(function() {
+  if (window.location
+    && window.location.pathname.indexOf('2020-prayer-guide') > -1
+    && window.location.hash.length > 1) {
+    var id = window.location.hash.slice(1);
+    setTimeout(function() {
+      document.querySelector('[data-id="' + id + '"]').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+      setTimeout(function() {
+        document.querySelector('[data-id="' + id + '"] a').click();
+      }, 400);
+    }, 600);
+  }
+});
 </script>
 <script>
     jQuery(function() {
