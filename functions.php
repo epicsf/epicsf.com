@@ -222,6 +222,7 @@ if (!function_exists('should_hide_title')) {
       'faq',
       'get connected',
       'media',
+      'podcast',
       'link tree',
       'ministries',
       'partnerships',
