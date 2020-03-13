@@ -40,6 +40,39 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+
+<div class="modal fade" id="covid" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                  <p>
+Epic Family,
+<br><br>
+This Sunday we will gather <strong>online only</strong> as a church. Last Sunday, there were 700+ people who participated in our 3 online gatherings. While we love to be together in person, we are so grateful to have the technology and team to bring a full worship experience to you.
+<br><br>
+We will be <strong>canceling</strong> our in person gatherings this Sunday (March 15) at Epic Church. We will be streaming online at 9:00AM, 10:30AM, and 12:00PM and encourage you to join us from home. You can join us at <a href="https://live.epicsf.com">live.epicsf.com</a>.
+<br><br>
+As you stay connected with Epic online, we want to encourage you to also connect with friends from your groups and teams throughout the week.
+<br><br>
+Much love,
+Pastor Ben
+<br><br>
+PS - Take a moment and watch this <a href="https://www.instagram.com/p/B9mdw2upbHv/">personal message</a> from Pastor Ben on Instagram.
+          </p>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:;" role="button" class="btn btn-sm" data-dismiss="modal">Continue to epicsf.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="site-inner">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'epic' ); ?></a>
 
