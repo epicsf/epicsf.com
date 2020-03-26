@@ -22,14 +22,20 @@ get_header(); ?>
     <?php if ( have_posts() ) : ?>
 
       <?php if ( is_home() ) : ?>
-        <header class="home-header"></header>
+        <header class="home-header vertical-center">
+          <div class="text-center ctas">
+            <h1 class="variation">You are welcome here</h1>
+            <a class="btn primary" href="https://live.epicsf.com">Attend Online Church</a>
+            <a class="btn" href="/events">Stay Connected</a>
+          </div>
+        </header>
         <div class="container-fluid">
           <div class="row home-featured">
               <?php
                 $featured = epic_get_featured_post();
                 if ( $featured ) { ?>
             <div class="col-md-10 col-md-offset-2 col-xs-12">
-              <h1 class="variation"><?php echo get_the_title($featured); ?></h1>
+              <h2 class="h1 variation"><?php echo get_the_title($featured); ?></h2>
               <div class="body3"><?php get_the_subtitle($featured) ?></div>
               <div class="spacer-30"></div>
             </div>
