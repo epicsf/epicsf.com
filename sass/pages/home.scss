@@ -9,13 +9,17 @@
 }
 
 .home-header {
-  background: url(/wordpress2/wp-content/uploads/2020/03/homepage-banner2.jpg) no-repeat;
+  background: $gray url(/wordpress2/wp-content/uploads/2020/03/homepage-banner2.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
   height: 680px;
   position: relative;
   top: -100px;
-  transition: all .5s;
+
+  @media (max-width:70em) {
+    top: 0;
+    background: $gray url(/wordpress2/wp-content/uploads/2020/03/homepage-banner-sm.jpg) no-repeat;
+  }
 
   h1 {
     color: #FFF;
@@ -33,12 +37,16 @@
     font-size: .9rem;
     letter-spacing: 2px;
     text-align: center;
-    transition: all .4s;
+    transition: border .4s, background .4s, box-shadow .4s;
 
     &:hover, &:focus {
       border: 1px solid #FFF;
       background: darken($cta-opaque, 4);
       box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.03);
+    }
+
+    @media (max-width:70em) {
+      display: block;
     }
   }
 
@@ -51,18 +59,15 @@
     &:hover, &:focus {
       background: lighten($campaign-blue, 4);
     }
+
+    @media (max-width:70em) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   @media (max-width: 100em) {
     height: 400px;
-  }
-
-  @media (max-width: 70em) {
-    height: 300px;
-  }
-
-  @media (max-width: 34em) {
-    display: none;
   }
 }
 
