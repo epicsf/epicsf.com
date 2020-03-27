@@ -5895,7 +5895,7 @@ body,
       margin-top: 50px; } }
 
 .home-header {
-  background: #414447 url(/wordpress2/wp-content/uploads/2020/03/homepage-banner2.jpg) no-repeat;
+  background: #414447 url(/wp-content/uploads/2020/03/homepage-banner2.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
   height: 680px;
@@ -5904,7 +5904,7 @@ body,
   @media (max-width: 70em) {
     .home-header {
       top: 0;
-      background: #414447 url(/wordpress2/wp-content/uploads/2020/03/homepage-banner-sm.jpg) no-repeat; } }
+      background: #414447 url(/wp-content/uploads/2020/03/homepage-banner-sm.jpg) no-repeat; } }
   .home-header h1 {
     color: #FFF;
     margin-bottom: 70px; }

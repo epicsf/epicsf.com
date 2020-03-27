@@ -9,7 +9,7 @@
 }
 
 .home-header {
-  background: $gray url(/wordpress2/wp-content/uploads/2020/03/homepage-banner2.jpg) no-repeat;
+  background: $gray url(/wp-content/uploads/2020/03/homepage-banner2.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
   height: 680px;
@@ -18,7 +18,7 @@
 
   @media (max-width:70em) {
     top: 0;
-    background: $gray url(/wordpress2/wp-content/uploads/2020/03/homepage-banner-sm.jpg) no-repeat;
+    background: $gray url(/wp-content/uploads/2020/03/homepage-banner-sm.jpg) no-repeat;
   }
 
   h1 {
