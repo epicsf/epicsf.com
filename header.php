@@ -20,6 +20,12 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <?php endif; ?>
   <?php wp_head(); ?>
+  <meta name='og:image' content='https://d2jnnnpm1ykrse.cloudfront.net/2020-Epic-church-sf-stock-Ben-social-crop.jpg'>
+  <meta name='og:image:width' content='3600'>
+  <meta name='og:image:height' content='2400'>
+  <meta name='og:image:alt' content='Pastor Ben on stage at Epic Church'>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@epicchurchsf" />
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

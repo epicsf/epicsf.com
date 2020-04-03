@@ -26,7 +26,7 @@ get_header(); ?>
           <div class="text-center ctas">
             <h1 class="variation">You are welcome here</h1>
             <a class="btn primary" href="https://live.epicsf.com">Attend Online Church</a>
-            <a class="btn" href="/events">Stay Connected</a>
+            <a class="btn" href="/events">Stay Updated</a>
           </div>
         </header>
         <div class="container-fluid">
