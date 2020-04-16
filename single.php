@@ -21,8 +21,8 @@ get_header(); ?>
       } else if (epic_is_media()) {
         get_template_part( 'template-parts/media/media', get_post_format() );
       } else { ?>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-4">
+        <div class="entry-content container-fluid">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-lg-offset-4">
           <?php the_title( '<h1 class="variation">', '</h1>' ); ?>
           <?php the_subtitle( '<div class="body2">', '</div>' ); ?>
           <div class="spacer-30"></div>
