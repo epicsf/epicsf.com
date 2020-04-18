@@ -130,12 +130,6 @@ $('#prayerModal').on('show.bs.modal', function(e) {
   modal.find('.modal-body').html(body.html());
 });
 jQuery(function() {
-  var now = new Date();
-  if (now.getMonth() === 2 && (now.getDate() === 14 || now.getDate() === 15)) {
-    setTimeout(function() {
-      $('#covid').modal();
-    }, 400);
-  }
   if (window.location
     && window.location.pathname.indexOf('2020-prayer-guide') > -1
     && window.location.hash.length > 1) {
