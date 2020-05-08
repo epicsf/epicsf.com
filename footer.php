@@ -13,98 +13,53 @@
 
     <footer id="footer" class="site-footer">
       <nav class="navbar container-fluid">
+        <img src="/wp-content/uploads/2020/05/logo-black.svg" alt="" />
         <div class="row">
-          <div class="col-md-9 col-sm-7 col-xs-12">
-        <div class="row">
-        <?php if ( has_nav_menu( 'footer-about-us' ) ) : ?>
-          <div class="col-md-3 col-sm-6">
-            <strong class="hidden-sm-down">About Us</strong>
-            <a href="/about" class="hidden-md-up"><strong>About Us</strong></a>
-            <a href="/sunday-gathering" class="hidden-md-up"><strong>Sunday Gathering</strong></a>
-            <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer About Us Menu', 'epic' ); ?>">
+        <?php if ( has_nav_menu( 'footer-watch' ) ) : ?>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <strong>Watch</strong>
+            <div aria-label="<?php esc_attr_e( 'Footer Watch Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
-                  'theme_location' => 'footer-about-us',
+                  'theme_location' => 'footer-watch',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
             </div>
           </div>
         <?php endif; ?>
-        <?php if ( has_nav_menu( 'footer-media' ) ) : ?>
-          <div class="col-md-3 col-sm-6">
-            <strong class="hidden-sm-down">Media</strong>
-            <a href="/media" class="hidden-md-up"><strong>Media</strong></a>
-            <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer Media Menu', 'epic' ); ?>">
+        <?php if ( has_nav_menu( 'footer-connect' ) ) : ?>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <strong>Connect</strong>
+            <div aria-label="<?php esc_attr_e( 'Footer Connect Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
-                  'theme_location' => 'footer-media',
+                  'theme_location' => 'footer-connect',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
             </div>
           </div>
         <?php endif; ?>
-        <?php if ( has_nav_menu( 'footer-get-connected' ) ) : ?>
-          <div class="col-md-3 col-sm-6">
-            <strong class="hidden-sm-down" data-abbrev="Connect">Get Connected</strong>
-            <a href="/get-connected" class="hidden-md-up"><strong>Get Connected</strong></a>
-            <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer Get Connected Menu', 'epic' ); ?>">
+        <?php if ( has_nav_menu( 'footer-give' ) ) : ?>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <strong>Give</strong>
+            <div aria-label="<?php esc_attr_e( 'Footer Give Menu', 'epic' ); ?>">
               <?php
                 wp_nav_menu( array(
-                  'theme_location' => 'footer-get-connected',
+                  'theme_location' => 'footer-give',
                   'menu_class'     => 'nav navbar-nav',
                  ) );
               ?>
             </div>
           </div>
         <?php endif; ?>
-        <?php if ( has_nav_menu( 'footer-ministries' ) ) : ?>
-          <div class="col-md-3 col-sm-6">
-            <strong class="hidden-sm-down">Ministries</strong>
-            <a href="/ministries" class="hidden-md-up"><strong>Ministries</strong></a>
-            <div class="hidden-sm-down" aria-label="<?php esc_attr_e( 'Footer Ministries Menu', 'epic' ); ?>">
-              <?php
-                wp_nav_menu( array(
-                  'theme_location' => 'footer-ministries',
-                  'menu_class'     => 'nav navbar-nav',
-                 ) );
-              ?>
-            </div>
-          </div>
-        <?php endif; ?>
-        </div> <!-- .row -->
-        </div> <!-- .col-md-9 -->
-        <div class="col-md-3 col-sm-5 col-xs-12 aside-content">
-          <div class="row">
-            <div class="col-md-5">
-              <a href="/giving"><strong>Giving</strong></a>
-            </div> <!-- .col-md-5 -->
-            <div class="col-md-7">
-              <a href="/sunday-gathering#contact"><strong>Contact</strong></a>
-            </div> <!-- .col-md-7 -->
-          </div> <!-- .row -->
-          <div class="row social-links">
-            <div class="col-md-2 col-xs-3">
-              <a href="https://www.facebook.com/epicsf"><i class="fa fa-lg fa-facebook"></i> <span class="sr-only">facebook</span></a>
-            </div> <!-- .col-md-2 -->
-            <div class="col-md-2 col-xs-3">
-              <a href="https://twitter.com/EpicChurchSF"><i class="fa fa-lg fa-twitter"></i> <span class="sr-only">twitter</span></a>
-            </div> <!-- .col-md-2 -->
-            <div class="col-md-2 col-xs-3">
-              <a href="https://www.instagram.com/epicchurchsf"><i class="fa fa-lg fa-instagram"></i> <span class="sr-only">instagram</span></a>
-            </div> <!-- .col-md-2 -->
-          </div> <!-- .row -->
-          <div class="row">
-            <div class="col-md-12 service-times">
-              <p>
-                Join us at:<br> <strong>9:00am</strong>, <strong>10:30am</strong> or <strong>12:00pm</strong>
-                <br>
-                <em>250 Stevenson Street, SF</em>
-              </p>
-            </div> <!-- .col-md-12 -->
-          </div> <!-- .row -->
-        </div> <!-- .col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 social-links">
+          <a href="https://www.facebook.com/epicsf"><i class="fa fa-lg fa-facebook"></i> <span class="sr-only">facebook</span></a>
+          <a href="https://www.instagram.com/epicchurchsf"><i class="fa fa-lg fa-instagram"></i> <span class="sr-only">instagram</span></a>
+          <a href="https://twitter.com/EpicChurchSF"><i class="fa fa-lg fa-twitter"></i> <span class="sr-only">twitter</span></a>
+          <a href="https://www.youtube.com/channel/UCFM25Coi7V23ztbR5Lzkbxw"><i class="fa fa-lg fa-youtube"></i> <span class="sr-only">youtube</span></a>
+        </div> <!-- .col-md-2 -->
         </div> <!-- .row -->
       </nav>
       <div class="site-info">

@@ -1,70 +1,51 @@
 .site-footer {
-  $footer-color: #f2f3f4;
+  $footer-color: #000;
+  $footer-font-size: 24px;
+
+  background: #F6F6F6;
 
   .navbar {
-    background: #414447;
     color: $footer-color;
-    padding-top: 60px;
+    padding-top: 64px;
     padding-bottom: 60px;
     z-index: 3;
+
+    max-width: 1360px;
+    width: 95%;
   }
 
   strong {
-    @include lato(700);
+    display: block;
+    margin-bottom: 8px;
 
+    @include lato(700);
+    font-size: $footer-font-size;
     color: $footer-color;
-    letter-spacing: 2.5px;
+    letter-spacing: .5px;
     text-transform: uppercase;
   }
 
-  a {
-    color: $footer-color;
+  li {
+    padding: 0;
   }
 
   li a {
-    color: #e8e9ea;
-    font-size: 15px;
-    font-weight: 300;
-    text-transform: none;
+    color: $footer-color;
+    font-size: $footer-font-size;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-transform: uppercase;
   }
 
-  .navbar {
-    border-radius: 0;
-
-    @media (max-width: 543px) {
-      a {
-        display: block;
-        margin-bottom: 10px;
-      }
+  .social-links {
+    a {
+      color: $footer-color;
+      padding-right: 12px;
+      font-size: 20px;
     }
   }
 
-  .navbar-nav .nav-item {
-    float: none;
-    margin: 10px 0 0;
-  }
-
-  .aside-content {
-    .row {
-      margin-bottom: 30px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    @media (max-width: 34em) {
-      max-height: 200px;
-    }
-
-    .service-times {
-      strong {
-        text-transform: initial;
-      }
-    }
-
-    p {
-      font-weight: 400;
-    }
+  [class^="col-"] {
+    margin-top: 56px;
   }
 }

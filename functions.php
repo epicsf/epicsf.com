@@ -16,6 +16,9 @@ if (!function_exists('epic_setup')) {
       'footer-about-us'      => 'Footer About Us Menu',
       'footer-media'         => 'Footer Media Menu',
       'footer-get-connected' => 'Footer Get Connected Menu',
+      'footer-watch'         => 'Footer Watch Menu',
+      'footer-connect'       => 'Footer Connect Menu',
+      'footer-give'          => 'Footer Give Menu',
     ));
 
     /*
@@ -248,7 +251,7 @@ function epic_scripts() {
 
   wp_enqueue_style(
     'epic-font-icons',
-    'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css',
+    'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
     array(),
     null
   );
