@@ -4,7 +4,7 @@ Theme URI: http://github.com/epicsf/
 Description: Theme for Epic Church's Website
 Author: Brett Bukowski
 Author URI: http://epicsf.com/
-Version: 1.0.38
+Version: 1.0.40
 */
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
@@ -5350,135 +5350,133 @@ iframe {
   z-index: 1000; }
 
 #site-navigation {
-  padding-left: 80px;
-  padding-right: 80px; }
-  @media (max-width: 1276px) {
-    #site-navigation {
-      padding: .5rem 1rem; }
-      #site-navigation .navbar-nav .nav-item + .nav-item {
-        margin-left: 0;
-        margin-right: 20px; } }
-  #site-navigation a,
-  #site-navigation a:hover,
-  #site-navigation a:focus {
-    color: #414447;
-    text-transform: none; }
-  #site-navigation .giving-item a {
-    color: #77d9aa;
-    text-transform: uppercase; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1360px;
+  margin: auto; }
+  #site-navigation a {
+    color: #000;
+    font-size: 24px;
+    padding: 12px 16px; }
   #site-navigation .navbar-brand {
-    margin-top: 18px;
-    margin-right: 0 !important; }
+    padding: 12px 40px 12px 0;
+    margin-right: 0 !important;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto; }
     #site-navigation .navbar-brand img {
-      width: 70px; }
-    @media (max-width: 34em) {
-      #site-navigation .navbar-brand {
-        float: right;
-        margin-top: 10px;
-        width: 50px; } }
-  #site-navigation .nav.navbar-nav {
-    margin-top: 18px;
-    padding: 0 30px 0 0; }
-    #site-navigation .nav.navbar-nav li {
-      margin-right: 50px; }
-      #site-navigation .nav.navbar-nav li:last-child {
-        margin-right: 0; }
-      @media (max-width: 48em) {
-        #site-navigation .nav.navbar-nav li {
-          margin-right: 0;
-          display: block;
-          float: none;
-          margin-left: 0;
-          margin-bottom: 10px; } }
-  #site-navigation .dropdown-toggle::after {
-    margin-left: .6rem;
-    content: "\f107";
-    font: normal normal normal 14px/1 FontAwesome;
-    border: 0;
-    vertical-align: initial; }
-  #site-navigation .dropdown-menu {
-    border-radius: 0;
-    padding: 0; }
-    @media (max-width: 34em) {
-      #site-navigation .dropdown-menu {
-        border: 0;
-        position: static;
-        float: none; }
-        #site-navigation .dropdown-menu::before, #site-navigation .dropdown-menu::after {
-          content: none !important; } }
-    #site-navigation .dropdown-menu .nav-item {
-      margin-left: 0;
-      float: none;
+      height: 64px; }
+  #site-navigation .primary-nav-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    flex-grow: 1; }
+    @media (max-width: 70em) {
+      #site-navigation .primary-nav-container {
+        justify-content: flex-end; } }
+    #site-navigation .primary-nav-container div:first-child {
+      flex-grow: 1; }
+      @media (max-width: 70em) {
+        #site-navigation .primary-nav-container div:first-child {
+          display: none; } }
+  #site-navigation .navbar-toggler {
+    margin-left: 52px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 58px;
+    height: 56px;
+    margin-left: 52px;
+    padding: 8px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 2px solid #000;
+    border-radius: 0; }
+    #site-navigation .navbar-toggler .menu-line {
+      height: 2px;
+      width: 100%;
+      background-color: #000;
+      display: none; }
+      #site-navigation .navbar-toggler .menu-line:first-of-type {
+        display: block;
+        transform: translate(0, 9px) rotate(45deg); }
+      #site-navigation .navbar-toggler .menu-line:last-of-type {
+        display: block;
+        transform: translate(0, -9px) rotate(-45deg); }
+    #site-navigation .navbar-toggler.collapsed .menu-line {
       display: block;
-      margin-right: 0 !important;
-      padding: 0;
-      background: white; }
-    #site-navigation .dropdown-menu .dropdown-item {
-      padding: 10px 16px; }
-    #site-navigation .dropdown-menu a {
-      display: block; }
-    #site-navigation .dropdown-menu::before {
-      position: absolute;
-      top: -7px;
-      left: 9px;
-      display: inline-block;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid #CCC;
-      border-left: 7px solid transparent;
-      border-bottom-color: rgba(0, 0, 0, 0.2);
-      content: ''; }
-    #site-navigation .dropdown-menu::after {
-      position: absolute;
-      top: -6px;
-      left: 10px;
-      display: inline-block;
-      border-right: 6px solid transparent;
-      border-bottom: 6px solid white;
-      border-left: 6px solid transparent;
-      content: ''; }
-  @media (max-width: 34em) {
-    #site-navigation {
-      height: auto; } }
+      transform: none; }
+  #site-navigation .nav {
+    margin-top: 15px; }
 
-.site-footer .navbar {
-  background: #414447;
-  color: #f2f3f4;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  z-index: 3; }
-.site-footer strong {
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  color: #f2f3f4;
-  letter-spacing: 2.5px;
-  text-transform: uppercase; }
-.site-footer a {
-  color: #f2f3f4; }
-.site-footer li a {
-  color: #e8e9ea;
-  font-size: 15px;
-  font-weight: 300;
-  text-transform: none; }
-.site-footer .navbar {
-  border-radius: 0; }
-  @media (max-width: 543px) {
-    .site-footer .navbar a {
-      display: block;
-      margin-bottom: 10px; } }
-.site-footer .navbar-nav .nav-item {
-  float: none;
-  margin: 10px 0 0; }
-.site-footer .aside-content .row {
-  margin-bottom: 30px; }
-  .site-footer .aside-content .row:last-child {
-    margin-bottom: 0; }
-@media (max-width: 34em) {
-  .site-footer .aside-content {
-    max-height: 200px; } }
-.site-footer .aside-content .service-times strong {
-  text-transform: initial; }
-.site-footer .aside-content p {
-  font-weight: 400; }
+.site-footer {
+  background: #F6F6F6; }
+  .site-footer.navbar-collapse {
+    background: #FFF; }
+    .site-footer.navbar-collapse .navbar {
+      padding-top: 24px; }
+  .site-footer .vision {
+    margin-top: 0 !important; }
+    .site-footer .vision p {
+      font-size: 32px;
+      font-weight: 900; }
+  .site-footer .navbar {
+    color: #000;
+    padding-top: 64px;
+    padding-bottom: 60px;
+    z-index: 3;
+    max-width: 1360px;
+    width: 95%; }
+  .site-footer strong {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    letter-spacing: .5px;
+    text-transform: uppercase; }
+  .site-footer li {
+    padding: 0; }
+  .site-footer li a {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-transform: uppercase; }
+  .site-footer .social-links a {
+    color: #000;
+    padding-right: 12px;
+    font-size: 20px; }
+  .site-footer [class^="col-"] {
+    margin-top: 56px; }
 
 .carousel {
   margin-top: 40px; }
@@ -5901,7 +5899,7 @@ body,
   height: 680px;
   position: relative;
   top: -100px; }
-  @media (max-width: 70em) {
+  @media (max-width: 47em) {
     .home-header {
       top: 0;
       background: #414447 url(/wp-content/uploads/2020/03/homepage-banner-sm.jpg) no-repeat; } }
@@ -6145,12 +6143,11 @@ article.home header {
     article.home header {
       background: no-repeat url(/wp-content/uploads/2019/08/home-banner-sm.jpg) #e6e6e6 center center;
       background-size: cover;
-      height: 400px;
-      margin-bottom: 100px; } }
-  @media (max-width: 34em) {
+      height: 400px; } }
+  @media (max-width: 47em) {
     article.home header {
       height: 300px;
-      margin-top: -74px;
+      margin-top: -20px;
       margin-bottom: 100px; } }
   @media (max-width: 27em) {
     article.home header {
