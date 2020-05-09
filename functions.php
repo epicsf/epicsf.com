@@ -72,7 +72,7 @@ if (!function_exists('epic_fonts_url')) {
     $fonts_url = '';
     $fonts = array(
       'Cardo:400,400i',
-      'Lato:300,400,700',
+      'Lato:300,400,700,900',
     );
 
     $fonts_url = add_query_arg(array(

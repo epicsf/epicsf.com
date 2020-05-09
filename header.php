@@ -65,27 +65,78 @@
 
         <?php if ( has_nav_menu( 'primary' ) ) : ?>
           <nav id="site-navigation" class="navbar navbar-full navbar-light" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
-            <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
-              &#9776;
-            </button>
-            <img src="/wp-content/uploads/2016/07/logo-mobile.png" alt="" class="hidden-sm-up navbar-brand pull-right">
-            <div class="collapse navbar-toggleable-sm" id="epicCollapsingNavbar">
             <div>
               <a href="/" class="navbar-brand" id="epic-logo">
-                <span class="screen-reader-text">Epic</span>
-                <img src="/wp-content/uploads/2016/07/logo-desktop.png" alt="" class="hidden-sm-down">
+                <img src="/wordpress2/wp-content/uploads/2020/05/logo-black.svg" alt="Epic" />
               </a>
             </div>
-            <?php
-              wp_nav_menu(array(
-                'theme_location' => 'primary',
-                'menu_class'     => 'nav navbar-nav pull-md-right',
-                'walker'         => new WP_Bootstrap_Navwalker(),
-                'depth'          => 2,
-               ));
-            ?>
+            <div class="primary-nav-container">
+              <?php
+                wp_nav_menu(array(
+                  'theme_location' => 'primary',
+                  'menu_class'     => 'nav navbar-nav pull-md-right',
+                  'walker'         => new WP_Bootstrap_Navwalker(),
+                  'depth'          => 2,
+                 ));
+              ?>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#epicCollapsingNavbar">
+                <span class="screen-reader-text">Toggle menu</span>
+                <div class="menu-line" role="presentation"></div>
+                <div class="menu-line" role="presentation"></div>
+                <div class="menu-line" role="presentation"></div>
+              </button>
             </div>
           </nav><!-- .navbar -->
+          <div class="collapse navbar-collapse site-footer" id="epicCollapsingNavbar">
+            <nav class="navbar container-fluid">
+              <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 vision">
+                  <p>Our vision is to see an increasing number of people in San Francisco orient their entire lives around Jesus.</p>
+                </div>
+              </div>
+              <div class="row">
+              <?php if ( has_nav_menu( 'footer-watch' ) ) : ?>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                  <strong>Watch</strong>
+                  <div aria-label="<?php esc_attr_e( 'Footer Watch Menu', 'epic' ); ?>">
+                    <?php
+                      wp_nav_menu( array(
+                        'theme_location' => 'footer-watch',
+                        'menu_class'     => 'nav navbar-nav',
+                       ) );
+                    ?>
+                  </div>
+                </div>
+              <?php endif; ?>
+              <?php if ( has_nav_menu( 'footer-connect' ) ) : ?>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                  <strong>Connect</strong>
+                  <div aria-label="<?php esc_attr_e( 'Footer Connect Menu', 'epic' ); ?>">
+                    <?php
+                      wp_nav_menu( array(
+                        'theme_location' => 'footer-connect',
+                        'menu_class'     => 'nav navbar-nav',
+                       ) );
+                    ?>
+                  </div>
+                </div>
+              <?php endif; ?>
+              <?php if ( has_nav_menu( 'footer-give' ) ) : ?>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                  <strong>Give</strong>
+                  <div aria-label="<?php esc_attr_e( 'Footer Give Menu', 'epic' ); ?>">
+                    <?php
+                      wp_nav_menu( array(
+                        'theme_location' => 'footer-give',
+                        'menu_class'     => 'nav navbar-nav',
+                       ) );
+                    ?>
+                  </div>
+                </div>
+              <?php endif; ?>
+              </div> <!-- row site-footer -->
+            </nav>
+          </div> <!-- .collapse navbar-collapse -->
         <?php endif; ?>
       </div><!-- .site-header-menu -->
     <?php endif; ?>

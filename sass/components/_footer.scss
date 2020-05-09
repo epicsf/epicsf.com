@@ -4,6 +4,22 @@
 
   background: #F6F6F6;
 
+  &.navbar-collapse {
+    background: #FFF;
+
+    .navbar {
+      padding-top: 24px;
+    }
+  }
+
+  .vision {
+    margin-top: 0 !important;
+    p {
+      font-size: 32px;
+      font-weight: 900;
+    }
+  }
+
   .navbar {
     color: $footer-color;
     padding-top: 64px;
