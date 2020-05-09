@@ -19,6 +19,7 @@ if (!function_exists('epic_setup')) {
       'footer-watch'         => 'Footer Watch Menu',
       'footer-connect'       => 'Footer Connect Menu',
       'footer-give'          => 'Footer Give Menu',
+      'footer-social'        => 'Footer Social',
     ));
 
     /*
@@ -262,7 +263,7 @@ function epic_scripts() {
     get_stylesheet_uri(),
     null,
     // Increment this to match the theme version to bust the cache.
-    '1.0.38'
+    '1.0.39'
   );
 
 }

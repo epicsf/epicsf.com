@@ -134,6 +134,18 @@
                   </div>
                 </div>
               <?php endif; ?>
+              <?php if ( has_nav_menu( 'footer-social' ) ) : ?>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 social-links">
+                  <div aria-label="<?php esc_attr_e( 'Footer Social Menu', 'epic' ); ?>">
+                    <?php
+                      wp_nav_menu( array(
+                        'theme_location' => 'footer-social',
+                        'menu_class'     => 'nav navbar-nav',
+                       ) );
+                    ?>
+                  </div>
+                </div>
+              <?php endif; ?>
               </div> <!-- row site-footer -->
             </nav>
           </div> <!-- .collapse navbar-collapse -->

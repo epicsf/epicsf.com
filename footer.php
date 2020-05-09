@@ -54,12 +54,18 @@
             </div>
           </div>
         <?php endif; ?>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 social-links">
-          <a href="https://www.facebook.com/epicsf"><i class="fa fa-lg fa-facebook"></i> <span class="sr-only">facebook</span></a>
-          <a href="https://www.instagram.com/epicchurchsf"><i class="fa fa-lg fa-instagram"></i> <span class="sr-only">instagram</span></a>
-          <a href="https://twitter.com/EpicChurchSF"><i class="fa fa-lg fa-twitter"></i> <span class="sr-only">twitter</span></a>
-          <a href="https://www.youtube.com/channel/UCFM25Coi7V23ztbR5Lzkbxw"><i class="fa fa-lg fa-youtube"></i> <span class="sr-only">youtube</span></a>
-        </div> <!-- .col-md-2 -->
+        <?php if ( has_nav_menu( 'footer-social' ) ) : ?>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 social-links">
+            <div aria-label="<?php esc_attr_e( 'Footer Social Menu', 'epic' ); ?>">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-social',
+                  'menu_class'     => 'nav navbar-nav',
+                 ) );
+              ?>
+            </div>
+          </div>
+        <?php endif; ?>
         </div> <!-- .row -->
       </nav>
       <div class="site-info">
