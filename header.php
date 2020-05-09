@@ -67,7 +67,7 @@
           <nav id="site-navigation" class="navbar navbar-full navbar-light" aria-label="<?php esc_attr_e( 'Primary Menu', 'epic' ); ?>">
             <div>
               <a href="/" class="navbar-brand" id="epic-logo">
-                <img src="/wordpress2/wp-content/uploads/2020/05/logo-black.svg" alt="Epic" />
+                <img src="/wp-content/uploads/2020/05/logo-black.svg" alt="Epic" />
               </a>
             </div>
             <div class="primary-nav-container">

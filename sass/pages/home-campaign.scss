@@ -21,12 +21,11 @@ article.home {
       background: no-repeat url(/wp-content/uploads/2019/08/home-banner-sm.jpg) $image-placeholder center center;
       background-size: cover;
       height: 400px;
-      margin-bottom: 100px;
     }
 
-    @media (max-width:34em) {
+    @media (max-width:47em) {
       height: 300px;
-      margin-top: -74px;
+      margin-top: -20px;
       margin-bottom: 100px;
     }
 
