@@ -13,7 +13,7 @@
 
     <footer id="footer" class="site-footer">
       <nav class="navbar container-fluid">
-        <img src="/wp-content/uploads/2020/05/logo-black.svg" alt="" />
+        <a href="/"><img src="/wp-content/uploads/2020/05/logo-black.svg" alt="Epic homepage" /></a>
         <div class="row">
         <?php if ( has_nav_menu( 'footer-watch' ) ) : ?>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
